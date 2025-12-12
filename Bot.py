@@ -10,6 +10,7 @@ import glob
 from aiogram import Bot, Dispatcher, types 
 from aiogram.utils import executor 
 from aiogram.utils.exceptions import Unauthorized
+from aiohttp import web
 from datetime import datetime, timedelta 
 from typing import Dict, Any, List 
 
@@ -6738,3 +6739,21 @@ if __name__=='__main__':
     except RuntimeError: 
         asyncio.set_event_loop(asyncio.new_event_loop()) 
     executor.start_polling(dp, skip_updates=True, on_startup=on_startup, on_shutdown=on_shutdown)
+    async def handle_health_check(request):
+        return web.Response(text="OK")
+
+if __name__ == '__main__':
+    # 1. Создаем приложение aiohttp
+    app = web.Application()
+    # 2. Добавляем маршрут для проверки здоровья (например, по пути /health)
+    app.router.add_get('/health', handle_health_check)
+    
+    # 3. Запускаем Polling и веб-сервер вместе!
+    executor.start_polling(
+        dp, 
+        skip_updates=True, 
+        # Добавляем наш aiohttp-сервер в качестве 'web_app'
+        web_app=app, 
+        # Указываем, чтобы веб-сервер слушал порт 8000
+        web_app_port=8000
+    )
