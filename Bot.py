@@ -71,7 +71,13 @@ user_scrap: Dict[int, int] = {}
 
 # Система розыгрышей
 active_giveaway: Dict[str, Any] = {}
-giveaway_participants: List[int] = []
+# giveaway_participants: mapping user_id -> {'joined_at': float, 'note': Optional[str]}
+giveaway_participants: Dict[int, Dict[str, Any]] = {}
+pending_giveaway_clarify: Dict[int, bool] = {}
+
+# Система подписок
+SUBS_CHANNEL_ID = None  # channel username or id for subscription check
+user_subscriptions: Dict[int, Dict[str, Any]] = {}
 
 # ========== СИСТЕМА ТЕМАТИЧЕСКИХ ОБНОВЛЕНИЙ ==========
 
@@ -146,6 +152,9 @@ EVENTS = {
         }
     }
 }
+
+# Редкости/категории, доступные только подписчикам
+PREMIUM_RARITIES = {"Эксклюзивные", "Легендарные"}
 
 def check_current_event():
     """Проверяет текущее событие по дате"""
@@ -613,7 +622,8 @@ def init_crafting_system():
         'input_count': 2,
         'output_rarity': 'Легендарные',
         'success_chance': 50,
-        'cost': 30000
+        'cost': 30000,
+        'premium': True
     }
     
     crafting_recipes['legendary_from_rare'] = {
@@ -623,7 +633,8 @@ def init_crafting_system():
         'input_count': 3,
         'output_rarity': 'Легендарные',
         'success_chance': 35,
-        'cost': 25000
+        'cost': 25000,
+        'premium': True
     }
     
     crafting_recipes['special_epic'] = {
@@ -633,7 +644,8 @@ def init_crafting_system():
         'input_count': [1, 2],
         'output_rarity': 'Эпические',
         'success_chance': 60,
-        'cost': 10000
+        'cost': 10000,
+        'premium': True
     }
     
     # Новые рецепты для скраповых машин
@@ -733,14 +745,23 @@ def save_data():
             'user_taxipark': taxipark_serial,
             'flea_market': flea_market_serial,
             'user_scrap': scrap_serial
+            ,
+            # Giveaway
+            'active_giveaway': active_giveaway,
+            'giveaway_participants': {str(k): v for k, v in giveaway_participants.items()}
+            ,
+            # Subscriptions
+            'subs_channel_id': SUBS_CHANNEL_ID,
+            'user_subscriptions': {str(k): v for k, v in user_subscriptions.items()}
         } 
         with open(DATA_FILE, 'w', encoding='utf-8') as f: 
             json.dump(payload, f, ensure_ascii=False, indent=2) 
     except Exception as e: 
         print('save_data error', e) 
 
-def load_data(): 
-    try: 
+def load_data():
+    global SUBS_CHANNEL_ID
+    try:
         if not os.path.exists(DATA_FILE): 
             return 
         with open(DATA_FILE, 'r', encoding='utf-8') as f: 
@@ -821,6 +842,30 @@ def load_data():
         user_scrap.clear()
         for k, v in payload.get('user_scrap', {}).items():
             user_scrap[int(k)] = v
+
+        # Giveaway state
+        active_giveaway.clear()
+        active_giveaway.update(payload.get('active_giveaway', {}))
+
+        giveaway_participants.clear()
+        for k, v in payload.get('giveaway_participants', {}).items():
+            try:
+                giveaway_participants[int(k)] = v
+            except Exception:
+                giveaway_participants[k] = v
+
+        # Subscriptions
+        try:
+            SUBS_CHANNEL_ID = payload.get('subs_channel_id')
+        except Exception:
+            SUBS_CHANNEL_ID = None
+
+        user_subscriptions.clear()
+        for k, v in payload.get('user_subscriptions', {}).items():
+            try:
+                user_subscriptions[int(k)] = v
+            except Exception:
+                user_subscriptions[k] = v
 
     except Exception as e: 
         print('load_data error', e) 
@@ -990,7 +1035,7 @@ async def force_restore_if_needed():
     except Exception as e:
         print(f"❌ Ошибка при восстановлении: {e}")
 
-@dp.message_handler(lambda m: m.text and any(word in m.text.lower() for word in ['найти backup', 'поиск backup', 'найти бекап']) and m.from_user.id == OWNER_ID)
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['найти backup', 'поиск backup', 'найти бекап']) and m.from_user.id == OWNER_ID)
 async def find_all_backups(message: types.Message):
     """Поиск всех backup файлов с информацией"""
     backup_files = glob.glob('backups/bot_data_*.bak')
@@ -1172,7 +1217,7 @@ def restore_from_backup(backup_file):
         print(f"❌ Ошибка восстановления из backup: {e}")
         return False
 
-@dp.message_handler(lambda m: m.text and any(word in m.text.lower() for word in ['восстановить баланс', 'рестор баланс']) and m.from_user.id == OWNER_ID)
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['восстановить баланс', 'рестор баланс']) and m.from_user.id == OWNER_ID)
 async def force_restore_balance(message: types.Message):
     """Принудительное восстановление из backup с лучшим балансом"""
     await message.reply("🔄 <b>Принудительное восстановление баланса...</b>", parse_mode='HTML')
@@ -1383,7 +1428,7 @@ def update_achievements(user_id: int):
             save_data()
 
 # Команды для квестов
-@dp.message_handler(lambda m: m.text and any(word in m.text.lower() for word in ['квесты', 'задания', 'quests']))
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['квесты', 'задания', 'quests']))
 async def show_quests(message: types.Message):
     user_id = message.from_user.id
     init_user_quests(user_id)
@@ -1414,7 +1459,7 @@ async def show_quests(message: types.Message):
     
     await message.reply(text, parse_mode='HTML', reply_markup=kb)
 
-@dp.message_handler(lambda m: m.text and any(word in m.text.lower() for word in ['достижения', 'achievements']))
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['достижения', 'achievements']))
 async def show_achievements_cmd(message: types.Message):
     user_id = message.from_user.id
     init_user_achievements(user_id)
@@ -1630,6 +1675,79 @@ def ensure_user_initialized(user_id:int):
         
     if changed: save_data() 
 
+def is_giveaway_active() -> bool:
+    return bool(active_giveaway.get('active', False) and active_giveaway.get('end_time', 0) > time.time())
+
+def giveaway_participant_count() -> int:
+    return len(giveaway_participants)
+
+def add_giveaway_participant(user_id: int) -> None:
+    giveaway_participants[user_id] = {'joined_at': time.time(), 'note': None}
+    save_data()
+
+def is_command_message(m: types.Message, keywords):
+    """Return True if message text exactly equals a keyword or starts with keyword+space"""
+    if not m.text:
+        return False
+    txt = m.text.strip().lower()
+    for w in keywords:
+        w = w.strip().lower()
+        if txt == w or txt.startswith(w + ' '):
+            return True
+    return False
+
+def format_giveaway_text(g):
+    prizes_text = '\n'.join([f"{i+1} место: {prize}" for i, prize in enumerate(g.get('prizes', []))])
+    end_dt = datetime.fromtimestamp(g['end_time']) if g.get('end_time') else None
+    end_text = end_dt.strftime('%d.%m.%Y %H:%M') if end_dt else '—'
+    return (
+        f"🎉 <b>РОЗЫГРЫШ ЗАПУЩЕН!</b> 🎉\n\n"
+        f"📝 <b>{g.get('description','')}</b>\n\n"
+        f"🎁 <b>Призы:</b>\n{prizes_text}\n\n"
+        f"👥 Участие: {g.get('winner_count', 1)} победителей\n"
+        f"💰 Мин. баланс: {format_money(g.get('min_balance',0))}\n"
+        f"⏰ Окончание: {end_text}\n\n"
+        f"💡 Для участия напишите: <code>+рз</code>"
+    )
+
+def grant_subscription(user_id: int, days: int | None = None, reason: str = 'manual'):
+    """Grant subscription to user_id for days (None = permanent)"""
+    expires_at = None
+    if days and days > 0:
+        expires_at = time.time() + days * 86400
+    user_subscriptions[user_id] = {'expires_at': expires_at, 'type': reason}
+    save_data()
+
+def revoke_subscription(user_id: int):
+    if user_id in user_subscriptions:
+        del user_subscriptions[user_id]
+        save_data()
+
+async def is_user_subscribed(user_id: int) -> bool:
+    """Проверяет, есть ли действующая подписка у пользователя.
+    1) Проверяем локальные записи `user_subscriptions` (expires_at)
+    2) При наличии `SUBS_CHANNEL_ID` проверяем членство в канале/чате
+    """
+    try:
+        sub = user_subscriptions.get(user_id)
+        if sub:
+            expires = sub.get('expires_at')
+            if not expires or time.time() < expires:
+                return True
+
+        if SUBS_CHANNEL_ID:
+            try:
+                member = await bot.get_chat_member(SUBS_CHANNEL_ID, user_id)
+                if member and member.status not in ['left', 'kicked']:
+                    return True
+            except Exception:
+                # Не можем проверить (например, приватный канал), продолжим
+                pass
+
+    except Exception:
+        pass
+    return False
+
 def generate_car_data(car_name:str,rarity:str,user_id:int): 
     car_id = generate_unique_id() 
     value = random.randint(*RARITY_VALUES.get(rarity, (10000,50000))) 
@@ -1673,11 +1791,20 @@ def generate_car_data(car_name:str,rarity:str,user_id:int):
 
 # ========== СИСТЕМА КРАФТА ==========
 
-@dp.message_handler(lambda m: m.text and any(word in m.text.lower() for word in ['крафт', 'craft']))
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['крафт', 'craft']))
 async def craft_command(message: types.Message):
     """Команда для крафта машин"""
     user_id = message.from_user.id
     ensure_user_initialized(user_id)
+    # Subscription check: блокируем крафт для не подписанных пользователей
+    try:
+        if not await is_user_subscribed(user_id):
+            await message.reply("❌ Крафт доступен только подписчикам. Чтобы получить доступ, подпишитесь на наш канал или свяжитесь с администратором.")
+            return
+    except Exception:
+        # Не смогли проверить подписку — по умолчанию блокируем
+        await message.reply("❌ Не удалось проверить подписку. Попробуйте позже.")
+        return
     
     cars_list = user_garage.get(user_id, [])
     scrap_count = user_scrap.get(user_id, 0)
@@ -1792,6 +1919,15 @@ async def craft_select_recipe(callback_query: types.CallbackQuery):
         return
     
     recipe = crafting_recipes[recipe_id]
+    # Проверка на премиум-рецепт
+    if recipe.get('premium'):
+        try:
+            if not await is_user_subscribed(user_id):
+                await bot.send_message(user_id, "❌ Этот рецепт доступен только подписчикам.")
+                return
+        except Exception:
+            await bot.send_message(user_id, "❌ Не удалось проверить подписку. Попробуйте позже.")
+            return
     
     # Проверяем специальные условия для скрапа
     if recipe['input_rarity'] == 'Скрап':
@@ -2298,7 +2434,7 @@ async def send_car_card(chat_id: int, car: dict, index: int, total: int, reply_t
     else: 
         await bot.send_message(chat_id, text, parse_mode='HTML', reply_markup=kb) 
 
-@dp.message_handler(lambda m: m.text and any(word in m.text.lower() for word in ['гараж', 'garage', 'машины'])) 
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['гараж', 'garage', 'машины'])) 
 async def show_garage(message:types.Message): 
     uid=message.from_user.id 
     ensure_user_initialized(uid) 
@@ -2349,11 +2485,19 @@ async def garage_nav(callback_query: types.CallbackQuery):
 
 # ========== СИСТЕМА КАРШЕРИНГА ==========
 
-@dp.message_handler(lambda m: m.text and any(word in m.text.lower() for word in ['каршеринг', 'carsharing']))
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['каршеринг', 'carsharing']))
 async def carsharing_command(message: types.Message):
     """Управление каршерингом"""
     user_id = message.from_user.id
     ensure_user_initialized(user_id)
+    # Subscription check for carsharing
+    try:
+        if not await is_user_subscribed(user_id):
+            await message.reply("❌ Каршеринг доступен только подписчикам.")
+            return
+    except Exception:
+        await message.reply("❌ Не удалось проверить подписку. Попробуйте позже.")
+        return
     
     cars_list = user_garage.get(user_id, [])
     
@@ -2669,11 +2813,19 @@ async def carsharing_back(callback_query: types.CallbackQuery):
 
 # ========== СИСТЕМА ТАКСОПАРКА ==========
 
-@dp.message_handler(lambda m: m.text and any(word in m.text.lower() for word in ['такси', 'таксопарк', 'taxi']))
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['такси', 'таксопарк', 'taxi']))
 async def taxipark_command(message: types.Message):
     """Управление таксопарком"""
     user_id = message.from_user.id
     ensure_user_initialized(user_id)
+    # Subscription check for taxipark
+    try:
+        if not await is_user_subscribed(user_id):
+            await message.reply("❌ Таксопарк доступен только подписчикам.")
+            return
+    except Exception:
+        await message.reply("❌ Не удалось проверить подписку. Попробуйте позже.")
+        return
     
     taxipark_info = user_taxipark.get(user_id, {})
     has_taxi = taxipark_info.get('has_taxi', False)
@@ -2882,7 +3034,7 @@ async def taxi_collect(callback_query: types.CallbackQuery):
 
 # ========== СИСТЕМА БАРАХОЛКИ ==========
 
-@dp.message_handler(lambda m: m.text and any(word in m.text.lower() for word in ['барахолка', 'вторичный', 'flea', 'market']))
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['барахолка', 'вторичный', 'flea market', 'flea', 'market']))
 async def flea_market_command(message: types.Message):
     """Просмотр барахолки"""
     if not flea_market:
@@ -3162,7 +3314,7 @@ async def flea_buy_car(message: types.Message):
 
 # ========== УЛУЧШЕННЫЙ ТЮНИНГ С РЕМОНТОМ ==========
 
-@dp.message_handler(lambda m: m.text and any(word in m.text.lower() for word in ['тюнинг', 'улучшить', 'tune'])) 
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['тюнинг', 'улучшить', 'tune'])) 
 async def tune_cmd(message: types.Message): 
     uid = message.from_user.id 
     ensure_user_initialized(uid) 
@@ -3307,7 +3459,7 @@ async def tune_buy(callback_query: types.CallbackQuery):
 
 # ========== УЛУЧШЕННЫЙ ОБМЕН ==========
 
-@dp.message_handler(lambda m: m.text and any(word in m.text.lower() for word in ['обмен', 'trade', 'обменяться']))
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['обмен', 'trade', 'обменяться']))
 async def trade_command(message: types.Message):
     """Улучшенная система обмена"""
     user_id = message.from_user.id
@@ -3591,7 +3743,7 @@ async def cancel_trade(callback_query: types.CallbackQuery):
 
 # ========== СИСТЕМА ПАССИВНОГО ДОХОДА ==========
 
-@dp.message_handler(lambda m: m.text and any(word in m.text.lower() for word in ['доход', 'income', 'пассив']))
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['доход', 'income', 'пассив']))
 async def income_command(message: types.Message):
     """Общая команда для просмотра пассивного дохода"""
     user_id = message.from_user.id
@@ -3861,7 +4013,7 @@ async def get_random_car_for_free(user_id:int):
 
 # ========== ИСПРАВЛЕННАЯ КОМАНДА ЭКСКЛЮЗИВ ==========
 
-@dp.message_handler(lambda m: m.text and any(word in m.text.lower() for word in ['эксклюзив', 'exclusive']) and m.from_user.id == OWNER_ID)
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['эксклюзив', 'exclusive']) and m.from_user.id == OWNER_ID)
 async def give_exclusive(message: types.Message):
     decorations = get_event_decorations()
     
@@ -4048,7 +4200,7 @@ async def start_broadcast(message: types.Message, text: str):
 
 # ========== МАГАЗИН С ИВЕНТОВЫМИ МАШИНАМИ ==========
 
-@dp.message_handler(lambda m: m.text and any(word in m.text.lower() for word in ['магазин', 'shop', 'купить'])) 
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['магазин', 'shop', 'купить'])) 
 async def shop(message:types.Message): 
     uid=message.from_user.id 
     ensure_user_initialized(uid) 
@@ -4140,6 +4292,16 @@ async def process_select_shop_rarity(callback_query: types.CallbackQuery):
         await bot.send_message(user_id, 'В этой категории пока нет доступных машин.') 
         return 
 
+    # Premium category check
+    if rarity in PREMIUM_RARITIES:
+        try:
+            if not await is_user_subscribed(user_id):
+                await bot.send_message(user_id, '❌ Эта категория доступна только подписчикам.')
+                return
+        except Exception:
+            await bot.send_message(user_id, '❌ Не удалось проверить подписку. Попробуйте позже.')
+            return
+
     kb = types.InlineKeyboardMarkup(row_width=1) 
     
     # Определяем цену в зависимости от категории
@@ -4196,6 +4358,15 @@ async def process_buy_car(callback_query: types.CallbackQuery):
         return 
 
     ensure_user_initialized(user_id) 
+    # Check premium category access
+    if rarity in PREMIUM_RARITIES:
+        try:
+            if not await is_user_subscribed(user_id):
+                await bot.send_message(user_id, '❌ Покупка этой машины доступна только подписчикам.')
+                return
+        except Exception:
+            await bot.send_message(user_id, '❌ Не удалось проверить подписку. Попробуйте позже.')
+            return
     if user_balance.get(user_id,0) < price: 
         await bot.send_message(user_id, f'❌ Недостаточно средств. Нужно {format_money(price)}') 
         return 
@@ -4327,7 +4498,7 @@ async def callback_sell_by_id(callback_query: types.CallbackQuery):
 
 # ========== ТЮНИНГ ==========
 
-@dp.message_handler(lambda m: m.text and any(word in m.text.lower() for word in ['тюнинг', 'улучшить', 'tune'])) 
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['тюнинг', 'улучшить', 'tune'])) 
 async def tune_cmd(message: types.Message): 
     uid = message.from_user.id 
     ensure_user_initialized(uid) 
@@ -4391,14 +4562,14 @@ async def tune_buy(callback_query: types.CallbackQuery):
 
 # ========== БАЛАНС И ПРОФИЛЬ ==========
 
-@dp.message_handler(lambda m: m.text and any(word in m.text.lower() for word in ['баланс', 'деньги', 'balance', 'money'])) 
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['баланс', 'деньги', 'balance', 'money'])) 
 async def show_balance(message:types.Message): 
     uid=message.from_user.id 
     ensure_user_initialized(uid) 
     decorations = get_event_decorations()
     await message.reply(f"{decorations['money_emoji']} Баланс: {format_money(user_balance[uid])}") 
 
-@dp.message_handler(lambda m: m.text and any(word in m.text.lower() for word in ['профиль', 'profile', 'стата'])) 
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['профиль', 'profile', 'стата'])) 
 async def profile(message:types.Message): 
     uid=message.from_user.id 
     ensure_user_initialized(uid) 
@@ -4449,7 +4620,7 @@ async def profile(message:types.Message):
 
 # ========== ЕЖЕДНЕВНЫЙ БОНУС ==========
 
-@dp.message_handler(lambda m: m.text and any(word in m.text.lower() for word in ['бонус', 'ежедневный', 'подарок']))
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['бонус', 'ежедневный', 'подарок']))
 async def daily_bonus(message: types.Message):
     user_id = message.from_user.id
     ensure_user_initialized(user_id)
@@ -4493,7 +4664,7 @@ async def daily_bonus(message: types.Message):
 
 # ========== ТОП И СТАТИСТИКА ==========
 
-@dp.message_handler(lambda m: m.text and any(word in m.text.lower() for word in ['топ', 'рейтинг', 'лидеры']))
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['топ', 'рейтинг', 'лидеры']))
 async def top_players(message: types.Message):
     sorted_players = sorted(user_balance.items(), key=lambda x: x[1], reverse=True)[:10]
     
@@ -4511,7 +4682,7 @@ async def top_players(message: types.Message):
     
     await message.reply(text, parse_mode='HTML')
 
-@dp.message_handler(lambda m: m.text and any(word in m.text.lower() for word in ['статистика', 'стата', 'stats']))
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['статистика', 'стата', 'stats']))
 async def server_stats(message: types.Message):
     total_players = len(user_balance)
     total_cars = sum(len(garage) for garage in user_garage.values())
@@ -4542,7 +4713,7 @@ async def server_stats(message: types.Message):
 
 # ========== СИСТЕМА ГОНОК С ДВУМЯ УЧАСТНИКАМИ ==========
 
-@dp.message_handler(lambda m: m.text and any(word in m.text.lower() for word in ['гонка', 'race', 'вызвать']))
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['гонка', 'race', 'вызвать']))
 async def race_command(message: types.Message):
     user_id = message.from_user.id
     ensure_user_initialized(user_id)
@@ -4978,7 +5149,7 @@ async def race_cancel(callback_query: types.CallbackQuery):
 
 # ========== ОБМЕН ==========
 
-@dp.message_handler(lambda m: m.text and any(word in m.text.lower() for word in ['обмен', 'trade', 'обменяться']))
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['обмен', 'trade', 'обменяться']))
 async def trade_command(message: types.Message):
     user_id = message.from_user.id
     ensure_user_initialized(user_id)
@@ -5058,7 +5229,7 @@ async def cancel_trade(callback_query: types.CallbackQuery):
 
 # ========== СИСТЕМА АУКЦИОНОВ ==========
 
-@dp.message_handler(lambda m: m.text and any(word in m.text.lower() for word in ['аукцион', 'аукцион создать', 'аукц', 'аукц создать']))
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['аукцион', 'аукцион создать', 'аукц', 'аукц создать']))
 async def auction_command(message: types.Message):
     user_id = message.from_user.id
     
@@ -5258,7 +5429,7 @@ async def place_bid_command(message: types.Message):
 
 # ========== СИСТЕМА ПРОМОКОДОВ ==========
 
-@dp.message_handler(lambda m: m.text and any(word in m.text.lower() for word in ['промокод', 'промо']))
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['промокод', 'промо']))
 async def promocode_command(message: types.Message):
     user_id = message.from_user.id
     
@@ -5421,6 +5592,108 @@ async def use_promocode(message: types.Message):
     except Exception as e:
         await message.reply("❌ Ошибка при активации промокода!")
 
+
+@dp.message_handler(lambda m: m.text and m.text.lower().startswith('подписка ') and m.from_user.id == OWNER_ID)
+async def admin_manage_subscription(message: types.Message):
+    """Админские команды для подписок: setchannel, выдать, revoke, info"""
+    parts = message.text.strip().split()
+    cmd = parts[1].lower() if len(parts) > 1 else None
+    try:
+        if cmd == 'setchannel' and len(parts) > 2:
+            global SUBS_CHANNEL_ID
+            SUBS_CHANNEL_ID = parts[2]
+            save_data()
+            await message.reply(f"✅ Канал подписки установлен: {SUBS_CHANNEL_ID}")
+            return
+
+        if cmd in ('выдать', 'grant') and len(parts) >= 3:
+            uid = int(parts[2])
+            days = int(parts[3]) if len(parts) >= 4 else None
+            grant_subscription(uid, days, 'manual')
+            await message.reply(f"✅ Подписка выдана {uid} {'на ' + str(days) + ' дн.' if days else 'навсегда'}")
+            return
+
+        if cmd in ('revoke', 'удалить', 'отменить') and len(parts) >= 3:
+            uid = int(parts[2])
+            revoke_subscription(uid)
+            await message.reply(f"✅ Подписка для {uid} отменена")
+            return
+
+        if cmd in ('info', 'посмотреть'):
+            if len(parts) >= 3:
+                uid = int(parts[2])
+            else:
+                uid = message.from_user.id
+            sub = user_subscriptions.get(uid)
+            if not sub:
+                await message.reply(f"❌ У пользователя {uid} нет локальной подписки")
+                return
+            expires = sub.get('expires_at')
+            expires_text = 'навсегда' if not expires else datetime.fromtimestamp(expires).strftime('%d.%m.%Y %H:%M')
+            await message.reply(f"✅ Подписка у {uid}: {expires_text} (тип: {sub.get('type')})")
+            return
+
+    except Exception as e:
+        await message.reply(f"❌ Ошибка команды подписки: {e}")
+
+
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['моя подписка', 'подписка инфо', 'подписка статус']))
+async def my_subscription_info(message: types.Message):
+    user_id = message.from_user.id
+    try:
+        local = user_subscriptions.get(user_id)
+        local_ok = False
+        if local:
+            expires = local.get('expires_at')
+            if not expires or time.time() < expires:
+                local_ok = True
+            else:
+                local_ok = False
+
+        channel_ok = False
+        if SUBS_CHANNEL_ID:
+            try:
+                member = await bot.get_chat_member(SUBS_CHANNEL_ID, user_id)
+                channel_ok = member and member.status not in ['left', 'kicked']
+            except Exception:
+                channel_ok = False
+
+        if local_ok or channel_ok:
+            await message.reply("✅ У вас активная подписка!")
+        else:
+            await message.reply("❌ У вас нет активной подписки. Чтобы подписаться — следуйте инструкциям администратора или подпишитесь на канал.")
+    except Exception as e:
+        await message.reply(f"❌ Не удалось проверить подписку: {e}")
+
+
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['подписчики', 'подписчики экспорт', 'subscribers', 'subscribers export']) and m.from_user.id == OWNER_ID)
+async def admin_list_subscribers(message: types.Message):
+    """Admin command: list or export subscribers"""
+    text = "📋 <b>ПОДПИСЧИКИ</b>\n\n"
+    subs = []
+    for uid, info in user_subscriptions.items():
+        expires = info.get('expires_at')
+        expires_text = 'навсегда' if not expires else datetime.fromtimestamp(expires).strftime('%d.%m.%Y %H:%M')
+        subs.append({'uid': uid, 'expires': expires, 'expires_text': expires_text, 'type': info.get('type')})
+        text += f"• {uid} — {expires_text} (type: {info.get('type')})\n"
+
+    await message.reply(text, parse_mode='HTML')
+
+    # If export requested
+    if message.text.strip().lower().startswith('подписчики экспорт') or message.text.strip().lower().startswith('subscribers export'):
+        try:
+            ts = datetime.now().strftime('%Y%m%d_%H%M%S')
+            path = os.path.join('backups', f'subscribers_{ts}.csv')
+            os.makedirs('backups', exist_ok=True)
+            with open(path, 'w', encoding='utf-8') as f:
+                f.write('user_id,expires_at,expires_date,type\n')
+                for s in subs:
+                    e_ts = '' if not s['expires'] else str(int(s['expires']))
+                    f.write(f"{s['uid']},{e_ts},{s['expires_text']},{s['type']}\n")
+            await bot.send_document(message.chat.id, open(path, 'rb'))
+        except Exception as e:
+            await message.reply(f"❌ Ошибка экспорта: {e}")
+
 # ========== СИСТЕМА РОЗЫГРЫШЕЙ ==========
 
 @dp.message_handler(lambda m: m.text and m.text.lower() == 'создать рз' and m.from_user.id == OWNER_ID)
@@ -5480,23 +5753,11 @@ async def create_giveaway_config(message: types.Message):
             'active': True
         }
         
-        giveaway_participants = []
+        giveaway_participants = {}
         save_data()
         
         # Красивое сообщение о розыгрыше
-        prizes_text = '\n'.join([f"{i+1} место: {prize}" for i, prize in enumerate(prizes)])
-        
-        end_datetime = datetime.fromtimestamp(active_giveaway['end_time'])
-        
-        giveaway_text = (
-            f"🎉 <b>РОЗЫГРЫШ ЗАПУЩЕН!</b> 🎉\n\n"
-            f"📝 <b>{description}</b>\n\n"
-            f"🎁 <b>Призы:</b>\n{prizes_text}\n\n"
-            f"👥 Участие: {winner_count} победителей\n"
-            f"💰 Мин. баланс: {format_money(min_balance)}\n"
-            f"⏰ Окончание: {end_datetime.strftime('%d.%m.%Y %H:%M')}\n\n"
-            f"💡 Для участия напишите: <code>+рз</code>"
-        )
+        giveaway_text = format_giveaway_text(active_giveaway)
         
         await message.reply(giveaway_text, parse_mode='HTML')
         
@@ -5505,20 +5766,18 @@ async def create_giveaway_config(message: types.Message):
     except Exception as e:
         await message.reply(f"❌ Ошибка при создании розыгрыша: {e}")
 
-@dp.message_handler(lambda m: m.text and m.text.lower() in ['+рз', '+ рз', 'рз'])
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['+рз', '+ рз', 'рз']))
 async def join_giveaway(message: types.Message):
     """Регистрация на участие в розыгрыше"""
     user_id = message.from_user.id
     ensure_user_initialized(user_id)
     
-    if not active_giveaway.get('active', False):
+    if not is_giveaway_active():
         await message.reply("❌ В данный момент нет активных розыгрышей!")
         return
     
     # Проверка времени
-    if time.time() > active_giveaway['end_time']:
-        await message.reply("❌ Розыгрыш уже завершен!")
-        return
+    # time checked in is_giveaway_active
     
     # Проверка минимального баланса
     min_balance = active_giveaway.get('min_balance', 0)
@@ -5532,8 +5791,9 @@ async def join_giveaway(message: types.Message):
         return
     
     # Регистрируем участника
-    giveaway_participants.append(user_id)
-    save_data()
+    add_giveaway_participant(user_id)
+    # Пометим пользователя как ожидающего уточнения
+    pending_giveaway_clarify[user_id] = True
     
     await message.reply(
         f"✅ <b>ВЫ ЗАРЕГИСТРИРОВАНЫ!</b>\n\n"
@@ -5544,10 +5804,12 @@ async def join_giveaway(message: types.Message):
         parse_mode='HTML'
     )
 
-@dp.message_handler(lambda m: m.text and any(word in m.text.lower() for word in ['розыгрыш', 'рз инфо']))
+    await message.reply("💬 Пожалуйста, отправьте ответ на вопрос для уточнения (ник/комментарий). Отправьте 'пропустить' чтобы пропустить.")
+
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['розыгрыш', 'рз инфо']))
 async def giveaway_info(message: types.Message):
     """Информация о текущем розыгрыше"""
-    if not active_giveaway.get('active', False):
+    if not is_giveaway_active():
         await message.reply("❌ В данный момент нет активных розыгрышей!")
         return
     
@@ -5560,25 +5822,36 @@ async def giveaway_info(message: types.Message):
     hours = int(time_left // 3600)
     minutes = int((time_left % 3600) // 60)
     
-    prizes_text = '\n'.join([f"{i+1} место: {prize}" for i, prize in enumerate(active_giveaway['prizes'])])
-    
-    text = (
-        f"🎉 <b>АКТИВНЫЙ РОЗЫГРЫШ</b>\n\n"
-        f"📝 {active_giveaway['description']}\n\n"
-        f"🎁 <b>Призы:</b>\n{prizes_text}\n\n"
-        f"👥 Участников: {len(giveaway_participants)}\n"
-        f"🏆 Победителей: {active_giveaway['winner_count']}\n"
-        f"💰 Мин. баланс: {format_money(active_giveaway.get('min_balance', 0))}\n"
-        f"⏰ Осталось: {hours}ч {minutes}м\n\n"
-        f"💡 Для участия: <code>+рз</code>"
-    )
+    text = format_giveaway_text(active_giveaway)
+    # Добавляем текущее состояние
+    text = text.replace('💡 Для участия', f'👥 Участников: {len(giveaway_participants)}\n🏆 Победителей: {active_giveaway["winner_count"]}\n💰 Мин. баланс: {format_money(active_giveaway.get("min_balance", 0))}\n\n💡 Для участия')
+    text += f"\n⏰ Осталось: {hours}ч {minutes}м"
     
     await message.reply(text, parse_mode='HTML')
+
+
+@dp.message_handler(lambda m: m.text and m.from_user.id in pending_giveaway_clarify)
+async def giveaway_clarify_handler(message: types.Message):
+    """Handle clarifying question response when a user registers for a giveaway"""
+    user_id = message.from_user.id
+    if user_id not in pending_giveaway_clarify:
+        return
+
+    answer = message.text.strip()
+    if answer.lower() == 'пропустить' or answer.lower() == 'skip':
+        answer = None
+
+    if user_id in giveaway_participants:
+        giveaway_participants[user_id]['note'] = answer
+        save_data()
+
+    pending_giveaway_clarify.pop(user_id, None)
+    await message.reply("✅ Спасибо! Ваша информация сохранена для розыгрыша.")
 
 @dp.message_handler(lambda m: m.text and m.text.lower() == 'завершить рз' and m.from_user.id == OWNER_ID)
 async def finish_giveaway_manual(message: types.Message):
     """Ручное завершение розыгрыша (только админ)"""
-    if not active_giveaway.get('active', False):
+    if not is_giveaway_active():
         await message.reply("❌ Нет активных розыгрышей!")
         return
     
@@ -5589,12 +5862,12 @@ async def finish_giveaway():
     """Автоматическое завершение розыгрыша"""
     global active_giveaway, giveaway_participants
     
-    if not active_giveaway.get('active', False) or not giveaway_participants:
+    if not is_giveaway_active() or not giveaway_participants:
         return
     
     # Выбираем победителей
     winner_count = min(active_giveaway['winner_count'], len(giveaway_participants))
-    winners = random.sample(giveaway_participants, winner_count)
+    winners = random.sample(list(giveaway_participants.keys()), winner_count)
     
     # Отправляем результаты
     result_text = (
@@ -5611,7 +5884,9 @@ async def finish_giveaway():
             winner_name = f"ID {winner_id}"
         
         prize = active_giveaway['prizes'][i] if i < len(active_giveaway['prizes']) else "Приз"
-        result_text += f"{i+1} место: {winner_name}\n🎁 Приз: {prize}\n\n"
+        note = giveaway_participants.get(winner_id, {}).get('note')
+        note_text = f" ({note})" if note else ""
+        result_text += f"{i+1} место: {winner_name}{note_text}\n🎁 Приз: {prize}\n\n"
         
         # Выдаем приз
         try:
@@ -5652,7 +5927,7 @@ async def finish_giveaway():
     save_data()
 
 # ========== КОМАНДА ВОССТАНОВЛЕНИЯ ==========
-@dp.message_handler(lambda m: m.text and any(word in m.text.lower() for word in ['список backup', 'список бекап', 'выбрать backup', 'все backup']) and m.from_user.id == OWNER_ID)
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['список backup', 'список бекап', 'выбрать backup', 'все backup']) and m.from_user.id == OWNER_ID)
 async def show_backup_list_command(message: types.Message):
     """Команда для показа списка backup"""
     await show_backup_list(message)
@@ -6071,7 +6346,7 @@ async def restore_selected_backup(callback_query: types.CallbackQuery):
             parse_mode='HTML'
         )
 
-@dp.message_handler(lambda m: m.text and any(word in m.text.lower() for word in ['восстановить', 'рестор', 'restore', 'вайп']) and m.from_user.id == OWNER_ID)
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['восстановить', 'рестор', 'restore']) and m.from_user.id == OWNER_ID)
 async def restore_backup_command(message: types.Message):
     """Команда для восстановления данных из backup (только для владельца)"""
     await message.reply("🔄 <b>Поиск самого нового backup...</b>", parse_mode='HTML')
@@ -6102,9 +6377,71 @@ async def restore_backup_command(message: types.Message):
     else:
         await message.reply("❌ <b>Ошибка при восстановлении данных!</b>", parse_mode='HTML')
 
+
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['вайп']) and m.from_user.id == OWNER_ID)
+async def wipe_command(message: types.Message):
+    """Wipe all users (ask for confirmation)"""
+    kb = types.InlineKeyboardMarkup()
+    kb.row(
+        types.InlineKeyboardButton(text="✅ Подтвердить вайп", callback_data="confirm_wipe"),
+        types.InlineKeyboardButton(text="❌ Отмена", callback_data="cancel_wipe")
+    )
+    await message.reply("⚠️ <b>ВНИМАНИЕ!</b> Все балансы, гаражи и т.д. пользователей будут удалены (кроме владельца). Подтвердить?", parse_mode='HTML', reply_markup=kb)
+
+
+@dp.callback_query_handler(lambda c: c.data == 'confirm_wipe')
+async def confirm_wipe_callback(callback_query: types.CallbackQuery):
+    """Execute wipe (owner only)"""
+    if callback_query.from_user.id != OWNER_ID:
+        await bot.answer_callback_query(callback_query.id, "❌ Только владелец может подтверждать вайп", show_alert=True)
+        return
+    try:
+        # Backup current data first
+        create_backup()
+        # Wipe data for all non-owner users
+        for uid in list(user_balance.keys()):
+            if uid == OWNER_ID:
+                continue
+            user_balance[uid] = 0
+            user_garage[uid] = []
+            user_shop_limits[uid] = {'count': 0, 'last_reset': datetime.now()}
+            user_scrap[uid] = 0
+            # remove from car_owner_map any cars that belong to this user
+            for car_id, owner_id in list(car_owner_map.items()):
+                if owner_id == uid:
+                    del car_owner_map[car_id]
+
+        # Clear bids and auction participation
+        for auction_id, auction in list(auctions.items()):
+            auction['participants'] = []
+            auction['bids'] = {}
+
+        # Clear user_bids per item
+        for k, v in list(user_bids.items()):
+            user_bids[k] = {}
+
+        # Clear flea market entries owned by non-owners
+        for offer_id, offer in list(flea_market.items()):
+            if offer.get('owner_id') != OWNER_ID:
+                del flea_market[offer_id]
+
+        # Remove subscriptions for non-owner users
+        for uid in list(user_subscriptions.keys()):
+            if uid != OWNER_ID:
+                del user_subscriptions[uid]
+
+        save_data()
+        await bot.edit_message_text(chat_id=callback_query.message.chat.id, message_id=callback_query.message.message_id, text="✅ Вайп выполнен. Все данные пользователей (кроме владельца) очищены.")
+    except Exception as e:
+        await bot.edit_message_text(chat_id=callback_query.message.chat.id, message_id=callback_query.message.message_id, text=f"❌ Ошибка при вайпе: {e}")
+
+@dp.callback_query_handler(lambda c: c.data == 'cancel_wipe')
+async def cancel_wipe_callback(callback_query: types.CallbackQuery):
+    await bot.edit_message_text(chat_id=callback_query.message.chat.id, message_id=callback_query.message.message_id, text="❌ Вайп отменён.")
+
 # ========== КОМАНДА СОБЫТИЯ ==========
 
-@dp.message_handler(lambda m: m.text and any(word in m.text.lower() for word in ['событие', 'ивент', 'event']))
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['событие', 'ивент', 'event']))
 async def event_info(message: types.Message):
     """Информация о текущем событии"""
     check_current_event()
@@ -6168,6 +6505,7 @@ async def start_command(message: types.Message):
         "• <b>баланс</b> - проверить баланс\n"
         "• <b>профиль</b> - ваша статистика\n"
         "• <b>крафт</b> - создать машину из 2+ машин\n"
+        "• <b>подписка</b> - управление подпиской / статус подписки\n"
         "• <b>событие</b> - информация о текущем событии\n"
     )
     
@@ -6178,7 +6516,7 @@ async def start_command(message: types.Message):
     
     await message.reply(text, parse_mode='HTML')
 
-@dp.message_handler(lambda m: m.text and any(word in m.text.lower() for word in ['помощь', 'help', 'команды']))
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['помощь', 'help', 'команды']))
 async def help_command(message: types.Message):
     user_id = message.from_user.id
     is_owner = user_id == OWNER_ID
@@ -6204,6 +6542,7 @@ async def help_command(message: types.Message):
         "• <b>обмен</b> - обменяться машинами\n"
         "• <b>крафт</b> - создать машину из 2+ машин\n"
         "• <b>аукцион</b> - список аукционов\n"
+        "• <b>подписка</b> - управление подпиской / статус подписки\n"
         "• <b>ставка [ID] [сумма]</b> - сделать ставку\n"
         "• <b>промокод [КОД]</b> - активировать промокод\n"
         "• <b>событие</b> - информация о текущем событии\n"
@@ -6221,6 +6560,10 @@ async def help_command(message: types.Message):
         text += "• <b>промокод удалить</b> - удалить промокод\n"
         text += "• <b>аукцион создать</b> - создать аукцион\n"
         text += "• <b>восстановить</b> - восстановить данные из backup\n"
+        text += "• <b>подписка setchannel</b> - задать канал подписки (админ)\n"
+        text += "• <b>подписка выдать [ID] [дни]</b> - выдать подписку пользователю (админ)\n"
+        text += "• <b>подписка revoke [ID]</b> - отозвать подписку (админ)\n"
+        text += "• <b>подписка info [ID]</b> - информация о подписке пользователя (админ)\n"
     
     text += "\n💡 <i>Просто напишите команду в чат!</i>"
     
@@ -6270,7 +6613,7 @@ async def periodic_checks():
                 del trade_offers[trade_id]
             
             # Проверяем розыгрыши
-            if active_giveaway.get('active', False) and current_time > active_giveaway.get('end_time', 0):
+            if is_giveaway_active() and current_time > active_giveaway.get('end_time', 0):
                 await finish_giveaway()
             
             await asyncio.sleep(30)  # Проверяем каждые 30 секунд
@@ -6322,7 +6665,7 @@ async def on_startup(dp):
         print('Image mapping error:', e) 
         # ========== КОМАНДА ПРИНУДИТЕЛЬНОГО ВОССТАНОВЛЕНИЯ БАЛАНСА ==========
 
-@dp.message_handler(lambda m: m.text and any(word in m.text.lower() for word in ['восстановить баланс', 'рестор баланс']) and m.from_user.id == OWNER_ID)
+@dp.message_handler(lambda m: m.text and is_command_message(m, ['восстановить баланс', 'рестор баланс']) and m.from_user.id == OWNER_ID)
 async def force_restore_balance(message: types.Message):
     """Принудительное восстановление из backup с лучшим балансом"""
     await message.reply("🔄 <b>Принудительное восстановление баланса...</b>", parse_mode='HTML')
