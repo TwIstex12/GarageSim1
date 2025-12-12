@@ -1,5 +1,5 @@
 ﻿aiofiles
-aiogram
+aiogram==2.23.1
 aiohappyeyeballs
 aiohttp
 aiosignal
@@ -17,3 +17,4 @@ typing-inspection
 typing_extensions
 
 yarl
+
