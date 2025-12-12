@@ -6744,8 +6744,8 @@ async def run_web_server():
     
     PORT = int(os.environ.get("PORT", 8000))
 app = web.Application() 
-app.router.add_get('/', "handle_health_check") 
-app.router.add_get('/health', "handle_health_check")
+app.router.add_get('/', handle_health_check)
+app.router.add_get('/health', handle_health_check)      
 
 if __name__=='__main__': 
     try: 
@@ -6754,8 +6754,8 @@ if __name__=='__main__':
         asyncio.set_event_loop(asyncio.new_event_loop()) 
     executor.start_polling(dp, skip_updates=True, on_startup=on_startup, on_shutdown=on_shutdown)
     async def handle_health_check(request):
-        return web.Response(text="Bot is running and healthy")
-        return web.Response(text="OK")
+        async def handle_health_check(request):
+            return web.Response(text="Bot is running and healthy")
     # Настройка цикла событий (как у тебя уже было)
     try:
         loop = asyncio.get_event_loop()
