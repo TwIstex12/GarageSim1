@@ -6756,8 +6756,6 @@ if __name__=='__main__':
     async def handle_health_check(request):
         return web.Response(text="Bot is running and healthy")
         return web.Response(text="OK")
-
-if __name__ == '__main__':
     # Настройка цикла событий (как у тебя уже было)
     try:
         loop = asyncio.get_event_loop()
