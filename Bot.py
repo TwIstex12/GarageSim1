@@ -1,5 +1,6 @@
 import asyncio 
 import random 
+import os
 import time 
 import json 
 import os 
@@ -6743,8 +6744,7 @@ if __name__=='__main__':
         return web.Response(text="OK")
 
 if __name__ == '__main__':
-    asyncio.get_event_loop()    
-    # Логика для asyncio (переносим сюда)
+    # Логика для asyncio
     try:
         asyncio.get_event_loop()
     except RuntimeError:
@@ -6755,12 +6755,13 @@ if __name__ == '__main__':
     # 2. Добавляем маршрут для проверки здоровья
     app.router.add_get('/health', handle_health_check)
     
-    # 3. Запускаем Polling И веб-сервер вместе! (только ОДИН раз)
+    # 3. Запускаем Polling и веб-сервер вместе!
     executor.start_polling(
         dp, 
         skip_updates=True, 
         on_startup=on_startup, 
         on_shutdown=on_shutdown,
         web_app=app, 
-        web_app_port=8000
+        # !!! ИСПОЛЬЗУЕМ ДИНАМИЧЕСКИЙ ПОРТ !!!
+        web_app_port=int(os.environ.get("PORT", 8000)) 
     )
