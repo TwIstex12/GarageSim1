@@ -6762,6 +6762,5 @@ if __name__ == '__main__':
         on_startup=on_startup, 
         on_shutdown=on_shutdown,
         web_app=app, 
-        # !!! ИСПОЛЬЗУЕМ ДИНАМИЧЕСКИЙ ПОРТ !!!
-        web_app_port=int(os.environ.get("PORT", 8000)) 
+        web_app_port=int(os.environ.get("PORT", 8080))
     )
