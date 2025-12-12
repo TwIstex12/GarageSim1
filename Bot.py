@@ -24,6 +24,27 @@ COOLDOWN = 3 * 60 * 60
 bot = Bot(token=TOKEN) 
 dp = Dispatcher(bot) 
 
+# ======== WEB SERVER (health check) ========
+PORT = int(os.environ.get("PORT", 8000))
+app = web.Application()
+
+async def handle_health_check(request):
+    """Health check handler for web server"""
+    return web.Response(text="Bot is running and healthy")
+
+# Register routes
+app.router.add_get('/', handle_health_check)
+app.router.add_get('/health', handle_health_check)
+
+async def run_web_server():
+    """Start aiohttp web server on configured PORT"""
+    runner = web.AppRunner(app)
+    await runner.setup()
+    site = web.TCPSite(runner, '0.0.0.0', PORT)
+    print(f"Starting Health Check server on port {PORT}...")
+    await site.start()
+    print('Health server started')
+
 # Global runtime state 
 user_balance: Dict[int, int] = {} 
 user_garage: Dict[int, List[Dict[str, Any]]] = {} 
@@ -6731,24 +6752,7 @@ async def on_startup(dp):
     except Exception as e: 
         print('Image mapping error:', e) 
         
-async def handle_health_check(request):
-    """Health check handler for web server"""
-    return web.Response(text="Bot is running and healthy")
-
-async def run_web_server():
-    """Запускает веб-сервер aiohttp на порту, ожидаемом хостингом"""
-    PORT = int(os.environ.get("PORT", 8000))
-    app = web.Application()
-    app.router.add_get('/', handle_health_check)
-    app.router.add_get('/health', handle_health_check)
-    
-    runner = web.AppRunner(app)
-    await runner.setup()
-    site = web.TCPSite(runner, '0.0.0.0', PORT)
-    print(f"Starting Health Check server on port {PORT}...")
-    await site.start()
-    print('Бот запущен')
-    print(f'Активное событие: {current_event}')
+# Health check endpoint and web server functions moved to top of the file.
 
 if __name__=='__main__':
     try:
@@ -6758,6 +6762,12 @@ if __name__=='__main__':
         asyncio.set_event_loop(loop)
     
     print("Starting Telegram Bot Polling...")
+    # Start aiohttp web server for health checks before polling Telegram
+    try:
+        loop.run_until_complete(run_web_server())
+    except Exception as e:
+        print('Failed to start web server:', e)
+
     executor.start_polling(
         dp,
         skip_updates=True,
