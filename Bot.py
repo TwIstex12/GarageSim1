@@ -6731,63 +6731,36 @@ async def on_startup(dp):
     except Exception as e: 
         print('Image mapping error:', e) 
         
+async def handle_health_check(request):
+    """Health check handler for web server"""
+    return web.Response(text="Bot is running and healthy")
+
 async def run_web_server():
     """Запускает веб-сервер aiohttp на порту, ожидаемом хостингом"""
+    PORT = int(os.environ.get("PORT", 8000))
+    app = web.Application()
+    app.router.add_get('/', handle_health_check)
+    app.router.add_get('/health', handle_health_check)
+    
     runner = web.AppRunner(app)
     await runner.setup()
-    # Слушаем все сетевые интерфейсы ('0.0.0.0') на порту PORT
-    site = web.TCPSite(runner, '0.0.0.0', PORT) 
+    site = web.TCPSite(runner, '0.0.0.0', PORT)
     print(f"Starting Health Check server on port {PORT}...")
     await site.start()
-    print('Бот запущен') 
+    print('Бот запущен')
     print(f'Активное событие: {current_event}')
-    
-    PORT = int(os.environ.get("PORT", 8000))
-app = web.Application() 
-app.router.add_get('/', handle_health_check)
-app.router.add_get('/health', handle_health_check)      
 
-if __name__=='__main__': 
-    try: 
-        asyncio.get_event_loop() 
-    except RuntimeError: 
-        asyncio.set_event_loop(asyncio.new_event_loop()) 
-    executor.start_polling(dp, skip_updates=True, on_startup=on_startup, on_shutdown=on_shutdown)
-    async def handle_health_check(request):
-        async def handle_health_check(request):
-            return web.Response(text="Bot is running and healthy")
-    # Настройка цикла событий (как у тебя уже было)
+if __name__=='__main__':
     try:
         loop = asyncio.get_event_loop()
     except RuntimeError:
         loop = asyncio.new_event_loop()
         asyncio.set_event_loop(loop)
-    # Логика для asyncio
-    try:
-        asyncio.get_event_loop()
-    except RuntimeError:
-        asyncio.set_event_loop(asyncio.new_event_loop())
-
-    # 1. Создаем приложение aiohttp
-    app = web.Application()
-    # 2. Добавляем маршрут для проверки здоровья
-    app.router.add_get('/health', handle_health_check)
     
-    # 3. Запускаем Polling и веб-сервер вместе!
-    executor.start_polling(
-        dp, 
-        skip_updates=True, 
-        on_startup=on_startup, 
-        on_shutdown=on_shutdown,
-        web_app=app,    
-        # !!! ИСПОЛЬЗУЕМ ДИНАМИЧЕСКИЙ ПОРТ !!!
-        web_app_port=int(os.environ.get("PORT", 8000)) 
-    )
-    loop.run_until_complete(run_web_server())
     print("Starting Telegram Bot Polling...")
     executor.start_polling(
-        dp, 
-        skip_updates=True, 
-        on_startup=on_startup, 
+        dp,
+        skip_updates=True,
+        on_startup=on_startup,
         on_shutdown=on_shutdown
-        )
+    )
