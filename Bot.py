@@ -1,6 +1,5 @@
 import asyncio 
 import random 
-import os
 import time 
 import json 
 import os 
@@ -6478,6 +6477,7 @@ async def event_info(message: types.Message):
         )
     
     await message.reply(text, parse_mode='HTML')
+    
 
 # ========== ПОМОЩЬ И СТАРТ ==========
 
@@ -6730,9 +6730,22 @@ async def on_startup(dp):
             os.makedirs(IMAGE_BASE_PATH, exist_ok=True) 
     except Exception as e: 
         print('Image mapping error:', e) 
-
+        
+async def run_web_server():
+    """Запускает веб-сервер aiohttp на порту, ожидаемом хостингом"""
+    runner = web.AppRunner(app)
+    await runner.setup()
+    # Слушаем все сетевые интерфейсы ('0.0.0.0') на порту PORT
+    site = web.TCPSite(runner, '0.0.0.0', PORT) 
+    print(f"Starting Health Check server on port {PORT}...")
+    await site.start()
     print('Бот запущен') 
     print(f'Активное событие: {current_event}')
+    
+    PORT = int(os.environ.get("PORT", 8000))
+app = web.Application() 
+app.router.add_get('/', "handle_health_check") 
+app.router.add_get('/health', "handle_health_check")
 
 if __name__=='__main__': 
     try: 
@@ -6741,9 +6754,16 @@ if __name__=='__main__':
         asyncio.set_event_loop(asyncio.new_event_loop()) 
     executor.start_polling(dp, skip_updates=True, on_startup=on_startup, on_shutdown=on_shutdown)
     async def handle_health_check(request):
+        return web.Response(text="Bot is running and healthy")
         return web.Response(text="OK")
 
 if __name__ == '__main__':
+    # Настройка цикла событий (как у тебя уже было)
+    try:
+        loop = asyncio.get_event_loop()
+    except RuntimeError:
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
     # Логика для asyncio
     try:
         asyncio.get_event_loop()
@@ -6761,6 +6781,15 @@ if __name__ == '__main__':
         skip_updates=True, 
         on_startup=on_startup, 
         on_shutdown=on_shutdown,
-        web_app=app, 
-        web_app_port=int(os.environ.get("PORT", 8080))
+        web_app=app,    
+        # !!! ИСПОЛЬЗУЕМ ДИНАМИЧЕСКИЙ ПОРТ !!!
+        web_app_port=int(os.environ.get("PORT", 8000)) 
     )
+    loop.run_until_complete(run_web_server())
+    print("Starting Telegram Bot Polling...")
+    executor.start_polling(
+        dp, 
+        skip_updates=True, 
+        on_startup=on_startup, 
+        on_shutdown=on_shutdown
+        )
