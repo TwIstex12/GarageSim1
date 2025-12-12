@@ -6743,17 +6743,24 @@ if __name__=='__main__':
         return web.Response(text="OK")
 
 if __name__ == '__main__':
+    asyncio.get_event_loop()    
+    # Логика для asyncio (переносим сюда)
+    try:
+        asyncio.get_event_loop()
+    except RuntimeError:
+        asyncio.set_event_loop(asyncio.new_event_loop())
+
     # 1. Создаем приложение aiohttp
     app = web.Application()
-    # 2. Добавляем маршрут для проверки здоровья (например, по пути /health)
+    # 2. Добавляем маршрут для проверки здоровья
     app.router.add_get('/health', handle_health_check)
     
-    # 3. Запускаем Polling и веб-сервер вместе!
+    # 3. Запускаем Polling И веб-сервер вместе! (только ОДИН раз)
     executor.start_polling(
         dp, 
         skip_updates=True, 
-        # Добавляем наш aiohttp-сервер в качестве 'web_app'
+        on_startup=on_startup, 
+        on_shutdown=on_shutdown,
         web_app=app, 
-        # Указываем, чтобы веб-сервер слушал порт 8000
         web_app_port=8000
     )
