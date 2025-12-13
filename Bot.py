@@ -34,12 +34,23 @@ web_runner = None
 # УБЕДИТЕСЬ, ЧТО ЭТОТ БЛОК ПРАВИЛЬНЫЙ
 # ------------------------------------
 # Получаем публичный URL, который предоставляет Koyeb (например, https://app-name-id.koyeb.app)
-WEBHOOK_HOST = os.environ.get('K_SERVICE_URL')
+# ВРЕМЕННО ЖЕСТКО УСТАНАВЛИВАЕМ ПЕРЕМЕННЫЕ ДЛЯ ОТЛАДКИ/ТЕСТА (исключаем Koyeb)
+# ЖЕСТКО ПРОПИСЫВАЕМ ДАННЫЕ, ЧТОБЫ ГАРАНТИРОВАТЬ ИХ НАЛИЧИЕ
+BOT_TOKEN_ENV = '8098891662:AAFqbb0db3MT7d4iTXQZeTCaf_6z9GJDWfA'
+WEBHOOK_HOST = 'https://disciplinary-desiri-vort1xss-71ad2f98.koyeb.app'
 
-# Используем токен как уникальный путь. Убедитесь, что BOT_TOKEN установлен на Koyeb.
-BOT_TOKEN_ENV = os.environ.get('BOT_TOKEN')
-WEBHOOK_PATH = f'/{BOT_TOKEN_ENV}' if BOT_TOKEN_ENV else None
-WEBHOOK_URL = f"{WEBHOOK_HOST}{WEBHOOK_PATH}" if WEBHOOK_HOST and WEBHOOK_PATH else None
+# Если хотите динамику, можно вернуть чтение из окружения (временно закомментировано):
+# BOT_TOKEN_ENV = os.environ.get('BOT_TOKEN', '8098891662:...')
+# WEBHOOK_HOST = os.environ.get('K_SERVICE_URL', 'https://disciplinary-...')
+
+# Если токен или host пустые — выйдем, чтобы не запускать некорректный webhook
+if not BOT_TOKEN_ENV or not WEBHOOK_HOST:
+    print("КРИТИЧЕСКАЯ ОШИБКА: Токен или URL пусты, проверьте код!")
+    sys.exit(1)
+
+# Определяем путь и URL webhook
+WEBHOOK_PATH = f'/{BOT_TOKEN_ENV}'
+WEBHOOK_URL = f"{WEBHOOK_HOST}{WEBHOOK_PATH}"
 
 WEBAPP_HOST = '0.0.0.0'
 # Порт, который слушает Koyeb (должен совпадать с PORT в вашем Dockerfile/Procfile, обычно 8000 или 8080)
@@ -6753,11 +6764,13 @@ async def on_startup(dp):
         # Health check endpoint and web server functions moved to top of the file.
 
     # При старте мы лениво загружаем переменные окружения и пытаемся установить Webhook
+    # Используем заранее заданные выше BOT_TOKEN_ENV и WEBHOOK_HOST (жёстко прописанные для теста)
     global WEBHOOK_HOST, WEBHOOK_PATH, WEBHOOK_URL, BOT_TOKEN_ENV
-    WEBHOOK_HOST = os.environ.get('K_SERVICE_URL')
-    BOT_TOKEN_ENV = os.environ.get('BOT_TOKEN')
-    WEBHOOK_PATH = f'/{BOT_TOKEN_ENV}' if BOT_TOKEN_ENV else None
-    WEBHOOK_URL = f"{WEBHOOK_HOST}{WEBHOOK_PATH}" if WEBHOOK_HOST and WEBHOOK_PATH else None
+    # Если по какой-то причине WEBHOOK_PATH или WEBHOOK_URL ещё не заполнены — формируем их
+    if not WEBHOOK_PATH:
+        WEBHOOK_PATH = f'/{BOT_TOKEN_ENV}'
+    if not WEBHOOK_URL:
+        WEBHOOK_URL = f"{WEBHOOK_HOST}{WEBHOOK_PATH}"
 
     # ВРЕМЕННО удаляем защитную проверку, чтобы не прерывать работу
     # if not WEBHOOK_HOST or not BOT_TOKEN_ENV:
@@ -6776,18 +6789,7 @@ async def on_startup(dp):
 
 if __name__=='__main__':
     from aiogram import executor
-    # Перед стартом вебхука заново вычислим путь и URL, чтобы быть уверенными
-    # что переменные окружения доступны в runtime (ленивая загрузка).
-    WEBHOOK_HOST = os.environ.get('K_SERVICE_URL')
-    BOT_TOKEN_ENV = os.environ.get('BOT_TOKEN')
-    if BOT_TOKEN_ENV:
-        WEBHOOK_PATH = f'/{BOT_TOKEN_ENV}'
-    if WEBHOOK_HOST and BOT_TOKEN_ENV:
-        WEBHOOK_URL = f"{WEBHOOK_HOST}{WEBHOOK_PATH}"
-
-    if not WEBHOOK_HOST or not BOT_TOKEN_ENV:
-        print("ОШИБКА: BOT_TOKEN или K_SERVICE_URL не заданы. Webhook не будет запущен.")
-        sys.exit(1)
+    # Используем жестко прописанные выше WEBHOOK_HOST и BOT_TOKEN_ENV.
 
     executor.start_webhook(
         dispatcher=dp,
