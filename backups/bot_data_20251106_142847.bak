@@ -1,0 +1,7090 @@
+{
+  "user_balance": {
+    "1678023162": 902539,
+    "6967681877": 52500,
+    "7448280758": 48000,
+    "6826037472": 23000,
+    "5157011394": 73865,
+    "1676302507": 1067606,
+    "8098891662": 10000,
+    "8299684575": 11000,
+    "6275470056": 17500,
+    "5228609209": 75500,
+    "6875556736": 118500,
+    "7940662917": 458007,
+    "7019678797": 574556,
+    "1721358063": 10000,
+    "7925260683": 17000,
+    "1276061866": 19000,
+    "1979989544": 10000,
+    "5026338588": 11000,
+    "1070180310": 17000,
+    "1622245964": 10500,
+    "5667887773": 16000,
+    "7647267427": 10500,
+    "7422210273": 19000,
+    "777000": 10000,
+    "6984112450": 75000,
+    "7872459217": 17000,
+    "8126975486": 16500,
+    "8437256547": 10000,
+    "5748333243": 15500,
+    "2072256303": 15500,
+    "8028974585": 10000,
+    "6298736639": 16000,
+    "7932419417": 18000,
+    "1087968824": 17500,
+    "1006083045": 15500,
+    "6118647204": 10000,
+    "5446305256": 15500,
+    "7736217536": 2443,
+    "5936146378": 15500,
+    "6629332380": 16000,
+    "2010611477": 106421,
+    "5020187526": 16000,
+    "5278998791": 16500,
+    "5211103523": 160677,
+    "5681582052": 16500,
+    "7574019779": 15500,
+    "7584071872": 10000
+  },
+  "user_garage": {
+    "1678023162": [
+      {
+        "id": "1Rbec46S",
+        "name": "Mercedes 300SL",
+        "rarity": "Эксклюзивные",
+        "rarity_key": "Эксклюзивные",
+        "value": 843475,
+        "image_path": "images/default.png",
+        "hp": 4735,
+        "acc": 1064,
+        "handling": 1053,
+        "sellable": false
+      },
+      {
+        "id": "iy4684fn",
+        "name": "Jaguar E-Type",
+        "rarity": "Эксклюзивные",
+        "rarity_key": "Эксклюзивные",
+        "value": 1627876,
+        "image_path": "images/default.png",
+        "hp": 1376,
+        "acc": 100,
+        "handling": 98,
+        "sellable": false
+      },
+      {
+        "id": "tCrPGnBG",
+        "name": "Shelby Cobra",
+        "rarity": "Эксклюзивные",
+        "rarity_key": "Эксклюзивные",
+        "value": 1726563,
+        "image_path": "images/default.png",
+        "hp": 1213,
+        "acc": 100,
+        "handling": 99,
+        "sellable": false
+      },
+      {
+        "id": "1Ov75WTU",
+        "name": "Ferrari Testarossa",
+        "rarity": "Эксклюзивные",
+        "rarity_key": "Эксклюзивные",
+        "value": 1799008,
+        "image_path": "images/default.png",
+        "hp": 803,
+        "acc": 92,
+        "handling": 97,
+        "sellable": false
+      },
+      {
+        "id": "Ws9NItHN",
+        "name": "Lamborghini Miura",
+        "rarity": "Эксклюзивные",
+        "rarity_key": "Эксклюзивные",
+        "value": 1719937,
+        "image_path": "images/default.png",
+        "hp": 1383,
+        "acc": 92,
+        "handling": 91,
+        "sellable": false,
+        "wear": 100
+      },
+      {
+        "id": "3E00EK7h",
+        "name": "Porsche 550 Spyder",
+        "rarity": "Эксклюзивные",
+        "rarity_key": "Эксклюзивные",
+        "value": 1746710,
+        "image_path": "images/default.png",
+        "hp": 930,
+        "acc": 90,
+        "handling": 99,
+        "sellable": false,
+        "wear": 100
+      }
+    ],
+    "6967681877": [
+      {
+        "id": "dICIeEqe",
+        "name": "Mercedes C63 AMG",
+        "rarity": "🟦 Редкие",
+        "rarity_key": "Редкие",
+        "value": 47490,
+        "image_path": "images/AMG.png"
+      },
+      {
+        "id": "gbTkA0nw",
+        "name": "Lamborghini Gallardo",
+        "rarity": "🟪 Эпические",
+        "rarity_key": "Эпические",
+        "value": 91938,
+        "image_path": "images/Lamborghini.png",
+        "hp": 430,
+        "acc": 87,
+        "handling": 70,
+        "sellable": true
+      },
+      {
+        "id": "rKIdd8KJ",
+        "name": "Nissan GT-R R34",
+        "rarity": "🟪 Эпические",
+        "rarity_key": "Эпические",
+        "value": 101429,
+        "image_path": "images/Nissan.png",
+        "hp": 362,
+        "acc": 93,
+        "handling": 76,
+        "sellable": true
+      },
+      {
+        "id": "55XjO6ww",
+        "name": "Nissan Skyline",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 11877,
+        "image_path": "images/skyline.png",
+        "hp": 133,
+        "acc": 58,
+        "handling": 30,
+        "sellable": true
+      },
+      {
+        "id": "sNwUw3mV",
+        "name": "Nissan Skyline",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 18771,
+        "image_path": "images/skyline.png",
+        "hp": 107,
+        "acc": 36,
+        "handling": 40,
+        "sellable": true
+      },
+      {
+        "id": "bvwMfOpU",
+        "name": "Lamborghini Aventador",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 94518,
+        "image_path": "images/aventador.png",
+        "hp": 384,
+        "acc": 78,
+        "handling": 70,
+        "sellable": true
+      },
+      {
+        "id": "8c0a5E3r",
+        "name": "Bugatti Veyron",
+        "rarity": "Легендарные",
+        "rarity_key": "Легендарные",
+        "value": 366410,
+        "image_path": "images/veyron.png",
+        "hp": 885,
+        "acc": 90,
+        "handling": 86,
+        "sellable": true
+      },
+      {
+        "id": "ztRHPABc",
+        "name": "Porsche 911",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 69743,
+        "image_path": "images/porsche_911.png",
+        "hp": 238,
+        "acc": 78,
+        "handling": 52,
+        "sellable": true
+      },
+      {
+        "id": "PNuYunnn",
+        "name": "Toyota Supra",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 19556,
+        "image_path": "images/supra.png",
+        "hp": 123,
+        "acc": 57,
+        "handling": 50,
+        "sellable": true
+      },
+      {
+        "id": "ABGEbdjx",
+        "name": "Porsche 911",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 43480,
+        "image_path": "images/porsche_911.png",
+        "hp": 160,
+        "acc": 51,
+        "handling": 54,
+        "sellable": true
+      },
+      {
+        "id": "yIkhOqOu",
+        "name": "Nissan Skyline",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 11604,
+        "image_path": "images/skyline.png",
+        "hp": 138,
+        "acc": 30,
+        "handling": 46,
+        "sellable": true
+      },
+      {
+        "id": "VxjvrHJv",
+        "name": "Toyota Supra",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 15735,
+        "image_path": "images/supra.png",
+        "hp": 116,
+        "acc": 51,
+        "handling": 51,
+        "sellable": true
+      },
+      {
+        "id": "h6jyYGtx",
+        "name": "Subaru Impreza",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 10912,
+        "image_path": "images/default.png",
+        "hp": 138,
+        "acc": 44,
+        "handling": 31,
+        "sellable": true
+      },
+      {
+        "id": "A1kZy2ca",
+        "name": "Nissan GT-R Nismo",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 77895,
+        "image_path": "images/default.png",
+        "hp": 333,
+        "acc": 70,
+        "handling": 80,
+        "sellable": true
+      },
+      {
+        "id": "TJ3g4XJR",
+        "name": "Audi S4",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 61025,
+        "image_path": "images/default.png",
+        "hp": 252,
+        "acc": 66,
+        "handling": 74,
+        "sellable": true
+      },
+      {
+        "id": "Tew2KNMk",
+        "name": "Mazda MX-5",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 24986,
+        "image_path": "images/default.png",
+        "hp": 103,
+        "acc": 37,
+        "handling": 32,
+        "sellable": true
+      },
+      {
+        "id": "jSOtgfGy",
+        "name": "Chevrolet Malibu",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 28687,
+        "image_path": "images/default.png",
+        "hp": 113,
+        "acc": 50,
+        "handling": 49,
+        "sellable": true
+      },
+      {
+        "id": "bDYAmmWa",
+        "name": "Mercedes Maybach",
+        "rarity": "Эксклюзивные",
+        "rarity_key": "Эксклюзивные",
+        "value": 1064403,
+        "image_path": "images/default.png",
+        "hp": 1496,
+        "acc": 91,
+        "handling": 95,
+        "sellable": false
+      },
+      {
+        "id": "f7agffGc",
+        "name": "Jaguar E-Type",
+        "rarity": "Эксклюзивные",
+        "rarity_key": "Эксклюзивные",
+        "value": 1782500,
+        "image_path": "images/default.png",
+        "hp": 1373,
+        "acc": 96,
+        "handling": 92,
+        "sellable": false
+      },
+      {
+        "id": "w6cv57ly",
+        "name": "Volvo S60",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 29966,
+        "image_path": "images/default.png",
+        "hp": 150,
+        "acc": 54,
+        "handling": 47,
+        "sellable": true
+      },
+      {
+        "id": "5h7TAQau",
+        "name": "Chevrolet Malibu",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 14438,
+        "image_path": "images/default.png",
+        "hp": 129,
+        "acc": 43,
+        "handling": 36,
+        "sellable": true
+      },
+      {
+        "id": "rSE5c0JV",
+        "name": "Ferrari F8 Tributo",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 101099,
+        "image_path": "images/default.png",
+        "hp": 264,
+        "acc": 91,
+        "handling": 81,
+        "sellable": true
+      },
+      {
+        "id": "ZCfR3Fmx",
+        "name": "Lamborghini Gallardo",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 112023,
+        "image_path": "images/Lamborghini.png",
+        "hp": 290,
+        "acc": 84,
+        "handling": 82,
+        "sellable": true
+      },
+      {
+        "id": "Zp4078aT",
+        "name": "Renault Megane",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 21085,
+        "image_path": "images/default.png",
+        "hp": 93,
+        "acc": 36,
+        "handling": 42,
+        "sellable": true
+      },
+      {
+        "id": "nIZ07VFY",
+        "name": "Ford Mondeo",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 27462,
+        "image_path": "images/default.png",
+        "hp": 86,
+        "acc": 40,
+        "handling": 59,
+        "sellable": true
+      },
+      {
+        "id": "IZ0URpfn",
+        "name": "Chevrolet Malibu",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 13213,
+        "image_path": "images/default.png",
+        "hp": 139,
+        "acc": 55,
+        "handling": 50,
+        "sellable": true,
+        "wear": 100
+      },
+      {
+        "id": "dVXD1Hni",
+        "name": "Renault Megane",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 27319,
+        "image_path": "images/default.png",
+        "hp": 104,
+        "acc": 58,
+        "handling": 36,
+        "sellable": true,
+        "wear": 100
+      }
+    ],
+    "7448280758": [
+      {
+        "id": "6GM2CAGq",
+        "name": "Opel Astra",
+        "rarity": "🟩 Обычные",
+        "rarity_key": "Обычные",
+        "value": 18464,
+        "image_path": "images/Astra.png",
+        "hp": 102,
+        "acc": 32,
+        "handling": 33,
+        "sellable": true
+      },
+      {
+        "id": "LvXqCVTe",
+        "name": "Ferrari F40",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 37334,
+        "image_path": "images/ferrari_f40.png",
+        "hp": 240,
+        "acc": 51,
+        "handling": 59,
+        "sellable": true
+      },
+      {
+        "id": "ThA84FMt",
+        "name": "Nissan Skyline",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 22568,
+        "image_path": "images/skyline.png",
+        "hp": 98,
+        "acc": 46,
+        "handling": 35,
+        "sellable": true
+      },
+      {
+        "id": "eIwZOHMK",
+        "name": "Lamborghini Aventador",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 131920,
+        "image_path": "images/aventador.png",
+        "hp": 352,
+        "acc": 78,
+        "handling": 76,
+        "sellable": true
+      },
+      {
+        "id": "rwjWqj5n",
+        "name": "Nissan Skyline",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 16841,
+        "image_path": "images/skyline.png",
+        "hp": 127,
+        "acc": 56,
+        "handling": 59,
+        "sellable": true
+      },
+      {
+        "id": "YWGYa44i",
+        "name": "Porsche 911",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 41210,
+        "image_path": "images/porsche_911.png",
+        "hp": 158,
+        "acc": 71,
+        "handling": 78,
+        "sellable": true
+      },
+      {
+        "id": "Yin2D7n0",
+        "name": "Ferrari F40",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 32128,
+        "image_path": "images/ferrari_f40.png",
+        "hp": 204,
+        "acc": 64,
+        "handling": 76,
+        "sellable": true
+      },
+      {
+        "id": "O221otek",
+        "name": "Toyota Camry",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 18674,
+        "image_path": "images/default.png",
+        "hp": 95,
+        "acc": 49,
+        "handling": 50,
+        "sellable": true
+      },
+      {
+        "id": "uNYX6Jnd",
+        "name": "BMW M4",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 31471,
+        "image_path": "images/default.png",
+        "hp": 251,
+        "acc": 64,
+        "handling": 57,
+        "sellable": true
+      },
+      {
+        "id": "eESt6SoK",
+        "name": "Infiniti Q50",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 54649,
+        "image_path": "images/default.png",
+        "hp": 177,
+        "acc": 74,
+        "handling": 55,
+        "sellable": true
+      },
+      {
+        "id": "Zr2liZ1e",
+        "name": "BMW M5",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 48135,
+        "image_path": "images/default.png",
+        "hp": 189,
+        "acc": 67,
+        "handling": 56,
+        "sellable": true
+      },
+      {
+        "id": "eRwE9lIS",
+        "name": "Lotus Evija",
+        "rarity": "Легендарные",
+        "rarity_key": "Легендарные",
+        "value": 234151,
+        "image_path": "images/default.png",
+        "hp": 523,
+        "acc": 88,
+        "handling": 80,
+        "sellable": true
+      },
+      {
+        "id": "ILElSs8A",
+        "name": "Audi A4",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 13030,
+        "image_path": "images/default.png",
+        "hp": 127,
+        "acc": 43,
+        "handling": 46,
+        "sellable": true
+      },
+      {
+        "id": "yr5kcbsh",
+        "name": "Volkswagen Golf R",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 38266,
+        "image_path": "images/default.png",
+        "hp": 224,
+        "acc": 63,
+        "handling": 68,
+        "sellable": true
+      },
+      {
+        "id": "ARjdsFKe",
+        "name": "Nissan GT-R50",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 102118,
+        "image_path": "images/default.png",
+        "hp": 315,
+        "acc": 71,
+        "handling": 83,
+        "sellable": true
+      },
+      {
+        "id": "QylePfNm",
+        "name": "Renault Megane",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 12944,
+        "image_path": "images/default.png",
+        "hp": 118,
+        "acc": 60,
+        "handling": 55,
+        "sellable": true,
+        "wear": 100
+      }
+    ],
+    "6826037472": [
+      {
+        "id": "zCN5FVXb",
+        "name": "Lamborghini Gallardo",
+        "rarity": "🟪 Эпические",
+        "rarity_key": "Эпические",
+        "value": 93134,
+        "image_path": "images/Lamborghini.png"
+      },
+      {
+        "id": "IqnOiu5c",
+        "name": "Bugatti Chiron",
+        "rarity": "🟥 Легендарные",
+        "rarity_key": "Легендарные",
+        "value": 234895,
+        "image_path": "images/Chiron.png",
+        "hp": 539,
+        "acc": 97,
+        "handling": 81,
+        "sellable": true
+      },
+      {
+        "id": "NQcXfuiW",
+        "name": "Nissan Skyline",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 21049,
+        "image_path": "images/skyline.png",
+        "hp": 126,
+        "acc": 56,
+        "handling": 56,
+        "sellable": true
+      },
+      {
+        "id": "jlnF5cFY",
+        "name": "Lamborghini Aventador",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 144128,
+        "image_path": "images/aventador.png",
+        "hp": 341,
+        "acc": 74,
+        "handling": 88,
+        "sellable": true
+      },
+      {
+        "id": "tUgt8oOI",
+        "name": "Toyota Supra",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 12383,
+        "image_path": "images/supra.png",
+        "hp": 117,
+        "acc": 31,
+        "handling": 57,
+        "sellable": true
+      },
+      {
+        "id": "ezABluXJ",
+        "name": "Nissan Skyline",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 12836,
+        "image_path": "images/skyline.png",
+        "hp": 90,
+        "acc": 39,
+        "handling": 42,
+        "sellable": true
+      },
+      {
+        "id": "4KS2wgFI",
+        "name": "Toyota Supra",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 10565,
+        "image_path": "images/supra.png",
+        "hp": 114,
+        "acc": 58,
+        "handling": 30,
+        "sellable": true
+      },
+      {
+        "id": "1kcB42nz",
+        "name": "Nissan Skyline",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 15059,
+        "image_path": "images/skyline.png",
+        "hp": 95,
+        "acc": 57,
+        "handling": 47,
+        "sellable": true
+      },
+      {
+        "id": "uGfC4xY0",
+        "name": "Nissan Skyline",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 28053,
+        "image_path": "images/skyline.png",
+        "hp": 123,
+        "acc": 54,
+        "handling": 36,
+        "sellable": true
+      },
+      {
+        "id": "xptaIZhk",
+        "name": "Toyota Supra",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 10733,
+        "image_path": "images/supra.png",
+        "hp": 109,
+        "acc": 36,
+        "handling": 55,
+        "sellable": true
+      },
+      {
+        "id": "jki4tRpz",
+        "name": "Toyota Supra",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 21072,
+        "image_path": "images/supra.png",
+        "hp": 130,
+        "acc": 30,
+        "handling": 49,
+        "sellable": true
+      },
+      {
+        "id": "vJNH0Pb3",
+        "name": "Honda Accord",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 27636,
+        "image_path": "images/default.png",
+        "hp": 118,
+        "acc": 37,
+        "handling": 36,
+        "sellable": true
+      },
+      {
+        "id": "wlTJ1y9m",
+        "name": "Mercedes SLS AMG",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 104669,
+        "image_path": "images/default.png",
+        "hp": 437,
+        "acc": 93,
+        "handling": 82,
+        "sellable": true
+      },
+      {
+        "id": "z70uM08L",
+        "name": "Seat Leon",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 25915,
+        "image_path": "images/default.png",
+        "hp": 90,
+        "acc": 46,
+        "handling": 54,
+        "sellable": true
+      },
+      {
+        "id": "rI55Kd1d",
+        "name": "Ford Focus",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 29082,
+        "image_path": "images/Focus.png",
+        "hp": 129,
+        "acc": 34,
+        "handling": 33,
+        "sellable": true
+      },
+      {
+        "id": "F3SYl3wV",
+        "name": "Mercedes AMG GT",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 81518,
+        "image_path": "images/default.png",
+        "hp": 293,
+        "acc": 95,
+        "handling": 86,
+        "sellable": true
+      }
+    ],
+    "5157011394": [
+      {
+        "id": "6CWyaWBF",
+        "name": "Lamborghini Aventador",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 133509,
+        "image_path": "images/aventador.png",
+        "hp": 442,
+        "acc": 75,
+        "handling": 89,
+        "sellable": true
+      },
+      {
+        "id": "dDncT18X",
+        "name": "Nissan Skyline",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 15738,
+        "image_path": "images/skyline.png",
+        "hp": 132,
+        "acc": 36,
+        "handling": 45,
+        "sellable": true
+      },
+      {
+        "id": "wwkq5vGV",
+        "name": "Porsche 911",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 50257,
+        "image_path": "images/porsche_911.png",
+        "hp": 189,
+        "acc": 51,
+        "handling": 68,
+        "sellable": true
+      },
+      {
+        "id": "lAquEGUU",
+        "name": "Dodge Challenger",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 48715,
+        "image_path": "images/default.png",
+        "hp": 204,
+        "acc": 70,
+        "handling": 67,
+        "sellable": true
+      },
+      {
+        "id": "foDh4VZo",
+        "name": "Ford Focus",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 28927,
+        "image_path": "images/Focus.png",
+        "hp": 94,
+        "acc": 50,
+        "handling": 60,
+        "sellable": true
+      },
+      {
+        "id": "zdibLznH",
+        "name": "Porsche Cayman",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 69405,
+        "image_path": "images/default.png",
+        "hp": 237,
+        "acc": 54,
+        "handling": 73,
+        "sellable": true
+      },
+      {
+        "id": "MKuAcHFp",
+        "name": "Mercedes C63 AMG",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 58930,
+        "image_path": "images/AMG.png",
+        "hp": 229,
+        "acc": 77,
+        "handling": 79,
+        "sellable": true
+      },
+      {
+        "id": "b3a2q70w",
+        "name": "Toyota GR86",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 32532,
+        "image_path": "images/default.png",
+        "hp": 145,
+        "acc": 68,
+        "handling": 53,
+        "sellable": true
+      },
+      {
+        "id": "zyUIis6R",
+        "name": "Mercedes C63 AMG",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 58686,
+        "image_path": "images/AMG.png",
+        "hp": 144,
+        "acc": 55,
+        "handling": 60,
+        "sellable": true
+      },
+      {
+        "id": "0Y98uy9d",
+        "name": "Nissan 370Z",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 55080,
+        "image_path": "images/default.png",
+        "hp": 254,
+        "acc": 73,
+        "handling": 58,
+        "sellable": true
+      },
+      {
+        "id": "2yMMwuRZ",
+        "name": "Hyundai Sonata",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 10584,
+        "image_path": "images/default.png",
+        "hp": 125,
+        "acc": 32,
+        "handling": 32,
+        "sellable": true
+      },
+      {
+        "id": "53I5htHW",
+        "name": "Acura NSX",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 88762,
+        "image_path": "images/default.png",
+        "hp": 403,
+        "acc": 83,
+        "handling": 78,
+        "sellable": true
+      },
+      {
+        "id": "nbvUlYRz",
+        "name": "Ferrari F40",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 51477,
+        "image_path": "images/ferrari_f40.png",
+        "hp": 186,
+        "acc": 75,
+        "handling": 59,
+        "sellable": true
+      },
+      {
+        "id": "qJjbguKF",
+        "name": "Toyota GR86",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 34264,
+        "image_path": "images/default.png",
+        "hp": 152,
+        "acc": 52,
+        "handling": 74,
+        "sellable": true
+      },
+      {
+        "id": "Sig8JOoJ",
+        "name": "Subaru Impreza",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 20023,
+        "image_path": "images/default.png",
+        "hp": 118,
+        "acc": 53,
+        "handling": 47,
+        "sellable": true
+      },
+      {
+        "id": "yQa7C1Q3",
+        "name": "Lamborghini Aventador",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 82263,
+        "image_path": "images/aventador.png",
+        "hp": 407,
+        "acc": 84,
+        "handling": 85,
+        "sellable": true
+      },
+      {
+        "id": "2igSWSXN",
+        "name": "Porsche Cayman",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 51816,
+        "image_path": "images/default.png",
+        "hp": 218,
+        "acc": 75,
+        "handling": 70,
+        "sellable": true
+      },
+      {
+        "id": "u7mnzQOn",
+        "name": "Audi TT",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 48230,
+        "image_path": "images/default.png",
+        "hp": 183,
+        "acc": 55,
+        "handling": 71,
+        "sellable": true
+      },
+      {
+        "id": "X7uJf5nw",
+        "name": "Chevrolet Cruze",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 22695,
+        "image_path": "images/default.png",
+        "hp": 103,
+        "acc": 51,
+        "handling": 57,
+        "sellable": true
+      },
+      {
+        "id": "fa564R4S",
+        "name": "Mazda RX-7",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 33614,
+        "image_path": "images/default.png",
+        "hp": 152,
+        "acc": 77,
+        "handling": 60,
+        "sellable": true
+      }
+    ],
+    "1676302507": [
+      {
+        "id": "D498FSzQ",
+        "name": "Ferrari F40",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 68723,
+        "image_path": "images/ferrari_f40.png",
+        "hp": 197,
+        "acc": 53,
+        "handling": 79,
+        "sellable": true
+      },
+      {
+        "id": "W5WCcUev",
+        "name": "Lamborghini Aventador",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 72072,
+        "image_path": "images/aventador.png",
+        "hp": 394,
+        "acc": 71,
+        "handling": 82,
+        "sellable": true
+      },
+      {
+        "id": "dH7R3omS",
+        "name": "Porsche 911",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 40593,
+        "image_path": "images/porsche_911.png",
+        "hp": 245,
+        "acc": 66,
+        "handling": 77,
+        "sellable": true
+      },
+      {
+        "id": "je3rexuU",
+        "name": "Koenigsegg Jesko",
+        "rarity": "Эксклюзивные",
+        "rarity_key": "Эксклюзивные",
+        "value": 1486566,
+        "image_path": "images/default.png",
+        "hp": 1349,
+        "acc": 94,
+        "handling": 92,
+        "sellable": false
+      },
+      {
+        "id": "8QXb5FjF",
+        "name": "Lamborghini Aventador",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 128567,
+        "image_path": "images/aventador.png",
+        "hp": 342,
+        "acc": 78,
+        "handling": 91,
+        "sellable": true
+      },
+      {
+        "id": "5u5r9iK7",
+        "name": "Lamborghini Aventador",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 80631,
+        "image_path": "images/aventador.png",
+        "hp": 258,
+        "acc": 86,
+        "handling": 80,
+        "sellable": true
+      },
+      {
+        "id": "DXJHWZ8b",
+        "name": "Porsche 911",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 61019,
+        "image_path": "images/porsche_911.png",
+        "hp": 142,
+        "acc": 62,
+        "handling": 68,
+        "sellable": true
+      },
+      {
+        "id": "bNYuXao1",
+        "name": "Ferrari 812 Superfast",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 76519,
+        "image_path": "images/default.png",
+        "hp": 252,
+        "acc": 94,
+        "handling": 82,
+        "sellable": true
+      },
+      {
+        "id": "e8cs7CR6",
+        "name": "McLaren 570S",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 131546,
+        "image_path": "images/default.png",
+        "hp": 430,
+        "acc": 94,
+        "handling": 74,
+        "sellable": true
+      },
+      {
+        "id": "VnQist0e",
+        "name": "Lamborghini Gallardo",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 109095,
+        "image_path": "images/Lamborghini.png",
+        "hp": 416,
+        "acc": 80,
+        "handling": 87,
+        "sellable": true
+      },
+      {
+        "id": "3k4vcgov",
+        "name": "Porsche 911 Turbo",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 127614,
+        "image_path": "images/Porshe.png",
+        "hp": 422,
+        "acc": 73,
+        "handling": 77,
+        "sellable": true
+      },
+      {
+        "id": "qZdb54cJ",
+        "name": "Pumpkin King",
+        "rarity": "🎃 ХЭЛЛОУИН",
+        "rarity_key": "🎃 ХЭЛЛОУИН",
+        "value": 40426,
+        "image_path": "images/default.png",
+        "hp": 102,
+        "acc": 41,
+        "handling": 46,
+        "sellable": true
+      },
+      {
+        "id": "EESkzadu",
+        "name": "Hyundai Sonata",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 28264,
+        "image_path": "images/default.png",
+        "hp": 104,
+        "acc": 53,
+        "handling": 49,
+        "sellable": true,
+        "wear": 100
+      },
+      {
+        "id": "Ro2SeFxs",
+        "name": "Mercedes SLS AMG",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 73403,
+        "image_path": "images/default.png",
+        "hp": 434,
+        "acc": 70,
+        "handling": 72,
+        "sellable": true,
+        "wear": 100
+      }
+    ],
+    "8098891662": [],
+    "8299684575": [
+      {
+        "id": "FJUpKwzk",
+        "name": "Lamborghini Gallardo",
+        "rarity": "🟪 Эпические",
+        "rarity_key": "Эпические",
+        "value": 115252,
+        "image_path": "images/Lamborghini.png"
+      },
+      {
+        "id": "sgeWPLb4",
+        "name": "Ferrari F40",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 55267,
+        "image_path": "images/ferrari_f40.png",
+        "hp": 182,
+        "acc": 70,
+        "handling": 74,
+        "sellable": true
+      }
+    ],
+    "6275470056": [
+      {
+        "id": "HbSbeYTQ",
+        "name": "BMW M3",
+        "rarity": "🟦 Редкие",
+        "rarity_key": "Редкие",
+        "value": 45450,
+        "image_path": "images/M3.png"
+      },
+      {
+        "id": "hexshu1c",
+        "name": "Koenigsegg Jesko",
+        "rarity": "Эксклюзивные",
+        "rarity_key": "Эксклюзивные",
+        "value": 1791155,
+        "image_path": "images/default.png",
+        "hp": 1128,
+        "acc": 92,
+        "handling": 92,
+        "sellable": false
+      },
+      {
+        "id": "zYnrUpoG",
+        "name": "McLaren 570S",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 85543,
+        "image_path": "images/default.png",
+        "hp": 380,
+        "acc": 84,
+        "handling": 82,
+        "sellable": true
+      },
+      {
+        "id": "65bIMWxZ",
+        "name": "BMW M3",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 31800,
+        "image_path": "images/M3.png",
+        "hp": 190,
+        "acc": 72,
+        "handling": 58,
+        "sellable": true
+      },
+      {
+        "id": "pvl9S7HR",
+        "name": "Chevrolet Malibu",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 21804,
+        "image_path": "images/default.png",
+        "hp": 135,
+        "acc": 45,
+        "handling": 43,
+        "sellable": true
+      },
+      {
+        "id": "1IwVyIMT",
+        "name": "Aston Martin DBS",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 78008,
+        "image_path": "images/default.png",
+        "hp": 281,
+        "acc": 91,
+        "handling": 82,
+        "sellable": true,
+        "wear": 100
+      }
+    ],
+    "5228609209": [
+      {
+        "id": "mStzexnz",
+        "name": "Subaru WRX STI",
+        "rarity": "🟦 Редкие",
+        "rarity_key": "Редкие",
+        "value": 58767,
+        "image_path": "images/Subaru_WRX_STI.png",
+        "hp": 156,
+        "acc": 68,
+        "handling": 64,
+        "sellable": true
+      },
+      {
+        "id": "RnVVAuI5",
+        "name": "Nissan Skyline",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 16838,
+        "image_path": "images/skyline.png",
+        "hp": 103,
+        "acc": 59,
+        "handling": 39,
+        "sellable": true
+      },
+      {
+        "id": "9CNBYEf3",
+        "name": "Ferrari F40",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 50272,
+        "image_path": "images/ferrari_f40.png",
+        "hp": 141,
+        "acc": 61,
+        "handling": 59,
+        "sellable": true
+      },
+      {
+        "id": "Hbfkku6R",
+        "name": "Toyota Supra",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 20723,
+        "image_path": "images/supra.png",
+        "hp": 148,
+        "acc": 45,
+        "handling": 40,
+        "sellable": true
+      },
+      {
+        "id": "D69dF3vU",
+        "name": "Nissan Skyline",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 21057,
+        "image_path": "images/skyline.png",
+        "hp": 144,
+        "acc": 40,
+        "handling": 60,
+        "sellable": true
+      },
+      {
+        "id": "pjVpWbYe",
+        "name": "Porsche 911",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 57162,
+        "image_path": "images/porsche_911.png",
+        "hp": 238,
+        "acc": 55,
+        "handling": 74,
+        "sellable": true
+      },
+      {
+        "id": "aQ7CAufK",
+        "name": "Nissan Skyline",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 17149,
+        "image_path": "images/skyline.png",
+        "hp": 108,
+        "acc": 52,
+        "handling": 43,
+        "sellable": true
+      },
+      {
+        "id": "XFLQZvxE",
+        "name": "Lamborghini Aventador",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 148629,
+        "image_path": "images/aventador.png",
+        "hp": 304,
+        "acc": 88,
+        "handling": 87,
+        "sellable": true
+      },
+      {
+        "id": "lCsrYLJC",
+        "name": "BMW 3 Series",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 17262,
+        "image_path": "images/default.png",
+        "hp": 89,
+        "acc": 54,
+        "handling": 43,
+        "sellable": true
+      },
+      {
+        "id": "cb4RZnaS",
+        "name": "Audi RS5",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 47235,
+        "image_path": "images/default.png",
+        "hp": 205,
+        "acc": 67,
+        "handling": 57,
+        "sellable": true
+      },
+      {
+        "id": "a3ehUJVN",
+        "name": "Lexus IS",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 41892,
+        "image_path": "images/default.png",
+        "hp": 222,
+        "acc": 78,
+        "handling": 66,
+        "sellable": true
+      },
+      {
+        "id": "rR0Ye5kL",
+        "name": "Dodge Challenger",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 47028,
+        "image_path": "images/default.png",
+        "hp": 250,
+        "acc": 68,
+        "handling": 57,
+        "sellable": true
+      },
+      {
+        "id": "pwavmnoD",
+        "name": "Toyota Corolla",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 29174,
+        "image_path": "images/Corolla.png",
+        "hp": 84,
+        "acc": 46,
+        "handling": 59,
+        "sellable": true
+      },
+      {
+        "id": "Rh5P4Mq0",
+        "name": "Renault Logan",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 20095,
+        "image_path": "images/default.png",
+        "hp": 145,
+        "acc": 39,
+        "handling": 42,
+        "sellable": true
+      },
+      {
+        "id": "QM2CepZ4",
+        "name": "Dodge Challenger",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 31341,
+        "image_path": "images/default.png",
+        "hp": 163,
+        "acc": 77,
+        "handling": 50,
+        "sellable": true
+      },
+      {
+        "id": "rInAGIrj",
+        "name": "Toyota Corolla",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 14414,
+        "image_path": "images/Corolla.png",
+        "hp": 125,
+        "acc": 32,
+        "handling": 33,
+        "sellable": true
+      },
+      {
+        "id": "FTz3cwc2",
+        "name": "Mercedes CLA45",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 50238,
+        "image_path": "images/default.png",
+        "hp": 194,
+        "acc": 77,
+        "handling": 73,
+        "sellable": true
+      },
+      {
+        "id": "7ew7V6x2",
+        "name": "Hyundai Sonata",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 20985,
+        "image_path": "images/default.png",
+        "hp": 138,
+        "acc": 38,
+        "handling": 31,
+        "sellable": true
+      },
+      {
+        "id": "WMoHGVKl",
+        "name": "Audi TT",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 37606,
+        "image_path": "images/default.png",
+        "hp": 161,
+        "acc": 54,
+        "handling": 54,
+        "sellable": true
+      },
+      {
+        "id": "ldOutruY",
+        "name": "Porsche Cayman",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 38342,
+        "image_path": "images/default.png",
+        "hp": 142,
+        "acc": 73,
+        "handling": 62,
+        "sellable": true
+      },
+      {
+        "id": "3qMnjfoS",
+        "name": "Honda Civic",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 14663,
+        "image_path": "images/Civik.png",
+        "hp": 105,
+        "acc": 47,
+        "handling": 40,
+        "sellable": true
+      }
+    ],
+    "6875556736": [
+      {
+        "id": "vuxcFL8j",
+        "name": "Mercedes C63 AMG",
+        "rarity": "🟦 Редкие",
+        "rarity_key": "Редкие",
+        "value": 38245,
+        "image_path": "images/AMG.png",
+        "hp": 144,
+        "acc": 76,
+        "handling": 55,
+        "sellable": true
+      },
+      {
+        "id": "ZzLu9Gh0",
+        "name": "Toyota Corolla",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 19638,
+        "image_path": "images/Corolla.png",
+        "hp": 146,
+        "acc": 36,
+        "handling": 56,
+        "sellable": true
+      },
+      {
+        "id": "cmj97Uzu",
+        "name": "Opel Astra",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 10740,
+        "image_path": "images/Astra.png",
+        "hp": 109,
+        "acc": 47,
+        "handling": 41,
+        "sellable": true
+      },
+      {
+        "id": "ol2r50L4",
+        "name": "Tesla Model S Plaid",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 75258,
+        "image_path": "images/default.png",
+        "hp": 425,
+        "acc": 90,
+        "handling": 71,
+        "sellable": true
+      },
+      {
+        "id": "1rXyxXVX",
+        "name": "Ford Mondeo",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 28700,
+        "image_path": "images/default.png",
+        "hp": 134,
+        "acc": 50,
+        "handling": 49,
+        "sellable": true
+      },
+      {
+        "id": "aScIvo9N",
+        "name": "Ferrari Roma",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 137910,
+        "image_path": "images/default.png",
+        "hp": 401,
+        "acc": 82,
+        "handling": 70,
+        "sellable": true
+      },
+      {
+        "id": "E31MWGLs",
+        "name": "Audi TT",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 68710,
+        "image_path": "images/default.png",
+        "hp": 245,
+        "acc": 53,
+        "handling": 63,
+        "sellable": true,
+        "wear": 100
+      }
+    ],
+    "7940662917": [
+      {
+        "id": "a75soIrl",
+        "name": "Volkswagen Golf",
+        "rarity": "🟩 Обычные",
+        "rarity_key": "Обычные",
+        "value": 23735,
+        "image_path": "images/golf.png",
+        "hp": 95,
+        "acc": 53,
+        "handling": 39,
+        "sellable": true
+      },
+      {
+        "id": "LEWZZE4F",
+        "name": "Nissan Skyline",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 11950,
+        "image_path": "images/skyline.png",
+        "hp": 147,
+        "acc": 45,
+        "handling": 50,
+        "sellable": true
+      },
+      {
+        "id": "O33iyM1z",
+        "name": "Toyota Supra",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 20258,
+        "image_path": "images/supra.png",
+        "hp": 80,
+        "acc": 30,
+        "handling": 60,
+        "sellable": true
+      },
+      {
+        "id": "IrEL6LJG",
+        "name": "Nissan Skyline",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 20702,
+        "image_path": "images/skyline.png",
+        "hp": 112,
+        "acc": 37,
+        "handling": 30,
+        "sellable": true
+      },
+      {
+        "id": "GIfSIgtq",
+        "name": "Porsche 911",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 67485,
+        "image_path": "images/porsche_911.png",
+        "hp": 253,
+        "acc": 53,
+        "handling": 52,
+        "sellable": true
+      },
+      {
+        "id": "622Cek9z",
+        "name": "Nissan Skyline",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 20534,
+        "image_path": "images/skyline.png",
+        "hp": 137,
+        "acc": 41,
+        "handling": 50,
+        "sellable": true
+      },
+      {
+        "id": "V79vnVss",
+        "name": "Nissan Skyline",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 21089,
+        "image_path": "images/skyline.png",
+        "hp": 111,
+        "acc": 53,
+        "handling": 37,
+        "sellable": true
+      },
+      {
+        "id": "ywXfFNMP",
+        "name": "Ferrari F40",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 54386,
+        "image_path": "images/ferrari_f40.png",
+        "hp": 251,
+        "acc": 51,
+        "handling": 75,
+        "sellable": true
+      },
+      {
+        "id": "GiKCj0Je",
+        "name": "Bugatti Veyron",
+        "rarity": "Легендарные",
+        "rarity_key": "Легендарные",
+        "value": 360260,
+        "image_path": "images/veyron.png",
+        "hp": 792,
+        "acc": 96,
+        "handling": 86,
+        "sellable": true
+      },
+      {
+        "id": "upO601BU",
+        "name": "Nissan Skyline",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 17331,
+        "image_path": "images/skyline.png",
+        "hp": 124,
+        "acc": 33,
+        "handling": 58,
+        "sellable": true
+      },
+      {
+        "id": "ndzRuxnv",
+        "name": "Ferrari F40",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 52545,
+        "image_path": "images/ferrari_f40.png",
+        "hp": 219,
+        "acc": 57,
+        "handling": 61,
+        "sellable": true
+      },
+      {
+        "id": "twX6nynk",
+        "name": "Nissan Skyline",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 21662,
+        "image_path": "images/skyline.png",
+        "hp": 97,
+        "acc": 50,
+        "handling": 40,
+        "sellable": true
+      },
+      {
+        "id": "Y5b3OLrz",
+        "name": "Toyota Supra",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 19873,
+        "image_path": "images/supra.png",
+        "hp": 103,
+        "acc": 31,
+        "handling": 59,
+        "sellable": true
+      },
+      {
+        "id": "U6zq3Nb0",
+        "name": "Ferrari F40",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 59055,
+        "image_path": "images/ferrari_f40.png",
+        "hp": 236,
+        "acc": 64,
+        "handling": 50,
+        "sellable": true
+      },
+      {
+        "id": "QQtVGUEM",
+        "name": "Dodge Challenger",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 62609,
+        "image_path": "images/default.png",
+        "hp": 225,
+        "acc": 68,
+        "handling": 61,
+        "sellable": true
+      },
+      {
+        "id": "uZ1pV3ZM",
+        "name": "McLaren 650S",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 96770,
+        "image_path": "images/default.png",
+        "hp": 367,
+        "acc": 85,
+        "handling": 89,
+        "sellable": true
+      },
+      {
+        "id": "fAxl7Z8r",
+        "name": "Toyota MR2",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 35003,
+        "image_path": "images/default.png",
+        "hp": 212,
+        "acc": 62,
+        "handling": 60,
+        "sellable": true
+      },
+      {
+        "id": "ewbclmMp",
+        "name": "Dodge Challenger",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 36500,
+        "image_path": "images/default.png",
+        "hp": 163,
+        "acc": 71,
+        "handling": 79,
+        "sellable": true
+      },
+      {
+        "id": "ebv8KxIa",
+        "name": "Acura Integra",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 39272,
+        "image_path": "images/default.png",
+        "hp": 143,
+        "acc": 76,
+        "handling": 69,
+        "sellable": true
+      },
+      {
+        "id": "OZpolsPj",
+        "name": "McLaren 650S",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 137457,
+        "image_path": "images/default.png",
+        "hp": 374,
+        "acc": 74,
+        "handling": 91,
+        "sellable": true
+      },
+      {
+        "id": "93hmRSNa",
+        "name": "Ford Mustang GT",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 39276,
+        "image_path": "images/Mustang.png",
+        "hp": 212,
+        "acc": 61,
+        "handling": 58,
+        "sellable": true
+      },
+      {
+        "id": "8ynQHt91",
+        "name": "Jaguar F-Type",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 111797,
+        "image_path": "images/default.png",
+        "hp": 378,
+        "acc": 84,
+        "handling": 76,
+        "sellable": true
+      },
+      {
+        "id": "mWJvqMrb",
+        "name": "Mercedes AMG GT",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 95526,
+        "image_path": "images/default.png",
+        "hp": 256,
+        "acc": 86,
+        "handling": 83,
+        "sellable": true
+      },
+      {
+        "id": "rbNQPuG7",
+        "name": "Chevrolet Malibu",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 28365,
+        "image_path": "images/default.png",
+        "hp": 145,
+        "acc": 58,
+        "handling": 46,
+        "sellable": true
+      },
+      {
+        "id": "1NGtciVh",
+        "name": "Opel Insignia",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 21550,
+        "image_path": "images/default.png",
+        "hp": 119,
+        "acc": 38,
+        "handling": 30,
+        "sellable": true
+      },
+      {
+        "id": "vMgB5MBO",
+        "name": "Lamborghini Sian",
+        "rarity": "Легендарные",
+        "rarity_key": "Легендарные",
+        "value": 241149,
+        "image_path": "images/default.png",
+        "hp": 525,
+        "acc": 88,
+        "handling": 97,
+        "sellable": true
+      },
+      {
+        "id": "8smFOTEB",
+        "name": "McLaren Sabre",
+        "rarity": "Легендарные",
+        "rarity_key": "Легендарные",
+        "value": 320548,
+        "image_path": "images/default.png",
+        "hp": 627,
+        "acc": 85,
+        "handling": 82,
+        "sellable": true
+      },
+      {
+        "id": "od1kA9rw",
+        "name": "Jaguar XE",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 47449,
+        "image_path": "images/default.png",
+        "hp": 243,
+        "acc": 57,
+        "handling": 73,
+        "sellable": true
+      },
+      {
+        "id": "DEpRpMRY",
+        "name": "Honda Civic",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 11096,
+        "image_path": "images/Civik.png",
+        "hp": 134,
+        "acc": 35,
+        "handling": 45,
+        "sellable": true
+      },
+      {
+        "id": "k9fw4Rq6",
+        "name": "Nissan Skyline",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 22316,
+        "image_path": "images/skyline.png",
+        "hp": 137,
+        "acc": 56,
+        "handling": 54,
+        "sellable": true
+      },
+      {
+        "id": "TtIJrN4X",
+        "name": "Chevrolet Cruze",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 27426,
+        "image_path": "images/default.png",
+        "hp": 150,
+        "acc": 39,
+        "handling": 56,
+        "sellable": true
+      },
+      {
+        "id": "fUPIRimR",
+        "name": "Audi A4",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 28319,
+        "image_path": "images/default.png",
+        "hp": 121,
+        "acc": 43,
+        "handling": 42,
+        "sellable": true
+      },
+      {
+        "id": "sNyox4LH",
+        "name": "Fiat Punto",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 19146,
+        "image_path": "images/default.png",
+        "hp": 114,
+        "acc": 49,
+        "handling": 47,
+        "sellable": true
+      },
+      {
+        "id": "RFGJlf5y",
+        "name": "Audi S4",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 66972,
+        "image_path": "images/default.png",
+        "hp": 166,
+        "acc": 60,
+        "handling": 57,
+        "sellable": true
+      },
+      {
+        "id": "iGZReipb",
+        "name": "Chevrolet Malibu",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 10704,
+        "image_path": "images/default.png",
+        "hp": 94,
+        "acc": 38,
+        "handling": 35,
+        "sellable": true
+      },
+      {
+        "id": "tNeMLbyl",
+        "name": "Nissan GT-R Nismo",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 99351,
+        "image_path": "images/default.png",
+        "hp": 401,
+        "acc": 78,
+        "handling": 93,
+        "sellable": true
+      },
+      {
+        "id": "cKR3mfbz",
+        "name": "Ford Mustang GT",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 69367,
+        "image_path": "images/Mustang.png",
+        "hp": 174,
+        "acc": 62,
+        "handling": 72,
+        "sellable": true
+      },
+      {
+        "id": "ela5iJu9",
+        "name": "Toyota Corolla",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 28928,
+        "image_path": "images/Corolla.png",
+        "hp": 97,
+        "acc": 37,
+        "handling": 47,
+        "sellable": true
+      },
+      {
+        "id": "JoiK02S0",
+        "name": "Subaru Impreza",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 28204,
+        "image_path": "images/default.png",
+        "hp": 123,
+        "acc": 45,
+        "handling": 36,
+        "sellable": true
+      },
+      {
+        "id": "d2faf1yQ",
+        "name": "Opel Insignia",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 28128,
+        "image_path": "images/default.png",
+        "hp": 119,
+        "acc": 55,
+        "handling": 31,
+        "sellable": true
+      },
+      {
+        "id": "9E0BSb4I",
+        "name": "Toyota Supra",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 27161,
+        "image_path": "images/supra.png",
+        "hp": 126,
+        "acc": 30,
+        "handling": 46,
+        "sellable": true
+      }
+    ],
+    "7019678797": [
+      {
+        "id": "GAQdRvAG",
+        "name": "Porsche 911",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 46667,
+        "image_path": "images/porsche_911.png",
+        "hp": 255,
+        "acc": 66,
+        "handling": 67,
+        "sellable": true
+      },
+      {
+        "id": "tSt9TMDx",
+        "name": "Porsche 911",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 65398,
+        "image_path": "images/porsche_911.png",
+        "hp": 246,
+        "acc": 58,
+        "handling": 66,
+        "sellable": true
+      },
+      {
+        "id": "lJM05uVr",
+        "name": "Bugatti Chiron",
+        "rarity": "Легендарные",
+        "rarity_key": "Легендарные",
+        "value": 380096,
+        "image_path": "images/Chiron.png",
+        "hp": 768,
+        "acc": 89,
+        "handling": 94,
+        "sellable": true
+      },
+      {
+        "id": "SH5IlX34",
+        "name": "Lamborghini Aventador",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 77555,
+        "image_path": "images/aventador.png",
+        "hp": 402,
+        "acc": 77,
+        "handling": 90,
+        "sellable": true
+      },
+      {
+        "id": "qBHWxYqx",
+        "name": "Audi R8 V10",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 113928,
+        "image_path": "images/default.png",
+        "hp": 397,
+        "acc": 94,
+        "handling": 74,
+        "sellable": true,
+        "wear": 100
+      }
+    ],
+    "1721358063": [],
+    "7925260683": [
+      {
+        "id": "CEaLwnnr",
+        "name": "Toyota Supra",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 12972,
+        "image_path": "images/supra.png",
+        "hp": 98,
+        "acc": 58,
+        "handling": 40,
+        "sellable": true
+      },
+      {
+        "id": "B5IE2EeH",
+        "name": "Porsche 911",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 43263,
+        "image_path": "images/porsche_911.png",
+        "hp": 255,
+        "acc": 79,
+        "handling": 62,
+        "sellable": true
+      },
+      {
+        "id": "er32LBnC",
+        "name": "Dodge Viper",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 122646,
+        "image_path": "images/default.png",
+        "hp": 313,
+        "acc": 80,
+        "handling": 83,
+        "sellable": true
+      },
+      {
+        "id": "6B7qAcwZ",
+        "name": "Honda Accord",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 28320,
+        "image_path": "images/default.png",
+        "hp": 150,
+        "acc": 38,
+        "handling": 35,
+        "sellable": true
+      }
+    ],
+    "1276061866": [
+      {
+        "id": "1JXQ93v7",
+        "name": "Toyota Supra",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 17099,
+        "image_path": "images/supra.png",
+        "hp": 125,
+        "acc": 48,
+        "handling": 42,
+        "sellable": true
+      },
+      {
+        "id": "WfgeGUws",
+        "name": "Lamborghini Aventador",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 95547,
+        "image_path": "images/aventador.png",
+        "hp": 276,
+        "acc": 74,
+        "handling": 87,
+        "sellable": true
+      },
+      {
+        "id": "EIOwuOS9",
+        "name": "Nissan Skyline",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 28363,
+        "image_path": "images/skyline.png",
+        "hp": 121,
+        "acc": 43,
+        "handling": 42,
+        "sellable": true
+      },
+      {
+        "id": "TvWdD5gG",
+        "name": "BMW 3 Series",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 28660,
+        "image_path": "images/default.png",
+        "hp": 98,
+        "acc": 44,
+        "handling": 41,
+        "sellable": true
+      },
+      {
+        "id": "XvlI9jqf",
+        "name": "Ferrari F40",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 32826,
+        "image_path": "images/ferrari_f40.png",
+        "hp": 159,
+        "acc": 77,
+        "handling": 50,
+        "sellable": true
+      },
+      {
+        "id": "SrVWcjBR",
+        "name": "Dodge Viper",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 124014,
+        "image_path": "images/default.png",
+        "hp": 395,
+        "acc": 90,
+        "handling": 73,
+        "sellable": true
+      },
+      {
+        "id": "6xqEWjqj",
+        "name": "Nissan GT-R R34",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 48362,
+        "image_path": "images/Nissan.png",
+        "hp": 176,
+        "acc": 69,
+        "handling": 52,
+        "sellable": true
+      },
+      {
+        "id": "6KCzU8Hk",
+        "name": "Maserati Ghibli",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 69552,
+        "image_path": "images/default.png",
+        "hp": 242,
+        "acc": 69,
+        "handling": 53,
+        "sellable": true
+      }
+    ],
+    "1979989544": [],
+    "5026338588": [
+      {
+        "id": "L4dKs2ho",
+        "name": "Lamborghini Aventador",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 104485,
+        "image_path": "images/aventador.png",
+        "hp": 341,
+        "acc": 75,
+        "handling": 82,
+        "sellable": true
+      },
+      {
+        "id": "pYZs4zsE",
+        "name": "Toyota Supra",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 28501,
+        "image_path": "images/supra.png",
+        "hp": 147,
+        "acc": 30,
+        "handling": 46,
+        "sellable": true
+      }
+    ],
+    "1070180310": [
+      {
+        "id": "pThdyIv1",
+        "name": "Ferrari F40",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 48993,
+        "image_path": "images/ferrari_f40.png",
+        "hp": 185,
+        "acc": 63,
+        "handling": 72,
+        "sellable": true
+      },
+      {
+        "id": "WSNT07RE",
+        "name": "Nissan 370Z",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 50902,
+        "image_path": "images/default.png",
+        "hp": 147,
+        "acc": 80,
+        "handling": 56,
+        "sellable": true
+      },
+      {
+        "id": "vulcujhk",
+        "name": "Seat Leon",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 22211,
+        "image_path": "images/default.png",
+        "hp": 126,
+        "acc": 44,
+        "handling": 40,
+        "sellable": true
+      },
+      {
+        "id": "rTW9fTry",
+        "name": "Volkswagen Passat",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 11815,
+        "image_path": "images/default.png",
+        "hp": 91,
+        "acc": 57,
+        "handling": 59,
+        "sellable": true
+      }
+    ],
+    "1622245964": [
+      {
+        "id": "u278m9Zw",
+        "name": "Toyota Supra",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 15547,
+        "image_path": "images/supra.png",
+        "hp": 143,
+        "acc": 37,
+        "handling": 50,
+        "sellable": true
+      }
+    ],
+    "5667887773": [
+      {
+        "id": "qhqr8G7Q",
+        "name": "Ferrari F40",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 57725,
+        "image_path": "images/ferrari_f40.png",
+        "hp": 141,
+        "acc": 71,
+        "handling": 76,
+        "sellable": true
+      },
+      {
+        "id": "hPuMfzcF",
+        "name": "Toyota MR2",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 59648,
+        "image_path": "images/default.png",
+        "hp": 144,
+        "acc": 66,
+        "handling": 69,
+        "sellable": true
+      }
+    ],
+    "7647267427": [
+      {
+        "id": "vwAssVYb",
+        "name": "Toyota Supra",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 28324,
+        "image_path": "images/supra.png",
+        "hp": 126,
+        "acc": 32,
+        "handling": 35,
+        "sellable": true
+      }
+    ],
+    "7422210273": [
+      {
+        "id": "cooPloSd",
+        "name": "Nissan Skyline",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 20536,
+        "image_path": "images/skyline.png",
+        "hp": 111,
+        "acc": 51,
+        "handling": 56,
+        "sellable": true
+      },
+      {
+        "id": "9Kyz8WZv",
+        "name": "Toyota Supra",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 11232,
+        "image_path": "images/supra.png",
+        "hp": 127,
+        "acc": 44,
+        "handling": 43,
+        "sellable": true
+      },
+      {
+        "id": "FlPk1sCV",
+        "name": "Fiat Punto",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 12728,
+        "image_path": "images/default.png",
+        "hp": 98,
+        "acc": 48,
+        "handling": 31,
+        "sellable": true
+      },
+      {
+        "id": "nsP2fAuw",
+        "name": "Audi TT",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 53725,
+        "image_path": "images/default.png",
+        "hp": 151,
+        "acc": 63,
+        "handling": 56,
+        "sellable": true
+      },
+      {
+        "id": "Tspmr3B1",
+        "name": "Seat Leon",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 13755,
+        "image_path": "images/default.png",
+        "hp": 88,
+        "acc": 43,
+        "handling": 58,
+        "sellable": true
+      },
+      {
+        "id": "d6jttMqt",
+        "name": "Honda Accord",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 28444,
+        "image_path": "images/default.png",
+        "hp": 118,
+        "acc": 53,
+        "handling": 58,
+        "sellable": true
+      },
+      {
+        "id": "kvctGggk",
+        "name": "Ford Mustang GT",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 42463,
+        "image_path": "images/Mustang.png",
+        "hp": 157,
+        "acc": 79,
+        "handling": 54,
+        "sellable": true,
+        "wear": 100
+      },
+      {
+        "id": "VVSa9vmV",
+        "name": "McLaren 570S",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 122608,
+        "image_path": "images/default.png",
+        "hp": 260,
+        "acc": 77,
+        "handling": 72,
+        "sellable": true,
+        "wear": 100
+      }
+    ],
+    "777000": [],
+    "6984112450": [
+      {
+        "id": "G53oYAZq",
+        "name": "Ferrari F40",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 62374,
+        "image_path": "images/ferrari_f40.png",
+        "hp": 200,
+        "acc": 70,
+        "handling": 60,
+        "sellable": true
+      },
+      {
+        "id": "dPhDv5lU",
+        "name": "Toyota Supra",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 27903,
+        "image_path": "images/supra.png",
+        "hp": 104,
+        "acc": 41,
+        "handling": 53,
+        "sellable": true
+      },
+      {
+        "id": "8eRFVPKp",
+        "name": "Skoda Octavia",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 21934,
+        "image_path": "images/default.png",
+        "hp": 134,
+        "acc": 30,
+        "handling": 49,
+        "sellable": true
+      },
+      {
+        "id": "Y354y1GA",
+        "name": "Audi R8",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 102414,
+        "image_path": "images/default.png",
+        "hp": 378,
+        "acc": 77,
+        "handling": 71,
+        "sellable": true
+      },
+      {
+        "id": "IXjhb8KY",
+        "name": "Hyundai Elantra",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 21083,
+        "image_path": "images/default.png",
+        "hp": 135,
+        "acc": 51,
+        "handling": 45,
+        "sellable": true
+      },
+      {
+        "id": "nRGQLUw7",
+        "name": "Toyota Supra",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 15803,
+        "image_path": "images/supra.png",
+        "hp": 104,
+        "acc": 60,
+        "handling": 59,
+        "sellable": true
+      },
+      {
+        "id": "5auBwubP",
+        "name": "Ferrari LaFerrari",
+        "rarity": "Легендарные",
+        "rarity_key": "Легендарные",
+        "value": 206250,
+        "image_path": "images/default.png",
+        "hp": 563,
+        "acc": 98,
+        "handling": 88,
+        "sellable": true
+      },
+      {
+        "id": "YdDgebcP",
+        "name": "Subaru Impreza",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 11984,
+        "image_path": "images/default.png",
+        "hp": 93,
+        "acc": 43,
+        "handling": 49,
+        "sellable": true
+      },
+      {
+        "id": "JcNqF4cN",
+        "name": "Mercedes C63 AMG",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 60248,
+        "image_path": "images/AMG.png",
+        "hp": 210,
+        "acc": 73,
+        "handling": 50,
+        "sellable": true
+      },
+      {
+        "id": "HWTbtTE9",
+        "name": "Skoda Octavia",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 20505,
+        "image_path": "images/default.png",
+        "hp": 104,
+        "acc": 46,
+        "handling": 33,
+        "sellable": true
+      },
+      {
+        "id": "mDlWw7bn",
+        "name": "Porsche 918 Spyder",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 146294,
+        "image_path": "images/default.png",
+        "hp": 447,
+        "acc": 85,
+        "handling": 89,
+        "sellable": true
+      },
+      {
+        "id": "tZxXTT4m",
+        "name": "Subaru WRX STI",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 56957,
+        "image_path": "images/Subaru_WRX_STI.png",
+        "hp": 193,
+        "acc": 74,
+        "handling": 76,
+        "sellable": true
+      },
+      {
+        "id": "i4Ntnyte",
+        "name": "Dodge Challenger",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 33457,
+        "image_path": "images/default.png",
+        "hp": 180,
+        "acc": 59,
+        "handling": 62,
+        "sellable": true
+      },
+      {
+        "id": "7OVFVTCh",
+        "name": "Mazda MX-5",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 15320,
+        "image_path": "images/default.png",
+        "hp": 132,
+        "acc": 43,
+        "handling": 42,
+        "sellable": true
+      },
+      {
+        "id": "xyZ49zuC",
+        "name": "Ford Mondeo",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 12156,
+        "image_path": "images/default.png",
+        "hp": 133,
+        "acc": 33,
+        "handling": 30,
+        "sellable": true
+      },
+      {
+        "id": "eYCoFbVr",
+        "name": "Subaru WRX STI",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 58328,
+        "image_path": "images/Subaru_WRX_STI.png",
+        "hp": 141,
+        "acc": 71,
+        "handling": 57,
+        "sellable": true
+      },
+      {
+        "id": "2Bgik7st",
+        "name": "Skoda Octavia",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 29566,
+        "image_path": "images/default.png",
+        "hp": 111,
+        "acc": 47,
+        "handling": 57,
+        "sellable": true
+      },
+      {
+        "id": "CX7JATaS",
+        "name": "BMW M5",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 36417,
+        "image_path": "images/default.png",
+        "hp": 156,
+        "acc": 76,
+        "handling": 69,
+        "sellable": true
+      },
+      {
+        "id": "f9G8dgmo",
+        "name": "Mercedes E63",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 34703,
+        "image_path": "images/default.png",
+        "hp": 239,
+        "acc": 54,
+        "handling": 78,
+        "sellable": true
+      },
+      {
+        "id": "QwVr3X8K",
+        "name": "Tesla Model S Plaid",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 87952,
+        "image_path": "images/default.png",
+        "hp": 358,
+        "acc": 89,
+        "handling": 83,
+        "sellable": true
+      }
+    ],
+    "7872459217": [
+      {
+        "id": "5hyGzd5P",
+        "name": "Honda NSX",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 36160,
+        "image_path": "images/default.png",
+        "hp": 225,
+        "acc": 53,
+        "handling": 79,
+        "sellable": true
+      },
+      {
+        "id": "DJjfYgwU",
+        "name": "Chevrolet Cruze",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 23885,
+        "image_path": "images/default.png",
+        "hp": 111,
+        "acc": 33,
+        "handling": 49,
+        "sellable": true
+      },
+      {
+        "id": "rbsdapgV",
+        "name": "Nissan Altima",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 17100,
+        "image_path": "images/default.png",
+        "hp": 147,
+        "acc": 31,
+        "handling": 32,
+        "sellable": true
+      },
+      {
+        "id": "VEDVCk3i",
+        "name": "Dodge Viper",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 88914,
+        "image_path": "images/default.png",
+        "hp": 307,
+        "acc": 72,
+        "handling": 92,
+        "sellable": true
+      }
+    ],
+    "8126975486": [
+      {
+        "id": "MNNsmsB4",
+        "name": "McLaren 720S",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 140505,
+        "image_path": "images/default.png",
+        "hp": 262,
+        "acc": 81,
+        "handling": 74,
+        "sellable": true
+      },
+      {
+        "id": "pjKz9enp",
+        "name": "Toyota Camry",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 26963,
+        "image_path": "images/default.png",
+        "hp": 134,
+        "acc": 51,
+        "handling": 51,
+        "sellable": true
+      },
+      {
+        "id": "AvPTpucf",
+        "name": "Volkswagen Golf R",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 58617,
+        "image_path": "images/default.png",
+        "hp": 216,
+        "acc": 74,
+        "handling": 66,
+        "sellable": true
+      }
+    ],
+    "8437256547": [],
+    "5748333243": [
+      {
+        "id": "RRkNzeA0",
+        "name": "Opel Insignia",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 24696,
+        "image_path": "images/default.png",
+        "hp": 117,
+        "acc": 39,
+        "handling": 44,
+        "sellable": true
+      }
+    ],
+    "2072256303": [
+      {
+        "id": "XQmzG1EB",
+        "name": "Audi TT",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 43975,
+        "image_path": "images/default.png",
+        "hp": 159,
+        "acc": 74,
+        "handling": 63,
+        "sellable": true
+      }
+    ],
+    "8028974585": [],
+    "6298736639": [
+      {
+        "id": "O6M3LaoV",
+        "name": "BMW M4",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 31588,
+        "image_path": "images/default.png",
+        "hp": 157,
+        "acc": 52,
+        "handling": 78,
+        "sellable": true
+      },
+      {
+        "id": "l6a1zIE6",
+        "name": "Tesla Model 3",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 44003,
+        "image_path": "images/default.png",
+        "hp": 168,
+        "acc": 50,
+        "handling": 57,
+        "sellable": true
+      }
+    ],
+    "7932419417": [
+      {
+        "id": "e748XHil",
+        "name": "Nissan GT-R R34",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 30618,
+        "image_path": "images/Nissan.png",
+        "hp": 155,
+        "acc": 72,
+        "handling": 75,
+        "sellable": true
+      },
+      {
+        "id": "C2iJHBlE",
+        "name": "Seat Leon",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 26280,
+        "image_path": "images/default.png",
+        "hp": 101,
+        "acc": 45,
+        "handling": 32,
+        "sellable": true
+      },
+      {
+        "id": "RJowSxDj",
+        "name": "Dodge Viper",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 148126,
+        "image_path": "images/default.png",
+        "hp": 258,
+        "acc": 88,
+        "handling": 95,
+        "sellable": true
+      },
+      {
+        "id": "C4aUns2O",
+        "name": "Mercedes A-Class",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 21030,
+        "image_path": "images/default.png",
+        "hp": 110,
+        "acc": 30,
+        "handling": 48,
+        "sellable": true
+      },
+      {
+        "id": "r6mKHLNG",
+        "name": "Renault Logan",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 20936,
+        "image_path": "images/default.png",
+        "hp": 93,
+        "acc": 50,
+        "handling": 54,
+        "sellable": true
+      },
+      {
+        "id": "gj04zwp8",
+        "name": "Volkswagen Golf R",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 58481,
+        "image_path": "images/default.png",
+        "hp": 215,
+        "acc": 68,
+        "handling": 65,
+        "sellable": true
+      }
+    ],
+    "1087968824": [
+      {
+        "id": "NCt5yZb5",
+        "name": "Audi S4",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 55592,
+        "image_path": "images/default.png",
+        "hp": 227,
+        "acc": 68,
+        "handling": 60,
+        "sellable": true
+      },
+      {
+        "id": "KV6aDMLv",
+        "name": "Ferrari 488",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 131275,
+        "image_path": "images/default.png",
+        "hp": 446,
+        "acc": 85,
+        "handling": 74,
+        "sellable": true
+      },
+      {
+        "id": "7VaQbJWB",
+        "name": "Mitsubishi Lancer",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 28309,
+        "image_path": "images/default.png",
+        "hp": 111,
+        "acc": 52,
+        "handling": 48,
+        "sellable": true
+      },
+      {
+        "id": "aK056IEi",
+        "name": "Toyota Corolla",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 29655,
+        "image_path": "images/Corolla.png",
+        "hp": 143,
+        "acc": 46,
+        "handling": 51,
+        "sellable": true
+      },
+      {
+        "id": "J6e4DN9s",
+        "name": "Mercedes CLA45",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 31029,
+        "image_path": "images/default.png",
+        "hp": 240,
+        "acc": 64,
+        "handling": 63,
+        "sellable": true
+      }
+    ],
+    "1006083045": [
+      {
+        "id": "Z9JqN5qL",
+        "name": "Peugeot 308",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 19515,
+        "image_path": "images/default.png",
+        "hp": 110,
+        "acc": 39,
+        "handling": 52,
+        "sellable": true
+      }
+    ],
+    "6118647204": [],
+    "5446305256": [
+      {
+        "id": "dxA5EVLT",
+        "name": "Hyundai Sonata",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 23390,
+        "image_path": "images/default.png",
+        "hp": 129,
+        "acc": 42,
+        "handling": 35,
+        "sellable": true
+      }
+    ],
+    "7736217536": [
+      {
+        "id": "EAN5WBTV",
+        "name": "Porsche 911",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 38945,
+        "image_path": "images/porsche_911.png",
+        "hp": 239,
+        "acc": 56,
+        "handling": 56,
+        "sellable": true
+      },
+      {
+        "id": "20THSiuO",
+        "name": "Ferrari Testarossa",
+        "rarity": "Эксклюзивные",
+        "rarity_key": "Эксклюзивные",
+        "value": 1014026,
+        "image_path": "images/default.png",
+        "hp": 898,
+        "acc": 91,
+        "handling": 100,
+        "sellable": false
+      },
+      {
+        "id": "5ijxJNq1",
+        "name": "Rolls Royce Phantom",
+        "rarity": "Эксклюзивные",
+        "rarity_key": "Эксклюзивные",
+        "value": 1361976,
+        "image_path": "images/default.png",
+        "hp": 1246,
+        "acc": 94,
+        "handling": 99,
+        "sellable": false
+      }
+    ],
+    "5936146378": [
+      {
+        "id": "S4ZpF4OP",
+        "name": "Opel Insignia",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 26940,
+        "image_path": "images/default.png",
+        "hp": 105,
+        "acc": 35,
+        "handling": 55,
+        "sellable": true
+      }
+    ],
+    "6629332380": [
+      {
+        "id": "is8iDOkH",
+        "name": "Jaguar XE",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 49592,
+        "image_path": "images/default.png",
+        "hp": 155,
+        "acc": 75,
+        "handling": 59,
+        "sellable": true
+      },
+      {
+        "id": "kC0lXN5u",
+        "name": "Ford Focus",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 21419,
+        "image_path": "images/Focus.png",
+        "hp": 146,
+        "acc": 42,
+        "handling": 41,
+        "sellable": true
+      }
+    ],
+    "2010611477": [
+      {
+        "id": "qiicDjzx",
+        "name": "Porsche 550 Spyder",
+        "rarity": "Эксклюзивные",
+        "rarity_key": "Эксклюзивные",
+        "value": 732857,
+        "image_path": "images/default.png",
+        "hp": 1280,
+        "acc": 91,
+        "handling": 99,
+        "sellable": false
+      },
+      {
+        "id": "ka8p1o8e",
+        "name": "Audi A4",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 12296,
+        "image_path": "images/default.png",
+        "hp": 89,
+        "acc": 59,
+        "handling": 35,
+        "sellable": true,
+        "wear": 100
+      },
+      {
+        "id": "qcFT2hnq",
+        "name": "Nissan Altima",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 16914,
+        "image_path": "images/default.png",
+        "hp": 143,
+        "acc": 32,
+        "handling": 49,
+        "sellable": true,
+        "wear": 100
+      },
+      {
+        "id": "oulF24ce",
+        "name": "Kia Rio",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 28197,
+        "image_path": "images/default.png",
+        "hp": 137,
+        "acc": 43,
+        "handling": 55,
+        "sellable": true,
+        "wear": 100
+      }
+    ],
+    "5020187526": [
+      {
+        "id": "d9QZCjCb",
+        "name": "Dodge Challenger",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 43558,
+        "image_path": "images/default.png",
+        "hp": 241,
+        "acc": 52,
+        "handling": 50,
+        "sellable": true
+      },
+      {
+        "id": "wz3QcO66",
+        "name": "Opel Insignia",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 13269,
+        "image_path": "images/default.png",
+        "hp": 142,
+        "acc": 43,
+        "handling": 43,
+        "sellable": true,
+        "wear": 100
+      }
+    ],
+    "5278998791": [
+      {
+        "id": "b5qC74DI",
+        "name": "Lamborghini Countach",
+        "rarity": "Легендарные",
+        "rarity_key": "Легендарные",
+        "value": 221278,
+        "image_path": "images/default.png",
+        "hp": 661,
+        "acc": 99,
+        "handling": 82,
+        "sellable": true
+      },
+      {
+        "id": "zO7Sqa5F",
+        "name": "Nissan GT-R R34",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 36218,
+        "image_path": "images/Nissan.png",
+        "hp": 149,
+        "acc": 52,
+        "handling": 57,
+        "sellable": true
+      },
+      {
+        "id": "lELZbZ7f",
+        "name": "Alfa Romeo Giulia",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 62265,
+        "image_path": "images/default.png",
+        "hp": 142,
+        "acc": 71,
+        "handling": 55,
+        "sellable": true,
+        "wear": 100
+      }
+    ],
+    "5211103523": [
+      {
+        "id": "em5Ytg55",
+        "name": "Toyota Corolla",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 10991,
+        "image_path": "images/Corolla.png",
+        "hp": 99,
+        "acc": 50,
+        "handling": 38,
+        "sellable": true
+      },
+      {
+        "id": "Ior9eaBq",
+        "name": "Lexus IS",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 64759,
+        "image_path": "images/default.png",
+        "hp": 233,
+        "acc": 74,
+        "handling": 79,
+        "sellable": true,
+        "wear": 100
+      }
+    ],
+    "5681582052": [
+      {
+        "id": "OP4mg3p6",
+        "name": "Renault Logan",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 17657,
+        "image_path": "images/default.png",
+        "hp": 125,
+        "acc": 40,
+        "handling": 43,
+        "sellable": true
+      },
+      {
+        "id": "qTxIU9Wb",
+        "name": "Volvo S60",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 18862,
+        "image_path": "images/default.png",
+        "hp": 105,
+        "acc": 56,
+        "handling": 46,
+        "sellable": true
+      },
+      {
+        "id": "8VDU3yIv",
+        "name": "Opel Insignia",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 25628,
+        "image_path": "images/default.png",
+        "hp": 130,
+        "acc": 36,
+        "handling": 59,
+        "sellable": true,
+        "wear": 100
+      }
+    ],
+    "7574019779": [
+      {
+        "id": "KTNSVI7w",
+        "name": "Lamborghini Aventador",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 123711,
+        "image_path": "images/aventador.png",
+        "hp": 394,
+        "acc": 79,
+        "handling": 78,
+        "sellable": true,
+        "wear": 100
+      }
+    ],
+    "7584071872": []
+  },
+  "car_owner_map": {
+    "dICIeEqe": 6967681877,
+    "zCN5FVXb": 6826037472,
+    "FJUpKwzk": 8299684575,
+    "HbSbeYTQ": 6275470056,
+    "gbTkA0nw": 6967681877,
+    "IqnOiu5c": 6826037472,
+    "mStzexnz": 5228609209,
+    "vuxcFL8j": 6875556736,
+    "6GM2CAGq": 7448280758,
+    "rKIdd8KJ": 6967681877,
+    "a75soIrl": 7940662917,
+    "D498FSzQ": 1676302507,
+    "LvXqCVTe": 7448280758,
+    "NQcXfuiW": 6826037472,
+    "CEaLwnnr": 7925260683,
+    "GAQdRvAG": 7019678797,
+    "LEWZZE4F": 7940662917,
+    "55XjO6ww": 6967681877,
+    "ThA84FMt": 7448280758,
+    "jlnF5cFY": 6826037472,
+    "eIwZOHMK": 7448280758,
+    "1JXQ93v7": 1276061866,
+    "tUgt8oOI": 6826037472,
+    "O33iyM1z": 7940662917,
+    "sgeWPLb4": 8299684575,
+    "IrEL6LJG": 7940662917,
+    "sNwUw3mV": 6967681877,
+    "RnVVAuI5": 5228609209,
+    "9CNBYEf3": 5228609209,
+    "L4dKs2ho": 5026338588,
+    "bvwMfOpU": 6967681877,
+    "GIfSIgtq": 7940662917,
+    "pThdyIv1": 1070180310,
+    "ezABluXJ": 6826037472,
+    "WfgeGUws": 1276061866,
+    "622Cek9z": 7940662917,
+    "pYZs4zsE": 5026338588,
+    "EIOwuOS9": 1276061866,
+    "V79vnVss": 7940662917,
+    "Hbfkku6R": 5228609209,
+    "8c0a5E3r": 6967681877,
+    "u278m9Zw": 1622245964,
+    "rwjWqj5n": 7448280758,
+    "4KS2wgFI": 6826037472,
+    "ywXfFNMP": 7940662917,
+    "qhqr8G7Q": 5667887773,
+    "ztRHPABc": 6967681877,
+    "GiKCj0Je": 7940662917,
+    "vwAssVYb": 7647267427,
+    "cooPloSd": 7422210273,
+    "W5WCcUev": 1676302507,
+    "1kcB42nz": 6826037472,
+    "uGfC4xY0": 6826037472,
+    "dH7R3omS": 1676302507,
+    "hexshu1c": 6275470056,
+    "je3rexuU": 1676302507,
+    "PNuYunnn": 6967681877,
+    "D69dF3vU": 5228609209,
+    "upO601BU": 7940662917,
+    "pjVpWbYe": 5228609209,
+    "ABGEbdjx": 6967681877,
+    "8QXb5FjF": 1676302507,
+    "yIkhOqOu": 6967681877,
+    "ndzRuxnv": 7940662917,
+    "G53oYAZq": 6984112450,
+    "B5IE2EeH": 7925260683,
+    "aQ7CAufK": 5228609209,
+    "twX6nynk": 7940662917,
+    "Y5b3OLrz": 7940662917,
+    "5u5r9iK7": 1676302507,
+    "dPhDv5lU": 6984112450,
+    "YWGYa44i": 7448280758,
+    "6CWyaWBF": 5157011394,
+    "U6zq3Nb0": 7940662917,
+    "xptaIZhk": 6826037472,
+    "dDncT18X": 5157011394,
+    "XFLQZvxE": 5228609209,
+    "Yin2D7n0": 7448280758,
+    "DXJHWZ8b": 1676302507,
+    "jki4tRpz": 6826037472,
+    "wwkq5vGV": 5157011394,
+    "1Rbec46S": 1678023162,
+    "lCsrYLJC": 5228609209,
+    "QQtVGUEM": 7940662917,
+    "lAquEGUU": 5157011394,
+    "5hyGzd5P": 7872459217,
+    "O221otek": 7448280758,
+    "8eRFVPKp": 6984112450,
+    "vJNH0Pb3": 6826037472,
+    "MNNsmsB4": 8126975486,
+    "uZ1pV3ZM": 7940662917,
+    "bNYuXao1": 1676302507,
+    "TvWdD5gG": 1276061866,
+    "cb4RZnaS": 5228609209,
+    "pjKz9enp": 8126975486,
+    "iy4684fn": 1678023162,
+    "tCrPGnBG": 1678023162,
+    "RRkNzeA0": 5748333243,
+    "Y354y1GA": 6984112450,
+    "fAxl7Z8r": 7940662917,
+    "ZzLu9Gh0": 6875556736,
+    "hPuMfzcF": 5667887773,
+    "ewbclmMp": 7940662917,
+    "wlTJ1y9m": 6826037472,
+    "ebv8KxIa": 7940662917,
+    "e8cs7CR6": 1676302507,
+    "tSt9TMDx": 7019678797,
+    "a3ehUJVN": 5228609209,
+    "foDh4VZo": 5157011394,
+    "uNYX6Jnd": 7448280758,
+    "DJjfYgwU": 7872459217,
+    "IXjhb8KY": 6984112450,
+    "VxjvrHJv": 6967681877,
+    "WSNT07RE": 1070180310,
+    "OZpolsPj": 7940662917,
+    "vulcujhk": 1070180310,
+    "rR0Ye5kL": 5228609209,
+    "93hmRSNa": 7940662917,
+    "h6jyYGtx": 6967681877,
+    "XQmzG1EB": 2072256303,
+    "nRGQLUw7": 6984112450,
+    "zdibLznH": 5157011394,
+    "eESt6SoK": 7448280758,
+    "A1kZy2ca": 6967681877,
+    "er32LBnC": 7925260683,
+    "XvlI9jqf": 1276061866,
+    "MKuAcHFp": 5157011394,
+    "5auBwubP": 6984112450,
+    "9Kyz8WZv": 7422210273,
+    "rTW9fTry": 1070180310,
+    "8ynQHt91": 7940662917,
+    "SrVWcjBR": 1276061866,
+    "YdDgebcP": 6984112450,
+    "lJM05uVr": 7019678797,
+    "mWJvqMrb": 7940662917,
+    "6B7qAcwZ": 7925260683,
+    "FlPk1sCV": 7422210273,
+    "b3a2q70w": 5157011394,
+    "JcNqF4cN": 6984112450,
+    "nsP2fAuw": 7422210273,
+    "Zr2liZ1e": 7448280758,
+    "rbNQPuG7": 7940662917,
+    "zyUIis6R": 5157011394,
+    "1NGtciVh": 7940662917,
+    "HWTbtTE9": 6984112450,
+    "0Y98uy9d": 5157011394,
+    "eRwE9lIS": 7448280758,
+    "vMgB5MBO": 7940662917,
+    "VnQist0e": 1676302507,
+    "mDlWw7bn": 6984112450,
+    "tZxXTT4m": 6984112450,
+    "TJ3g4XJR": 6967681877,
+    "2yMMwuRZ": 5157011394,
+    "O6M3LaoV": 6298736639,
+    "1Ov75WTU": 1678023162,
+    "8smFOTEB": 7940662917,
+    "i4Ntnyte": 6984112450,
+    "e748XHil": 7932419417,
+    "od1kA9rw": 7940662917,
+    "7OVFVTCh": 6984112450,
+    "6xqEWjqj": 1276061866,
+    "53I5htHW": 5157011394,
+    "Tew2KNMk": 6967681877,
+    "z70uM08L": 6826037472,
+    "l6a1zIE6": 6298736639,
+    "NCt5yZb5": 1087968824,
+    "pwavmnoD": 5228609209,
+    "AvPTpucf": 8126975486,
+    "cmj97Uzu": 6875556736,
+    "ILElSs8A": 7448280758,
+    "3k4vcgov": 1676302507,
+    "xyZ49zuC": 6984112450,
+    "nbvUlYRz": 5157011394,
+    "qZdb54cJ": 1676302507,
+    "DEpRpMRY": 7940662917,
+    "Rh5P4Mq0": 5228609209,
+    "zYnrUpoG": 6275470056,
+    "k9fw4Rq6": 7940662917,
+    "QM2CepZ4": 5228609209,
+    "qJjbguKF": 5157011394,
+    "yr5kcbsh": 7448280758,
+    "eYCoFbVr": 6984112450,
+    "C2iJHBlE": 7932419417,
+    "jSOtgfGy": 6967681877,
+    "KV6aDMLv": 1087968824,
+    "Z9JqN5qL": 1006083045,
+    "bDYAmmWa": 6967681877,
+    "f7agffGc": 6967681877,
+    "TtIJrN4X": 7940662917,
+    "Sig8JOoJ": 5157011394,
+    "rInAGIrj": 5228609209,
+    "6KCzU8Hk": 1276061866,
+    "65bIMWxZ": 6275470056,
+    "7VaQbJWB": 1087968824,
+    "fUPIRimR": 7940662917,
+    "rbsdapgV": 7872459217,
+    "RJowSxDj": 7932419417,
+    "2Bgik7st": 6984112450,
+    "sNyox4LH": 7940662917,
+    "FTz3cwc2": 5228609209,
+    "w6cv57ly": 6967681877,
+    "aK056IEi": 1087968824,
+    "ARjdsFKe": 7448280758,
+    "Tspmr3B1": 7422210273,
+    "RFGJlf5y": 7940662917,
+    "rI55Kd1d": 6826037472,
+    "dxA5EVLT": 5446305256,
+    "5h7TAQau": 6967681877,
+    "EAN5WBTV": 7736217536,
+    "20THSiuO": 7736217536,
+    "5ijxJNq1": 7736217536,
+    "7ew7V6x2": 5228609209,
+    "yQa7C1Q3": 5157011394,
+    "CX7JATaS": 6984112450,
+    "SH5IlX34": 7019678797,
+    "rSE5c0JV": 6967681877,
+    "J6e4DN9s": 1087968824,
+    "C4aUns2O": 7932419417,
+    "F3SYl3wV": 6826037472,
+    "pvl9S7HR": 6275470056,
+    "2igSWSXN": 5157011394,
+    "ol2r50L4": 6875556736,
+    "WMoHGVKl": 5228609209,
+    "ZCfR3Fmx": 6967681877,
+    "iGZReipb": 7940662917,
+    "VEDVCk3i": 7872459217,
+    "d6jttMqt": 7422210273,
+    "tNeMLbyl": 7940662917,
+    "ldOutruY": 5228609209,
+    "u7mnzQOn": 5157011394,
+    "cKR3mfbz": 7940662917,
+    "X7uJf5nw": 5157011394,
+    "f9G8dgmo": 6984112450,
+    "r6mKHLNG": 7932419417,
+    "fa564R4S": 5157011394,
+    "ela5iJu9": 7940662917,
+    "Zp4078aT": 6967681877,
+    "Ws9NItHN": 1678023162,
+    "S4ZpF4OP": 5936146378,
+    "is8iDOkH": 6629332380,
+    "JoiK02S0": 7940662917,
+    "nIZ07VFY": 6967681877,
+    "3qMnjfoS": 5228609209,
+    "QwVr3X8K": 6984112450,
+    "d9QZCjCb": 5020187526,
+    "b5qC74DI": 5278998791,
+    "gj04zwp8": 7932419417,
+    "OP4mg3p6": 5681582052,
+    "1rXyxXVX": 6875556736,
+    "kC0lXN5u": 6629332380,
+    "zO7Sqa5F": 5278998791,
+    "em5Ytg55": 5211103523,
+    "qTxIU9Wb": 5681582052,
+    "aScIvo9N": 6875556736,
+    "d2faf1yQ": 7940662917,
+    "9E0BSb4I": 7940662917,
+    "qiicDjzx": 2010611477,
+    "KTNSVI7w": 7574019779,
+    "E31MWGLs": 6875556736,
+    "3E00EK7h": 1678023162,
+    "EESkzadu": 1676302507,
+    "ka8p1o8e": 2010611477,
+    "IZ0URpfn": 6967681877,
+    "qBHWxYqx": 7019678797,
+    "kvctGggk": 7422210273,
+    "qcFT2hnq": 2010611477,
+    "8VDU3yIv": 5681582052,
+    "Ro2SeFxs": 1676302507,
+    "lELZbZ7f": 5278998791,
+    "Ior9eaBq": 5211103523,
+    "wz3QcO66": 5020187526,
+    "oulF24ce": 2010611477,
+    "dVXD1Hni": 6967681877,
+    "VVSa9vmV": 7422210273,
+    "1IwVyIMT": 6275470056,
+    "QylePfNm": 7448280758
+  },
+  "user_shop_limits": {
+    "1678023162": {
+      "count": 0,
+      "last_reset": "2025-11-05T18:54:09.406607"
+    },
+    "6967681877": {
+      "count": 0,
+      "last_reset": "2025-11-06T04:03:25.071111"
+    },
+    "7448280758": {
+      "count": 0,
+      "last_reset": "2025-11-06T14:08:28.550952"
+    },
+    "6826037472": {
+      "count": 0,
+      "last_reset": "2025-11-04T22:44:11.427543"
+    },
+    "5157011394": {
+      "count": 0,
+      "last_reset": "2025-11-03T22:23:10.850335"
+    },
+    "1676302507": {
+      "count": 0,
+      "last_reset": "2025-11-05T22:59:22.424460"
+    },
+    "8098891662": {
+      "count": 0,
+      "last_reset": "2025-11-05T22:46:30.142068"
+    },
+    "8299684575": {
+      "count": 0,
+      "last_reset": "2025-10-21T23:21:24.055061"
+    },
+    "6275470056": {
+      "count": 0,
+      "last_reset": "2025-11-06T14:07:09.984695"
+    },
+    "5228609209": {
+      "count": 0,
+      "last_reset": "2025-11-05T04:05:30.190936"
+    },
+    "6875556736": {
+      "count": 0,
+      "last_reset": "2025-11-05T14:35:31.025953"
+    },
+    "7940662917": {
+      "count": 0,
+      "last_reset": "2025-11-05T18:38:57.576691"
+    },
+    "7019678797": {
+      "count": 0,
+      "last_reset": "2025-11-06T05:14:06.346858"
+    },
+    "1721358063": {
+      "count": 0,
+      "last_reset": "2025-10-20T17:40:35.828190"
+    },
+    "7925260683": {
+      "count": 0,
+      "last_reset": "2025-10-28T20:47:19.600569"
+    },
+    "1276061866": {
+      "count": 0,
+      "last_reset": "2025-11-02T14:54:38.272109"
+    },
+    "1979989544": {
+      "count": 0,
+      "last_reset": "2025-11-04T19:53:03.435875"
+    },
+    "5026338588": {
+      "count": 0,
+      "last_reset": "2025-10-22T14:01:27.742729"
+    },
+    "1070180310": {
+      "count": 0,
+      "last_reset": "2025-10-29T08:49:11.094400"
+    },
+    "1622245964": {
+      "count": 0,
+      "last_reset": "2025-10-23T05:21:21.489195"
+    },
+    "5667887773": {
+      "count": 0,
+      "last_reset": "2025-10-26T18:10:02.231775"
+    },
+    "7647267427": {
+      "count": 0,
+      "last_reset": "2025-10-23T16:27:26.817509"
+    },
+    "7422210273": {
+      "count": 0,
+      "last_reset": "2025-11-06T05:59:59.933047"
+    },
+    "777000": {
+      "count": 0,
+      "last_reset": "2025-11-06T00:07:22.367186"
+    },
+    "6984112450": {
+      "count": 0,
+      "last_reset": "2025-11-04T19:06:59.548155"
+    },
+    "7872459217": {
+      "count": 0,
+      "last_reset": "2025-11-04T09:20:36.331918"
+    },
+    "8126975486": {
+      "count": 0,
+      "last_reset": "2025-11-01T13:42:12.136213"
+    },
+    "8437256547": {
+      "count": 0,
+      "last_reset": "2025-10-26T13:35:20.832351"
+    },
+    "5748333243": {
+      "count": 0,
+      "last_reset": "2025-10-27T17:46:35.371862"
+    },
+    "2072256303": {
+      "count": 0,
+      "last_reset": "2025-11-05T00:55:26.935413"
+    },
+    "8028974585": {
+      "count": 0,
+      "last_reset": "2025-10-28T15:15:19.284828"
+    },
+    "6298736639": {
+      "count": 0,
+      "last_reset": "2025-10-31T18:12:09.327837"
+    },
+    "7932419417": {
+      "count": 0,
+      "last_reset": "2025-11-05T13:36:59.886884"
+    },
+    "1087968824": {
+      "count": 0,
+      "last_reset": "2025-11-03T19:40:53.805730"
+    },
+    "1006083045": {
+      "count": 0,
+      "last_reset": "2025-11-02T12:28:05.565322"
+    },
+    "6118647204": {
+      "count": 0,
+      "last_reset": "2025-11-03T07:32:57.074549"
+    },
+    "5446305256": {
+      "count": 0,
+      "last_reset": "2025-11-03T11:51:46.529124"
+    },
+    "7736217536": {
+      "count": 0,
+      "last_reset": "2025-11-03T14:15:43.609006"
+    },
+    "5936146378": {
+      "count": 0,
+      "last_reset": "2025-11-04T23:29:08.117794"
+    },
+    "6629332380": {
+      "count": 0,
+      "last_reset": "2025-11-04T23:29:16.037671"
+    },
+    "2010611477": {
+      "count": 0,
+      "last_reset": "2025-11-06T13:05:28.981920"
+    },
+    "5020187526": {
+      "count": 0,
+      "last_reset": "2025-11-05T12:16:05.900387"
+    },
+    "5278998791": {
+      "count": 0,
+      "last_reset": "2025-11-05T12:34:00.375812"
+    },
+    "5211103523": {
+      "count": 0,
+      "last_reset": "2025-11-05T13:51:20.692446"
+    },
+    "5681582052": {
+      "count": 0,
+      "last_reset": "2025-11-05T14:25:00.840673"
+    },
+    "7574019779": {
+      "count": 0,
+      "last_reset": "2025-11-05T22:46:43.538211"
+    },
+    "7584071872": {
+      "count": 0,
+      "last_reset": "2025-11-05T22:48:31.584281"
+    }
+  },
+  "last_use": {
+    "1678023162": 1762380027.4025216,
+    "6967681877": 1762426982.4929013,
+    "6826037472": 1762197208.1643553,
+    "5157011394": 1762276976.6597335,
+    "1676302507": 1762410154.3353643,
+    "8299684575": 1761078084.08402,
+    "6275470056": 1762430830.0107481,
+    "7448280758": 1762430908.5809186,
+    "5228609209": 1762308330.2159083,
+    "6875556736": 1762375884.0544417,
+    "7940662917": 1762422952.7346756,
+    "7019678797": 1762431848.1656835,
+    "7925260683": 1761738949.0568597,
+    "1276061866": 1762088078.2940817,
+    "5026338588": 1761154990.8547702,
+    "1070180310": 1761720551.1093845,
+    "1622245964": 1761186081.5048146,
+    "5667887773": 1761495002.2437649,
+    "7647267427": 1761226046.8331325,
+    "7422210273": 1762430682.9558983,
+    "6984112450": 1762311794.981597,
+    "7872459217": 1762240836.3614824,
+    "8126975486": 1761997332.1561582,
+    "5748333243": 1761478651.0820348,
+    "2072256303": 1761655232.2455382,
+    "6298736639": 1761995027.8826962,
+    "7932419417": 1762342619.9248407,
+    "1087968824": 1762191653.831703,
+    "1006083045": 1762079285.5853004,
+    "5446305256": 1762163506.5530977,
+    "7736217536": 1762172149.6710353,
+    "5936146378": 1762291748.1417675,
+    "6629332380": 1762348087.0709226,
+    "2010611477": 1762421841.8180122,
+    "5020187526": 1762421526.0468798,
+    "5278998791": 1762415156.679192,
+    "5211103523": 1762415362.4974115,
+    "5681582052": 1762409832.697058,
+    "7574019779": 1762375603.5641825
+  },
+  "daily_gift": {
+    "1678023162": 1762361649.4325767,
+    "7940662917": 1762360748.7816627,
+    "1676302507": 1762201461.766104,
+    "2010611477": 1762361656.5544202,
+    "5211103523": 1762361665.8589952
+  },
+  "user_quests": {
+    "1678023162": {
+      "daily_quests": {
+        "collect_cars": {
+          "progress": 3,
+          "completed": true,
+          "claimed": true
+        },
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 23,
+        "races_won_today": 0,
+        "cars_sold_today": 23,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 100,
+        "total_races_won": 4,
+        "total_money_earned": 7818202,
+        "total_cars_crafted": 2,
+        "total_auctions_won": 0,
+        "money_earned_today": 1172052
+      },
+      "last_reset": 1762375528.197058
+    },
+    "8098891662": {
+      "daily_quests": {
+        "collect_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 0,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "total_cars_collected": 0,
+        "total_races_won": 0,
+        "total_money_earned": 0
+      },
+      "last_reset": 1761324664.834477
+    },
+    "7940662917": {
+      "daily_quests": {
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "daily_balance": {
+          "progress": 57643,
+          "completed": true,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 3,
+        "races_won_today": 0,
+        "cars_sold_today": 3,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 33,
+        "total_races_won": 0,
+        "total_money_earned": 307507,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 178647
+      },
+      "last_reset": 1762360737.626664
+    },
+    "6984112450": {
+      "daily_quests": {
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 20,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1762311794.981596
+    },
+    "7925260683": {
+      "daily_quests": {
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 2,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "total_cars_collected": 3,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "cars_crafted_today": 0,
+        "total_cars_crafted": 0
+      },
+      "last_reset": 1761677239.621544
+    },
+    "1676302507": {
+      "daily_quests": {
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "collect_cars": {
+          "progress": 2,
+          "completed": false,
+          "claimed": false
+        },
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 2,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 28,
+        "total_races_won": 0,
+        "total_money_earned": 807606,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1762376452.757217
+    },
+    "5228609209": {
+      "daily_quests": {
+        "win_auction": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 15,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1762308330.215908
+    },
+    "7019678797": {
+      "daily_quests": {
+        "daily_balance": {
+          "progress": 50224,
+          "completed": true,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 2,
+        "races_won_today": 0,
+        "cars_sold_today": 15,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 15,
+        "total_races_won": 0,
+        "total_money_earned": 524556,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 524556
+      },
+      "last_reset": 1762398846.383816
+    },
+    "5157011394": {
+      "daily_quests": {
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 21,
+        "total_races_won": 0,
+        "total_money_earned": 131524,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1762276976.659733
+    },
+    "7448280758": {
+      "daily_quests": {
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "collect_cars": {
+          "progress": 1,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 11,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1762430908.581916
+    },
+    "6826037472": {
+      "daily_quests": {
+        "collect_cars": {
+          "progress": 2,
+          "completed": false,
+          "claimed": false
+        },
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 2,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 7,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1762162259.441837
+    },
+    "777000": {
+      "daily_quests": {
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 0,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "total_cars_collected": 0,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "total_cars_crafted": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1761680542.875074
+    },
+    "7872459217": {
+      "daily_quests": {
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 4,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1762240836.36248
+    },
+    "8126975486": {
+      "daily_quests": {
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 3,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1761997332.156158
+    },
+    "1276061866": {
+      "daily_quests": {
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 5,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1762088078.294081
+    },
+    "5748333243": {
+      "daily_quests": {
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "collect_cars": {
+          "progress": 1,
+          "completed": false,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "total_cars_collected": 1,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1761478651.082035
+    },
+    "6875556736": {
+      "daily_quests": {
+        "win_auction": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "collect_cars": {
+          "progress": 3,
+          "completed": true,
+          "claimed": false
+        },
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 3,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 6,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1762346131.051924
+    },
+    "5667887773": {
+      "daily_quests": {
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "collect_cars": {
+          "progress": 1,
+          "completed": false,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "total_cars_collected": 1,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1761495002.243764
+    },
+    "6967681877": {
+      "daily_quests": {
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 2,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 14,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1762394605.099085
+    },
+    "1070180310": {
+      "daily_quests": {
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "collect_cars": {
+          "progress": 1,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "total_cars_collected": 3,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "total_cars_crafted": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1761720551.109384
+    },
+    "2072256303": {
+      "daily_quests": {
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "total_cars_collected": 1,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1761655232.245538
+    },
+    "7422210273": {
+      "daily_quests": {
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 2,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 7,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1762401599.957019
+    },
+    "6298736639": {
+      "daily_quests": {
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "collect_cars": {
+          "progress": 2,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 2,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 2,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1761927129.35281
+    },
+    "7932419417": {
+      "daily_quests": {
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "collect_cars": {
+          "progress": 1,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 6,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1762342619.92484
+    },
+    "1087968824": {
+      "daily_quests": {
+        "win_auction": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 5,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1762191653.831703
+    },
+    "6275470056": {
+      "daily_quests": {
+        "win_auction": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 4,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1762430830.010748
+    },
+    "1006083045": {
+      "daily_quests": {
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 1,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762079285.565322
+    },
+    "6118647204": {
+      "daily_quests": {
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_auction": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 0,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 0,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762147977.074549
+    },
+    "5446305256": {
+      "daily_quests": {
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "collect_cars": {
+          "progress": 1,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 1,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762163506.529124
+    },
+    "7736217536": {
+      "daily_quests": {
+        "sell_cars": {
+          "progress": 1,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 2,
+        "races_won_today": 0,
+        "cars_sold_today": 1,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 2,
+        "total_races_won": 0,
+        "total_money_earned": 25888,
+        "money_earned_today": 25888,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762172143.609006
+    },
+    "1979989544": {
+      "daily_quests": {
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 0,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 0,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762278783.435875
+    },
+    "5936146378": {
+      "daily_quests": {
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 1,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762291748.117794
+    },
+    "6629332380": {
+      "daily_quests": {
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_auction": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 2,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 2,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762291756.037671
+    },
+    "2010611477": {
+      "daily_quests": {
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "sell_cars": {
+          "progress": 2,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 5,
+        "races_won_today": 0,
+        "cars_sold_today": 2,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 5,
+        "total_races_won": 0,
+        "total_money_earned": 88921,
+        "money_earned_today": 88921,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762337571.411026
+    },
+    "5020187526": {
+      "daily_quests": {
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "collect_cars": {
+          "progress": 2,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 2,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 2,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762337765.900387
+    },
+    "5278998791": {
+      "daily_quests": {
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 3,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 3,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762338840.375812
+    },
+    "5211103523": {
+      "daily_quests": {
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "collect_cars": {
+          "progress": 3,
+          "completed": true,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 3,
+        "races_won_today": 0,
+        "cars_sold_today": 1,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 3,
+        "total_races_won": 0,
+        "total_money_earned": 144177,
+        "money_earned_today": 144177,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762343480.692446
+    },
+    "5681582052": {
+      "daily_quests": {
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_auction": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "collect_cars": {
+          "progress": 3,
+          "completed": true,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 3,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 3,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762345500.840673
+    },
+    "7574019779": {
+      "daily_quests": {
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 1,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762375603.538211
+    },
+    "7584071872": {
+      "daily_quests": {
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "collect_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 0,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 0,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762375711.584281
+    }
+  },
+  "user_achievements": {
+    "1678023162": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761324654.727215
+      },
+      "garage_king": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761324718.275966
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761325482.216428
+      },
+      "car_collector": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761419896.74706
+      },
+      "legend_owner": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761419896.756981
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "8098891662": {
+      "first_car": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "7940662917": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761326494.895956
+      },
+      "garage_king": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761623539.315146
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762233132.986106
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "6984112450": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761326577.383604
+      },
+      "garage_king": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761819944.635302
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "7925260683": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761333609.369058
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "1676302507": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761335504.474974
+      },
+      "garage_king": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761688712.970016
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762255808.663651
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "5228609209": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761354090.668863
+      },
+      "garage_king": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762087663.693754
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "7019678797": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761368974.052414
+      },
+      "garage_king": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762056819.865245
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "5157011394": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761373332.707117
+      },
+      "garage_king": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761767366.031657
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "7448280758": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761378044.443535
+      },
+      "garage_king": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762151764.671935
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "6826037472": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761402013.833636
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "7872459217": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761456149.807428
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "8126975486": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761463691.552952
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "1276061866": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761471346.505972
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "5748333243": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761478651.082035
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "8437256547": {
+      "first_car": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "6875556736": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761494993.305032
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "5667887773": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761495002.243764
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "6967681877": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761579997.263769
+      },
+      "garage_king": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762233132.828284
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "1070180310": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761590925.731463
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "2072256303": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761655232.246536
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "7422210273": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761716780.281841
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "6298736639": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761927129.35281
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "7932419417": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761944215.473276
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "1087968824": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761996941.310937
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "6275470056": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762032776.80464
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "1006083045": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762079285.586299
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "6118647204": {
+      "first_car": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "5446305256": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762163506.553097
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "7736217536": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762172149.671035
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "777000": {
+      "first_car": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "1979989544": {
+      "first_car": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "5936146378": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762291748.141767
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "6629332380": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762291756.059646
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "2010611477": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762337571.435997
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "5020187526": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762337765.926357
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "5278998791": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762338840.399784
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "5211103523": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762343480.718417
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "5681582052": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762345500.865646
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "7574019779": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762375603.564182
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "7584071872": {
+      "first_car": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    }
+  },
+  "promocodes": {
+    "HALLOWEEN": {
+      "type": "money",
+      "created_at": 1761921164.964506,
+      "used_count": 0,
+      "value": 100000
+    },
+    "TEST2": {
+      "reward": 100000,
+      "max_uses": 5,
+      "used_count": 3,
+      "created_by": 1678023162,
+      "created_at": 1762376031.5038714
+    }
+  },
+  "used_promocodes": {
+    "777000": [],
+    "1979989544": [],
+    "7940662917": [
+      "TEST"
+    ],
+    "7448280758": [],
+    "5157011394": [],
+    "1678023162": [
+      "TEST",
+      "TEST2"
+    ],
+    "5228609209": [
+      "TEST"
+    ],
+    "1676302507": [
+      "TEST",
+      "TEST2"
+    ],
+    "6984112450": [
+      "TEST"
+    ],
+    "6875556736": [
+      "TEST2"
+    ]
+  },
+  "auctions": {
+    "DDTAND0L": {
+      "car": {
+        "id": "XE1J5UF8",
+        "name": "Seat Leon",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 13718,
+        "image_path": "images/default.png",
+        "hp": 110,
+        "acc": 32,
+        "handling": 58,
+        "sellable": true,
+        "wear": 100
+      },
+      "seller_id": 1678023162,
+      "current_bid": 11000,
+      "highest_bidder": 7940662917,
+      "start_time": 1762375766.5141819,
+      "end_time": 1762462166.5141819,
+      "min_bid_increment": 1000
+    }
+  },
+  "user_bids": {
+    "DDTAND0L": {
+      "7940662917": 11000
+    }
+  },
+  "user_carsharing": {
+    "1678023162": {
+      "active_cars": [
+        "Ws9NItHN",
+        "yPxmBEg0",
+        "2apFjeHy"
+      ],
+      "last_collect": 1762379976.4560869
+    }
+  },
+  "user_taxipark": {
+    "1678023162": {
+      "has_taxi": true,
+      "level": 3,
+      "last_collect": 1762380087.7992482
+    }
+  },
+  "flea_market": {
+    "vCrSWxRu": {
+      "seller_id": 1678023162,
+      "car": {
+        "id": "2apFjeHy",
+        "name": "Hyundai Sonata",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 18459,
+        "image_path": "images/default.png",
+        "hp": 150,
+        "acc": 43,
+        "handling": 47,
+        "sellable": true,
+        "wear": 100
+      },
+      "price": 10000,
+      "created_at": 1762375904.197226
+    }
+  },
+  "user_scrap": {
+    "1678023162": 0,
+    "8098891662": 0,
+    "7574019779": 0,
+    "7584071872": 0,
+    "6875556736": 0,
+    "1676302507": 0,
+    "777000": 0,
+    "2010611477": 0,
+    "6967681877": 0,
+    "7019678797": 0,
+    "7422210273": 0,
+    "5681582052": 0,
+    "5278998791": 0,
+    "5211103523": 0,
+    "5020187526": 0,
+    "7940662917": 0,
+    "6275470056": 0,
+    "7448280758": 0
+  }
+}

@@ -1,0 +1,5730 @@
+{
+  "user_balance": {
+    "1678023162": 6243507,
+    "6967681877": 0,
+    "7448280758": 0,
+    "6826037472": 0,
+    "5157011394": 0,
+    "1676302507": 0,
+    "8098891662": 0,
+    "8299684575": 0,
+    "6275470056": 0,
+    "5228609209": 0,
+    "6875556736": 0,
+    "7940662917": 0,
+    "7019678797": 0,
+    "1721358063": 0,
+    "7925260683": 0,
+    "1276061866": 0,
+    "1979989544": 0,
+    "5026338588": 0,
+    "1070180310": 0,
+    "1622245964": 0,
+    "5667887773": 0,
+    "7647267427": 0,
+    "7422210273": 0,
+    "777000": 0,
+    "6984112450": 0,
+    "7872459217": 0,
+    "8126975486": 0,
+    "8437256547": 0,
+    "5748333243": 0,
+    "2072256303": 0,
+    "8028974585": 0,
+    "6298736639": 0,
+    "7932419417": 0,
+    "1087968824": 0,
+    "1006083045": 0,
+    "6118647204": 0,
+    "5446305256": 0,
+    "7736217536": 0,
+    "5936146378": 0,
+    "6629332380": 0,
+    "2010611477": 0,
+    "5020187526": 0,
+    "5278998791": 0,
+    "5211103523": 0,
+    "5681582052": 0,
+    "7574019779": 0,
+    "7584071872": 0,
+    "1302901376": 0,
+    "5757043966": 0,
+    "5940454249": 0,
+    "1616503246": 0,
+    "8412951175": 0,
+    "8430618853": 0,
+    "7400329661": 0,
+    "5389217070": 0,
+    "5763445175": 0,
+    "136817688": 0,
+    "8344049341": 0,
+    "6304502234": 0,
+    "6666336371": 0,
+    "6165071514": 0,
+    "5793256493": 0,
+    "5428358845": 0,
+    "7659192375": 0,
+    "8073216818": 0,
+    "5365025253": 0,
+    "6250995946": 0,
+    "1032700767": 0
+  },
+  "user_garage": {
+    "1678023162": [
+      {
+        "id": "1Rbec46S",
+        "name": "Mercedes 300SL",
+        "rarity": "Эксклюзивные",
+        "rarity_key": "Эксклюзивные",
+        "value": 843475,
+        "image_path": "images/default.png",
+        "hp": 4735,
+        "acc": 1064,
+        "handling": 1053,
+        "sellable": false
+      },
+      {
+        "id": "iy4684fn",
+        "name": "Jaguar E-Type",
+        "rarity": "Эксклюзивные",
+        "rarity_key": "Эксклюзивные",
+        "value": 1627876,
+        "image_path": "images/default.png",
+        "hp": 1376,
+        "acc": 100,
+        "handling": 98,
+        "sellable": false
+      },
+      {
+        "id": "tCrPGnBG",
+        "name": "Shelby Cobra",
+        "rarity": "Эксклюзивные",
+        "rarity_key": "Эксклюзивные",
+        "value": 1726563,
+        "image_path": "images/default.png",
+        "hp": 1213,
+        "acc": 100,
+        "handling": 99,
+        "sellable": false
+      },
+      {
+        "id": "1Ov75WTU",
+        "name": "Ferrari Testarossa",
+        "rarity": "Эксклюзивные",
+        "rarity_key": "Эксклюзивные",
+        "value": 1799008,
+        "image_path": "images/default.png",
+        "hp": 803,
+        "acc": 92,
+        "handling": 97,
+        "sellable": false
+      },
+      {
+        "id": "Ws9NItHN",
+        "name": "Lamborghini Miura",
+        "rarity": "Эксклюзивные",
+        "rarity_key": "Эксклюзивные",
+        "value": 1719937,
+        "image_path": "images/default.png",
+        "hp": 1383,
+        "acc": 92,
+        "handling": 91,
+        "sellable": false,
+        "wear": 94
+      },
+      {
+        "id": "3E00EK7h",
+        "name": "Porsche 550 Spyder",
+        "rarity": "Эксклюзивные",
+        "rarity_key": "Эксклюзивные",
+        "value": 1746710,
+        "image_path": "images/default.png",
+        "hp": 930,
+        "acc": 90,
+        "handling": 99,
+        "sellable": false,
+        "wear": 100
+      },
+      {
+        "id": "4v68zqMa",
+        "name": "Infiniti Q50",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 62912,
+        "image_path": "images/default.png",
+        "hp": 152,
+        "acc": 65,
+        "handling": 78,
+        "sellable": true,
+        "wear": 100
+      },
+      {
+        "id": "3fiWMg5L",
+        "name": "Dodge Viper",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 121313,
+        "image_path": "images/default.png",
+        "hp": 273,
+        "acc": 72,
+        "handling": 78,
+        "sellable": true,
+        "wear": 94
+      },
+      {
+        "id": "0gBcXsjO",
+        "name": "Toyota Camry",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 28016,
+        "image_path": "images/default.png",
+        "hp": 105,
+        "acc": 52,
+        "handling": 56,
+        "sellable": true,
+        "wear": 100
+      },
+      {
+        "id": "AIUXuyL6",
+        "name": "Toyota MR2",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 68118,
+        "image_path": "images/default.png",
+        "hp": 164,
+        "acc": 55,
+        "handling": 51,
+        "sellable": true,
+        "wear": 100
+      },
+      {
+        "id": "V8ORqQ1x",
+        "name": "Toyota MR2",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 59927,
+        "image_path": "images/default.png",
+        "hp": 201,
+        "acc": 58,
+        "handling": 58,
+        "sellable": true,
+        "wear": 100
+      },
+      {
+        "id": "UlMdHvjN",
+        "name": "Toyota MR2",
+        "rarity": "Редкие",
+        "rarity_key": "Редкие",
+        "value": 49027,
+        "image_path": "images/default.png",
+        "hp": 258,
+        "acc": 60,
+        "handling": 63,
+        "sellable": true,
+        "wear": 100
+      },
+      {
+        "id": "RBNPCxnp",
+        "name": "Peugeot 308",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 25118,
+        "image_path": "images/default.png",
+        "hp": 111,
+        "acc": 32,
+        "handling": 37,
+        "sellable": true,
+        "wear": 100
+      }
+    ],
+    "6967681877": [],
+    "7448280758": [],
+    "6826037472": [],
+    "5157011394": [],
+    "1676302507": [],
+    "8098891662": [],
+    "8299684575": [],
+    "6275470056": [],
+    "5228609209": [],
+    "6875556736": [],
+    "7940662917": [],
+    "7019678797": [],
+    "1721358063": [],
+    "7925260683": [],
+    "1276061866": [],
+    "1979989544": [],
+    "5026338588": [],
+    "1070180310": [],
+    "1622245964": [],
+    "5667887773": [],
+    "7647267427": [],
+    "7422210273": [],
+    "777000": [],
+    "6984112450": [],
+    "7872459217": [],
+    "8126975486": [],
+    "8437256547": [],
+    "5748333243": [],
+    "2072256303": [],
+    "8028974585": [],
+    "6298736639": [],
+    "7932419417": [],
+    "1087968824": [],
+    "1006083045": [],
+    "6118647204": [],
+    "5446305256": [],
+    "7736217536": [],
+    "5936146378": [],
+    "6629332380": [],
+    "2010611477": [],
+    "5020187526": [],
+    "5278998791": [],
+    "5211103523": [],
+    "5681582052": [],
+    "7574019779": [],
+    "7584071872": [],
+    "1302901376": [],
+    "5757043966": [],
+    "5940454249": [],
+    "1616503246": [],
+    "8412951175": [],
+    "8430618853": [],
+    "7400329661": [],
+    "5389217070": [],
+    "5763445175": [],
+    "136817688": [],
+    "8344049341": [],
+    "6304502234": [],
+    "6666336371": [],
+    "6165071514": [],
+    "5793256493": [],
+    "5428358845": [],
+    "7659192375": [],
+    "8073216818": [],
+    "5365025253": [],
+    "6250995946": [],
+    "1032700767": []
+  },
+  "car_owner_map": {
+    "1Rbec46S": 1678023162,
+    "iy4684fn": 1678023162,
+    "tCrPGnBG": 1678023162,
+    "1Ov75WTU": 1678023162,
+    "Ws9NItHN": 1678023162,
+    "3E00EK7h": 1678023162,
+    "4v68zqMa": 1678023162,
+    "3fiWMg5L": 1678023162,
+    "0gBcXsjO": 1678023162,
+    "AIUXuyL6": 1678023162,
+    "V8ORqQ1x": 1678023162,
+    "UlMdHvjN": 1678023162,
+    "RBNPCxnp": 1678023162
+  },
+  "user_shop_limits": {
+    "1678023162": {
+      "count": 0,
+      "last_reset": "2025-12-12T21:56:48.677873"
+    },
+    "6967681877": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.936861"
+    },
+    "7448280758": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.936861"
+    },
+    "6826037472": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.936861"
+    },
+    "5157011394": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.936861"
+    },
+    "1676302507": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.936861"
+    },
+    "8098891662": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.936861"
+    },
+    "8299684575": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "6275470056": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "5228609209": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "6875556736": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "7940662917": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "7019678797": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "1721358063": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "7925260683": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "1276061866": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "1979989544": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "5026338588": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "1070180310": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "1622245964": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "5667887773": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "7647267427": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "7422210273": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "777000": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "6984112450": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "7872459217": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "8126975486": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "8437256547": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "5748333243": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "2072256303": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "8028974585": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "6298736639": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "7932419417": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "1087968824": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "1006083045": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "6118647204": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "5446305256": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "7736217536": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "5936146378": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "6629332380": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "2010611477": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "5020187526": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "5278998791": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "5211103523": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "5681582052": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "7574019779": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "7584071872": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "1302901376": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "5757043966": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "5940454249": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "1616503246": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "8412951175": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "8430618853": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "7400329661": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "5389217070": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "5763445175": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "136817688": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "8344049341": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "6304502234": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "6666336371": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "6165071514": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "5793256493": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "5428358845": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "7659192375": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "8073216818": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "5365025253": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "6250995946": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    },
+    "1032700767": {
+      "count": 0,
+      "last_reset": "2025-12-12T22:17:57.937860"
+    }
+  },
+  "last_use": {
+    "1678023162": 1763292631.013216,
+    "6967681877": 1763430327.8869545,
+    "6826037472": 1763131043.8277888,
+    "5157011394": 1763292616.741477,
+    "1676302507": 1765569325.3410892,
+    "8299684575": 1761078084.08402,
+    "6275470056": 1763404923.3713794,
+    "7448280758": 1762688477.2673829,
+    "5228609209": 1762675723.3594985,
+    "6875556736": 1763298403.7887657,
+    "7940662917": 1763313589.7595751,
+    "7019678797": 1763310248.0694182,
+    "7925260683": 1761738949.0568597,
+    "1276061866": 1762088078.2940817,
+    "5026338588": 1761154990.8547702,
+    "1070180310": 1761720551.1093845,
+    "1622245964": 1761186081.5048146,
+    "5667887773": 1761495002.2437649,
+    "7647267427": 1761226046.8331325,
+    "7422210273": 1762675724.742072,
+    "6984112450": 1763292615.414617,
+    "7872459217": 1763052826.4555635,
+    "8126975486": 1763313610.8653042,
+    "5748333243": 1761478651.0820348,
+    "2072256303": 1761655232.2455382,
+    "6298736639": 1761995027.8826962,
+    "7932419417": 1763306571.9310331,
+    "1087968824": 1762191653.831703,
+    "1006083045": 1762079285.5853004,
+    "5446305256": 1762163506.5530977,
+    "7736217536": 1762172149.6710353,
+    "5936146378": 1762291748.1417675,
+    "6629332380": 1762348087.0709226,
+    "2010611477": 1763311192.7715514,
+    "5020187526": 1762882848.8477674,
+    "5278998791": 1763218861.9714031,
+    "5211103523": 1763299086.1574123,
+    "5681582052": 1763299120.2562816,
+    "7574019779": 1762375603.5641825,
+    "5940454249": 1762589272.3106627,
+    "8430618853": 1762687366.8850875,
+    "7400329661": 1762887349.3839834,
+    "7659192375": 1763299628.4113472,
+    "5365025253": 1763403851.767828,
+    "1032700767": 1764421717.841148
+  },
+  "daily_gift": {
+    "1678023162": 1762361649.4325767,
+    "7940662917": 1763108479.0178385,
+    "1676302507": 1763402613.6466353,
+    "2010611477": 1762361656.5544202,
+    "5211103523": 1762361665.8589952,
+    "6629332380": 1763057143.4925368,
+    "5763445175": 1762778205.5834634,
+    "6304502234": 1762939555.9913192,
+    "6984112450": 1763139081.1246347,
+    "7872459217": 1763231031.086574,
+    "7448280758": 1763292614.88607,
+    "5365025253": 1763403839.2588947,
+    "6967681877": 1763403859.180511
+  },
+  "user_quests": {
+    "1678023162": {
+      "daily_quests": {
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "collect_cars": {
+          "progress": 3,
+          "completed": true,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 5,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 109,
+        "total_races_won": 4,
+        "total_money_earned": 7818202,
+        "total_cars_crafted": 2,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1763224643.284915
+    },
+    "8098891662": {
+      "daily_quests": {
+        "collect_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 0,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "total_cars_collected": 0,
+        "total_races_won": 0,
+        "total_money_earned": 0
+      },
+      "last_reset": 1761324664.834477
+    },
+    "7940662917": {
+      "daily_quests": {
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_auction": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 56,
+        "total_races_won": 0,
+        "total_money_earned": 2467015,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1763313589.759575
+    },
+    "6984112450": {
+      "daily_quests": {
+        "daily_balance": {
+          "progress": 213416,
+          "completed": true,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 1,
+          "completed": true,
+          "claimed": false
+        },
+        "sell_cars": {
+          "progress": 5,
+          "completed": true,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 74,
+        "races_won_today": 0,
+        "cars_sold_today": 26,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 25,
+        "auctions_won_today": 0,
+        "total_cars_collected": 375,
+        "total_races_won": 13,
+        "total_money_earned": 29533811,
+        "total_cars_crafted": 93,
+        "total_auctions_won": 0,
+        "money_earned_today": 7256261
+      },
+      "last_reset": 1763301254.752305
+    },
+    "7925260683": {
+      "daily_quests": {
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 2,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "total_cars_collected": 3,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "cars_crafted_today": 0,
+        "total_cars_crafted": 0
+      },
+      "last_reset": 1761677239.621544
+    },
+    "1676302507": {
+      "daily_quests": {
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 52,
+        "total_races_won": 0,
+        "total_money_earned": 2431474,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1765569325.342087
+    },
+    "5228609209": {
+      "daily_quests": {
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_auction": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 19,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1762675723.359498
+    },
+    "7019678797": {
+      "daily_quests": {
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 3,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 25,
+        "total_races_won": 0,
+        "total_money_earned": 602907,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1763236314.384118
+    },
+    "5157011394": {
+      "daily_quests": {
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 30,
+        "total_races_won": 0,
+        "total_money_earned": 754818,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1763292616.741477
+    },
+    "7448280758": {
+      "daily_quests": {
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "daily_balance": {
+          "progress": 7998,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 0,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 13,
+        "total_races_won": 0,
+        "total_money_earned": 7998,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 7998
+      },
+      "last_reset": 1763292614.886069
+    },
+    "6826037472": {
+      "daily_quests": {
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 2,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 11,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1763053489.161275
+    },
+    "777000": {
+      "daily_quests": {
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 0,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "total_cars_collected": 0,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "total_cars_crafted": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1761680542.875074
+    },
+    "7872459217": {
+      "daily_quests": {
+        "win_auction": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "collect_cars": {
+          "progress": 1,
+          "completed": false,
+          "claimed": false
+        },
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 9,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1763231031.086574
+    },
+    "8126975486": {
+      "daily_quests": {
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "collect_cars": {
+          "progress": 1,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 4,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1763313610.865304
+    },
+    "1276061866": {
+      "daily_quests": {
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 5,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1762088078.294081
+    },
+    "5748333243": {
+      "daily_quests": {
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "collect_cars": {
+          "progress": 1,
+          "completed": false,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "total_cars_collected": 1,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1761478651.082035
+    },
+    "6875556736": {
+      "daily_quests": {
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_auction": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 8,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1763298403.788765
+    },
+    "5667887773": {
+      "daily_quests": {
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "collect_cars": {
+          "progress": 1,
+          "completed": false,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "total_cars_collected": 1,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1761495002.243764
+    },
+    "6967681877": {
+      "daily_quests": {
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "daily_balance": {
+          "progress": 17647,
+          "completed": false,
+          "claimed": false
+        },
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 2,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 31,
+        "total_races_won": 0,
+        "total_money_earned": 17647,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 17647
+      },
+      "last_reset": 1763403745.242441
+    },
+    "1070180310": {
+      "daily_quests": {
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "collect_cars": {
+          "progress": 1,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "total_cars_collected": 3,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "total_cars_crafted": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1761720551.109384
+    },
+    "2072256303": {
+      "daily_quests": {
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "total_cars_collected": 1,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1761655232.245538
+    },
+    "7422210273": {
+      "daily_quests": {
+        "win_auction": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 8,
+        "total_races_won": 0,
+        "total_money_earned": 305491,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1762675724.743071
+    },
+    "6298736639": {
+      "daily_quests": {
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "collect_cars": {
+          "progress": 2,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 2,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 2,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1761927129.35281
+    },
+    "7932419417": {
+      "daily_quests": {
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "collect_cars": {
+          "progress": 1,
+          "completed": false,
+          "claimed": false
+        },
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 14,
+        "total_races_won": 0,
+        "total_money_earned": 243056,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1763306571.932031
+    },
+    "1087968824": {
+      "daily_quests": {
+        "win_auction": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 5,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1762191653.831703
+    },
+    "6275470056": {
+      "daily_quests": {
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "collect_cars": {
+          "progress": 1,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 7,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1763404923.371379
+    },
+    "1006083045": {
+      "daily_quests": {
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 1,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762079285.565322
+    },
+    "6118647204": {
+      "daily_quests": {
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_auction": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 0,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 0,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762147977.074549
+    },
+    "5446305256": {
+      "daily_quests": {
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "collect_cars": {
+          "progress": 1,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 1,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762163506.529124
+    },
+    "7736217536": {
+      "daily_quests": {
+        "sell_cars": {
+          "progress": 1,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 2,
+        "races_won_today": 0,
+        "cars_sold_today": 1,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 2,
+        "total_races_won": 0,
+        "total_money_earned": 25888,
+        "money_earned_today": 25888,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762172143.609006
+    },
+    "1979989544": {
+      "daily_quests": {
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 0,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 0,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762278783.435875
+    },
+    "5936146378": {
+      "daily_quests": {
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 1,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762291748.117794
+    },
+    "6629332380": {
+      "daily_quests": {
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "daily_balance": {
+          "progress": 29203,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 0,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 2,
+        "total_races_won": 0,
+        "total_money_earned": 38162,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 29203
+      },
+      "last_reset": 1763057143.493536
+    },
+    "2010611477": {
+      "daily_quests": {
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "collect_cars": {
+          "progress": 2,
+          "completed": false,
+          "claimed": false
+        },
+        "win_auction": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 2,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 34,
+        "total_races_won": 0,
+        "total_money_earned": 178769,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1763298388.41825
+    },
+    "5020187526": {
+      "daily_quests": {
+        "collect_cars": {
+          "progress": 1,
+          "completed": false,
+          "claimed": false
+        },
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 4,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1762882848.847767
+    },
+    "5278998791": {
+      "daily_quests": {
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "collect_cars": {
+          "progress": 1,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 6,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1763218861.971403
+    },
+    "5211103523": {
+      "daily_quests": {
+        "collect_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 0,
+        "races_won_today": 0,
+        "cars_sold_today": 13,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 23,
+        "total_races_won": 0,
+        "total_money_earned": 642784,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 335527
+      },
+      "last_reset": 1763311112.024415
+    },
+    "5681582052": {
+      "daily_quests": {
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 12,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1763299120.256281
+    },
+    "7574019779": {
+      "daily_quests": {
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 1,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762375603.538211
+    },
+    "7584071872": {
+      "daily_quests": {
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "collect_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 0,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 0,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762375711.584281
+    },
+    "1302901376": {
+      "daily_quests": {
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_auction": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 0,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 0,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762456536.78568
+    },
+    "5757043966": {
+      "daily_quests": {
+        "win_auction": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "collect_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 0,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 0,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762574895.223704
+    },
+    "5940454249": {
+      "daily_quests": {
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_auction": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "collect_cars": {
+          "progress": 1,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 1,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762589272.279698
+    },
+    "1616503246": {
+      "daily_quests": {
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 0,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 0,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762631715.687783
+    },
+    "5026338588": {
+      "daily_quests": {
+        "win_auction": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 0,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 0,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762638781.222995
+    },
+    "8412951175": {
+      "daily_quests": {
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_auction": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "collect_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 0,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 0,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762681122.09302
+    },
+    "8430618853": {
+      "daily_quests": {
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_auction": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 1,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762687366.842137
+    },
+    "7400329661": {
+      "daily_quests": {
+        "collect_cars": {
+          "progress": 2,
+          "completed": false,
+          "claimed": false
+        },
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_auction": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 2,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 3,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1762856903.180557
+    },
+    "5389217070": {
+      "daily_quests": {
+        "collect_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_auction": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 0,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 0,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762760733.19116
+    },
+    "5763445175": {
+      "daily_quests": {
+        "daily_balance": {
+          "progress": 28915,
+          "completed": false,
+          "claimed": false
+        },
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 0,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 0,
+        "total_races_won": 0,
+        "total_money_earned": 28915,
+        "money_earned_today": 28915,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762777938.385412
+    },
+    "136817688": {
+      "daily_quests": {
+        "collect_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 0,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 0,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762778455.822318
+    },
+    "8344049341": {
+      "daily_quests": {
+        "collect_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 0,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 0,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762848980.996869
+    },
+    "6304502234": {
+      "daily_quests": {
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_auction": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 0,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 0,
+        "total_races_won": 0,
+        "total_money_earned": 43108,
+        "money_earned_today": 43108,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762939555.941361
+    },
+    "6666336371": {
+      "daily_quests": {
+        "win_auction": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 0,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 0,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762974329.06827
+    },
+    "6165071514": {
+      "daily_quests": {
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 0,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 0,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762977875.255566
+    },
+    "5793256493": {
+      "daily_quests": {
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "collect_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 0,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 0,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762978917.284966
+    },
+    "5428358845": {
+      "daily_quests": {
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 0,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 0,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1762982606.187712
+    },
+    "7659192375": {
+      "daily_quests": {
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "collect_cars": {
+          "progress": 1,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 1,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1763299628.356394
+    },
+    "8073216818": {
+      "daily_quests": {
+        "collect_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_auction": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 0,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 0,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1763312842.666657
+    },
+    "5365025253": {
+      "daily_quests": {
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "win_races": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 2,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 3,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0,
+        "money_earned_today": 0
+      },
+      "last_reset": 1763403839.258894
+    },
+    "7647267427": {
+      "daily_quests": {
+        "sell_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 0,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 0,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1763330281.321201
+    },
+    "6250995946": {
+      "daily_quests": {
+        "daily_balance": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "collect_cars": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 0,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 0,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1763375304.806617
+    },
+    "1032700767": {
+      "daily_quests": {
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "sell_cars": {
+          "progress": 1,
+          "completed": false,
+          "claimed": false
+        },
+        "daily_balance": {
+          "progress": 25151,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 2,
+        "races_won_today": 0,
+        "cars_sold_today": 1,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 2,
+        "total_races_won": 0,
+        "total_money_earned": 25151,
+        "money_earned_today": 25151,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1764421717.79578
+    }
+  },
+  "user_achievements": {
+    "1678023162": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761324654.727215
+      },
+      "garage_king": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761324718.275966
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761325482.216428
+      },
+      "car_collector": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761419896.74706
+      },
+      "legend_owner": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761419896.756981
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "8098891662": {
+      "first_car": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "7940662917": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761326494.895956
+      },
+      "garage_king": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761623539.315146
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762432157.283383
+      },
+      "car_collector": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762233132.986106
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "6984112450": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761326577.383604
+      },
+      "garage_king": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761819944.635302
+      },
+      "race_champion": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1763139514.49788
+      },
+      "millionaire": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1763135080.394085
+      },
+      "car_collector": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762608972.49329
+      },
+      "legend_owner": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1763138370.663164
+      },
+      "master_crafter": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1763136320.27846
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "7925260683": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761333609.369058
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "1676302507": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761335504.474974
+      },
+      "garage_king": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761688712.970016
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1763144334.922208
+      },
+      "car_collector": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762255808.663651
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "5228609209": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761354090.668863
+      },
+      "garage_king": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762087663.693754
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "7019678797": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761368974.052414
+      },
+      "garage_king": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762056819.865245
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1763310248.070417
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "5157011394": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761373332.707117
+      },
+      "garage_king": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761767366.031657
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762688526.910645
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "7448280758": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761378044.443535
+      },
+      "garage_king": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762151764.671935
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "6826037472": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761402013.833636
+      },
+      "garage_king": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1763053489.216227
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "7872459217": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761456149.807428
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "8126975486": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761463691.552952
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "1276061866": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761471346.505972
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "5748333243": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761478651.082035
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "8437256547": {
+      "first_car": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "6875556736": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761494993.305032
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "5667887773": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761495002.243764
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "6967681877": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761579997.263769
+      },
+      "garage_king": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762233132.828284
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762998142.102209
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "1070180310": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761590925.731463
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "2072256303": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761655232.246536
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "7422210273": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761716780.281841
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "6298736639": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761927129.35281
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "7932419417": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761944215.473276
+      },
+      "garage_king": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762614038.887958
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "1087968824": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761996941.310937
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "6275470056": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762032776.80464
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "1006083045": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762079285.586299
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "6118647204": {
+      "first_car": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "5446305256": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762163506.553097
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "7736217536": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762172149.671035
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "777000": {
+      "first_car": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "1979989544": {
+      "first_car": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "5936146378": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762291748.141767
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "6629332380": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762291756.059646
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "2010611477": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762337571.435997
+      },
+      "garage_king": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762511915.232852
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762879921.862038
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "5020187526": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762337765.926357
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "5278998791": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762338840.399784
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "5211103523": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762343480.718417
+      },
+      "garage_king": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762675724.944842
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "5681582052": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762345500.865646
+      },
+      "garage_king": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762958758.08082
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "7574019779": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762375603.564182
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "7584071872": {
+      "first_car": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "1302901376": {
+      "first_car": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "5757043966": {
+      "first_car": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "5940454249": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762589272.310662
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "1616503246": {
+      "first_car": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "5026338588": {
+      "first_car": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "8412951175": {
+      "first_car": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "8430618853": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762687366.886085
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "7400329661": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1762691446.381111
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "5389217070": {
+      "first_car": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "5763445175": {
+      "first_car": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "136817688": {
+      "first_car": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "8344049341": {
+      "first_car": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "6304502234": {
+      "first_car": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "6666336371": {
+      "first_car": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "6165071514": {
+      "first_car": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "5793256493": {
+      "first_car": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "5428358845": {
+      "first_car": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "7755498031": {
+      "first_car": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "7659192375": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1763299628.411347
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "8073216818": {
+      "first_car": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "5365025253": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1763313605.306401
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "7647267427": {
+      "first_car": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "6250995946": {
+      "first_car": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    },
+    "1032700767": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1764421717.841147
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    }
+  },
+  "promocodes": {
+    "HALLOWEEN": {
+      "type": "money",
+      "created_at": 1761921164.964506,
+      "used_count": 0,
+      "value": 100000
+    },
+    "TEST2": {
+      "reward": 100000,
+      "max_uses": 5,
+      "used_count": 3,
+      "created_by": 1678023162,
+      "created_at": 1762376031.5038714
+    }
+  },
+  "used_promocodes": {
+    "777000": [],
+    "1979989544": [],
+    "7940662917": [
+      "TEST"
+    ],
+    "7448280758": [],
+    "5157011394": [],
+    "1678023162": [
+      "TEST",
+      "TEST2"
+    ],
+    "5228609209": [
+      "TEST"
+    ],
+    "1676302507": [
+      "TEST",
+      "TEST2"
+    ],
+    "6984112450": [
+      "TEST"
+    ],
+    "6875556736": [
+      "TEST2"
+    ]
+  },
+  "auctions": {
+    "DDTAND0L": {
+      "car": {
+        "id": "XE1J5UF8",
+        "name": "Seat Leon",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 13718,
+        "image_path": "images/default.png",
+        "hp": 110,
+        "acc": 32,
+        "handling": 58,
+        "sellable": true,
+        "wear": 100
+      },
+      "seller_id": 1678023162,
+      "current_bid": 11000,
+      "highest_bidder": 7940662917,
+      "start_time": 1762375766.5141819,
+      "end_time": 1762462166.5141819,
+      "min_bid_increment": 1000,
+      "participants": [],
+      "bids": {}
+    },
+    "AvfNYbUR": {
+      "car": {
+        "id": "mewBQLeq",
+        "name": "McLaren 650S",
+        "rarity": "Эпические",
+        "rarity_key": "Эпические",
+        "value": 115892,
+        "image_path": "images/default.png",
+        "hp": 410,
+        "acc": 88,
+        "handling": 82,
+        "sellable": true,
+        "wear": 99
+      },
+      "seller_id": 1678023162,
+      "current_bid": 5000000,
+      "highest_bidder": 6984112450,
+      "start_time": 1763224856.107025,
+      "end_time": 1763311256.107025,
+      "min_bid_increment": 5794,
+      "participants": [],
+      "bids": {}
+    },
+    "FOPgac6I": {
+      "car": {
+        "id": "6YeUOefP",
+        "name": "Lamborghini Sian",
+        "rarity": "Легендарные",
+        "rarity_key": "Легендарные",
+        "value": 499384,
+        "image_path": "images/default.png",
+        "hp": 850,
+        "acc": 100,
+        "handling": 100,
+        "sellable": true,
+        "wear": 100
+      },
+      "seller_id": 1678023162,
+      "current_bid": 280000,
+      "highest_bidder": 2010611477,
+      "start_time": 1763237550.634984,
+      "end_time": 1763323950.634984,
+      "min_bid_increment": 24969,
+      "participants": [],
+      "bids": {}
+    }
+  },
+  "user_bids": {
+    "DDTAND0L": {},
+    "AvfNYbUR": {},
+    "FOPgac6I": {}
+  },
+  "user_carsharing": {
+    "1678023162": {
+      "active_cars": [
+        "Ws9NItHN",
+        "yPxmBEg0",
+        "2apFjeHy",
+        "3fiWMg5L",
+        "mewBQLeq"
+      ],
+      "last_collect": 1765570626.9641962
+    },
+    "7932419417": {
+      "active_cars": [
+        "e748XHil",
+        "C2iJHBlE",
+        "C4aUns2O",
+        "r6mKHLNG",
+        "gj04zwp8"
+      ],
+      "last_collect": 1762451816.148608
+    },
+    "5681582052": {
+      "active_cars": [
+        "NQAIt9Da",
+        "10ZXFH2i",
+        "A2GKjXjq",
+        "bYJkOvdq",
+        "8VDU3yIv"
+      ],
+      "last_collect": 1762804169.4588132
+    },
+    "2010611477": {
+      "active_cars": [
+        "DubUORne",
+        "1TCfIGHQ"
+      ],
+      "last_collect": 1762793738.778331
+    },
+    "7019678797": {
+      "active_cars": [
+        "qBHWxYqx",
+        "lJM05uVr",
+        "SH5IlX34",
+        "GAQdRvAG",
+        "tSt9TMDx"
+      ],
+      "last_collect": 1762567443.505083
+    },
+    "5211103523": {
+      "active_cars": [
+        "em5Ytg55",
+        "Ior9eaBq",
+        "jJ8dBXEt",
+        "mrwjaL9x",
+        "iE0cxX4s"
+      ],
+      "last_collect": 1763088910.1106536
+    },
+    "6984112450": {
+      "active_cars": [
+        "EmKSm12S",
+        "l77hmxak",
+        "PTuDLjrx",
+        "uRtKy1LE",
+        "e0ocIy4Z"
+      ],
+      "last_collect": 1763139743.045098
+    },
+    "1676302507": {
+      "active_cars": [
+        "uNbfEHeQ",
+        "95kD5zXs",
+        "P3FWEqgx",
+        "DXeW51nN",
+        "mS6Ggkqu"
+      ],
+      "last_collect": 1763402626.932367
+    }
+  },
+  "user_taxipark": {
+    "1678023162": {
+      "has_taxi": true,
+      "level": 3,
+      "last_collect": 1765570626.9641962
+    },
+    "1676302507": {
+      "has_taxi": true,
+      "level": 2,
+      "last_collect": 1765569332.7493048
+    }
+  },
+  "flea_market": {},
+  "user_scrap": {
+    "1678023162": 0,
+    "8098891662": 0,
+    "7574019779": 0,
+    "7584071872": 0,
+    "6875556736": 0,
+    "1676302507": 0,
+    "777000": 0,
+    "2010611477": 0,
+    "6967681877": 0,
+    "7019678797": 0,
+    "7422210273": 0,
+    "5681582052": 0,
+    "5278998791": 0,
+    "5211103523": 0,
+    "5020187526": 0,
+    "7940662917": 0,
+    "6275470056": 0,
+    "7448280758": 0,
+    "5228609209": 0,
+    "1087968824": 0,
+    "5157011394": 0,
+    "7932419417": 0,
+    "6984112450": 0,
+    "1302901376": 0,
+    "5757043966": 0,
+    "5940454249": 0,
+    "1616503246": 0,
+    "5026338588": 0,
+    "6826037472": 0,
+    "8412951175": 0,
+    "8430618853": 0,
+    "7400329661": 0,
+    "6629332380": 0,
+    "5389217070": 0,
+    "7872459217": 0,
+    "5763445175": 0,
+    "136817688": 0,
+    "1979989544": 0,
+    "8344049341": 0,
+    "8126975486": 0,
+    "6304502234": 0,
+    "5936146378": 0,
+    "6666336371": 0,
+    "6165071514": 0,
+    "5793256493": 0,
+    "5428358845": 0,
+    "7659192375": 0,
+    "8073216818": 0,
+    "5365025253": 0,
+    "7647267427": 0,
+    "6250995946": 0,
+    "1032700767": 0,
+    "8299684575": 0,
+    "1721358063": 0,
+    "7925260683": 0,
+    "1276061866": 0,
+    "1070180310": 0,
+    "1622245964": 0,
+    "5667887773": 0,
+    "8437256547": 0,
+    "5748333243": 0,
+    "2072256303": 0,
+    "8028974585": 0,
+    "6298736639": 0,
+    "1006083045": 0,
+    "6118647204": 0,
+    "5446305256": 0,
+    "7736217536": 0
+  },
+  "active_giveaway": {},
+  "giveaway_participants": {},
+  "subs_channel_id": null,
+  "user_subscriptions": {
+    "1678023162": {
+      "expires_at": null,
+      "type": "manual"
+    }
+  }
+}

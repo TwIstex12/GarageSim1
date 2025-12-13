@@ -1,0 +1,251 @@
+{
+    "user_balance": {
+        "1678023162": 1207288,
+        "6967681877": 11000,
+        "7448280758": 11000,
+        "6826037472": 11000,
+        "5157011394": 34450,
+        "1676302507": 11500,
+        "8098891662": 10000,
+        "8299684575": 10500,
+        "6275470056": 10500,
+        "5228609209": 10500,
+        "6875556736": 10500,
+        "7940662917": 10000
+    },
+    "user_garage": {
+        "1678023162": [],
+        "6967681877": [
+            {
+                "id": "dICIeEqe",
+                "name": "Mercedes C63 AMG",
+                "rarity": "🟦 Редкие",
+                "rarity_key": "Редкие",
+                "value": 47490,
+                "image_path": "images/AMG.png"
+            },
+            {
+                "id": "gbTkA0nw",
+                "name": "Lamborghini Gallardo",
+                "rarity": "🟪 Эпические",
+                "rarity_key": "Эпические",
+                "value": 91938,
+                "image_path": "images/Lamborghini.png",
+                "hp": 430,
+                "acc": 87,
+                "handling": 70,
+                "sellable": true
+            }
+        ],
+        "7448280758": [
+            {
+                "id": "KYdVd35N",
+                "name": "Nissan GT-R R34",
+                "rarity": "🟪 Эпические",
+                "rarity_key": "Эпические",
+                "value": 97674,
+                "image_path": "images/Nissan.png",
+                "hp": 317,
+                "acc": 71,
+                "handling": 75,
+                "sellable": true
+            },
+            {
+                "id": "6GM2CAGq",
+                "name": "Opel Astra",
+                "rarity": "🟩 Обычные",
+                "rarity_key": "Обычные",
+                "value": 18464,
+                "image_path": "images/Astra.png",
+                "hp": 102,
+                "acc": 32,
+                "handling": 33,
+                "sellable": true
+            }
+        ],
+        "6826037472": [
+            {
+                "id": "zCN5FVXb",
+                "name": "Lamborghini Gallardo",
+                "rarity": "🟪 Эпические",
+                "rarity_key": "Эпические",
+                "value": 93134,
+                "image_path": "images/Lamborghini.png"
+            },
+            {
+                "id": "IqnOiu5c",
+                "name": "Bugatti Chiron",
+                "rarity": "🟥 Легендарные",
+                "rarity_key": "Легендарные",
+                "value": 234895,
+                "image_path": "images/Chiron.png",
+                "hp": 539,
+                "acc": 97,
+                "handling": 81,
+                "sellable": true
+            }
+        ],
+        "5157011394": [],
+        "1676302507": [
+            {
+                "id": "Zs9YXrDn",
+                "name": "BMW M3",
+                "rarity": "🟦 Редкие",
+                "rarity_key": "Редкие",
+                "value": 43048,
+                "image_path": "images/BMW M3.png"
+            },
+            {
+                "id": "9wLXFodS",
+                "name": "Mercedes C63 AMG",
+                "rarity": "🟦 Редкие",
+                "rarity_key": "Редкие",
+                "value": 30367,
+                "image_path": "images/AMG.png",
+                "hp": 181,
+                "acc": 58,
+                "handling": 71,
+                "sellable": true
+            },
+            {
+                "id": "IE3XHQIL",
+                "name": "Toyota Corolla",
+                "rarity": "🟩 Обычные",
+                "rarity_key": "Обычные",
+                "value": 23616,
+                "image_path": "images/Corolla.png",
+                "hp": 99,
+                "acc": 60,
+                "handling": 59,
+                "sellable": true
+            }
+        ],
+        "8098891662": [],
+        "8299684575": [
+            {
+                "id": "FJUpKwzk",
+                "name": "Lamborghini Gallardo",
+                "rarity": "🟪 Эпические",
+                "rarity_key": "Эпические",
+                "value": 115252,
+                "image_path": "images/Lamborghini.png"
+            }
+        ],
+        "6275470056": [
+            {
+                "id": "HbSbeYTQ",
+                "name": "BMW M3",
+                "rarity": "🟦 Редкие",
+                "rarity_key": "Редкие",
+                "value": 45450,
+                "image_path": "images/BMW M3.png"
+            }
+        ],
+        "5228609209": [
+            {
+                "id": "mStzexnz",
+                "name": "Subaru WRX STI",
+                "rarity": "🟦 Редкие",
+                "rarity_key": "Редкие",
+                "value": 58767,
+                "image_path": "images/Subaru WRX STI.png",
+                "hp": 156,
+                "acc": 68,
+                "handling": 64,
+                "sellable": true
+            }
+        ],
+        "6875556736": [
+            {
+                "id": "vuxcFL8j",
+                "name": "Mercedes C63 AMG",
+                "rarity": "🟦 Редкие",
+                "rarity_key": "Редкие",
+                "value": 38245,
+                "image_path": "images/AMG.png",
+                "hp": 144,
+                "acc": 76,
+                "handling": 55,
+                "sellable": true
+            }
+        ],
+        "7940662917": []
+    },
+    "last_use": {
+        "1678023162": 1760943346.9537838,
+        "6967681877": 1760926029.7178109,
+        "6826037472": 1760933705.2376702,
+        "5157011394": 1760900002.7763495,
+        "1676302507": 1760945864.5322764,
+        "8299684575": 1760902719.6508234,
+        "6275470056": 1760902904.8241482,
+        "7448280758": 1760947472.5482283,
+        "5228609209": 1760934239.2362437,
+        "6875556736": 1760941397.8602817
+    },
+    "car_owner_map": {
+        "dICIeEqe": 6967681877,
+        "zCN5FVXb": 6826037472,
+        "Zs9YXrDn": 1676302507,
+        "FJUpKwzk": 8299684575,
+        "HbSbeYTQ": 6275470056,
+        "gbTkA0nw": 6967681877,
+        "9wLXFodS": 1676302507,
+        "KYdVd35N": 7448280758,
+        "IqnOiu5c": 6826037472,
+        "mStzexnz": 5228609209,
+        "vuxcFL8j": 6875556736,
+        "IE3XHQIL": 1676302507,
+        "6GM2CAGq": 7448280758
+    },
+    "user_shop_limits": {
+        "1678023162": {
+            "count": 9,
+            "last_reset": "2025-10-19T19:15:39.379906"
+        },
+        "6967681877": {
+            "count": 0,
+            "last_reset": "2025-10-19T19:36:40.529993"
+        },
+        "7448280758": {
+            "count": 0,
+            "last_reset": "2025-10-19T21:39:10.542358"
+        },
+        "6826037472": {
+            "count": 0,
+            "last_reset": "2025-10-19T21:42:24.593021"
+        },
+        "5157011394": {
+            "count": 0,
+            "last_reset": "2025-10-19T21:53:22.775350"
+        },
+        "1676302507": {
+            "count": 0,
+            "last_reset": "2025-10-19T21:57:14.119416"
+        },
+        "8098891662": {
+            "count": 0,
+            "last_reset": "2025-10-19T21:57:15.868022"
+        },
+        "8299684575": {
+            "count": 0,
+            "last_reset": "2025-10-19T22:38:16.608319"
+        },
+        "6275470056": {
+            "count": 0,
+            "last_reset": "2025-10-19T22:41:44.822150"
+        },
+        "5228609209": {
+            "count": 0,
+            "last_reset": "2025-10-20T07:23:59.220617"
+        },
+        "6875556736": {
+            "count": 0,
+            "last_reset": "2025-10-20T09:23:17.860281"
+        },
+        "7940662917": {
+            "count": 0,
+            "last_reset": "2025-10-20T11:34:00.735325"
+        }
+    }
+}

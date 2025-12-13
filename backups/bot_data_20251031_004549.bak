@@ -1,0 +1,49 @@
+{
+  "user_balance": {},
+  "user_garage": {},
+  "car_owner_map": {},
+  "user_shop_limits": {},
+  "last_use": {},
+  "daily_gift": {},
+  "user_quests": {},
+  "user_achievements": {},
+  "promocodes": {},
+  "used_promocodes": {},
+  "auctions": {},
+  "user_bids": {},
+  "user_referrals": {},
+  "referral_codes": {},
+  "active_events": {
+    "double_money": {
+      "name": "💰 Двойные деньги",
+      "description": "Получайте в 2 раза больше денег за все действия",
+      "multiplier": 2,
+      "end_time": 1761950089.4832978,
+      "type": "money_boost"
+    }
+  },
+  "event_participants": {},
+  "battle_requests": {},
+  "battle_history": {},
+  "user_deposits": {},
+  "nft_collections": {
+    "golden_cars": {
+      "name": "🚗 Золотая коллекция",
+      "description": "Эксклюзивные золотые версии машин",
+      "price": 50000,
+      "available": 100,
+      "sold": 0
+    },
+    "limited_edition": {
+      "name": "🎨 Лимитированная серия",
+      "description": "Особые дизайнерские версии",
+      "price": 75000,
+      "available": 50,
+      "sold": 0
+    }
+  },
+  "user_nfts": {},
+  "bank_balance": 0,
+  "season_data": {
+    "current_season": 1,
+    "season_end": 

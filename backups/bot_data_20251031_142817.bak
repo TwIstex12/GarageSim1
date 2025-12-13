@@ -1,0 +1,103 @@
+{
+  "user_balance": {
+    "1678023162": 43389
+  },
+  "user_garage": {
+    "1678023162": []
+  },
+  "car_owner_map": {},
+  "user_shop_limits": {
+    "1678023162": {
+      "count": 0,
+      "last_reset": "2025-10-31T14:16:25.101503"
+    }
+  },
+  "last_use": {
+    "1678023162": 1761912057.4559321
+  },
+  "daily_gift": {},
+  "user_quests": {
+    "1678023162": {
+      "daily_quests": {
+        "collect_cars": {
+          "progress": 1,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 1,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 1,
+        "total_races_won": 0,
+        "total_money_earned": 27889,
+        "money_earned_today": 27889,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1761912057.451936
+    }
+  },
+  "user_achievements": {
+    "1678023162": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761912057.455932
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    }
+  },
+  "promocodes": {},
+  "used_promocodes": {},
+  "auctions": {},
+  "user_bids": {}
+}

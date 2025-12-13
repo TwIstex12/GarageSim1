@@ -1,0 +1,51 @@
+{
+    "user_balance": {
+        "1111": 100000,
+        "2222": 126731
+    },
+    "user_garage": {
+        "1111": [
+            {
+                "id": "MIIC9pD1",
+                "name": "Opel Astra",
+                "rarity": "🟩 Обычные",
+                "rarity_key": "Обычные",
+                "value": 15298,
+                "image_path": "images/Astra.png",
+                "hp": 109,
+                "acc": 39,
+                "handling": 33,
+                "sellable": true
+            }
+        ],
+        "2222": [
+            {
+                "id": "Ki6AEpEK",
+                "name": "Mercedes C63 AMG",
+                "rarity": "🟦 Редкие",
+                "rarity_key": "Редкие",
+                "value": 49795,
+                "image_path": "images/AMG.png",
+                "hp": 229,
+                "acc": 60,
+                "handling": 53,
+                "sellable": true
+            }
+        ]
+    },
+    "last_use": {},
+    "car_owner_map": {
+        "MIIC9pD1": 1111,
+        "Ki6AEpEK": 2222
+    },
+    "user_shop_limits": {
+        "1111": {
+            "count": 0,
+            "last_reset": "2025-10-20T01:59:27.043246"
+        },
+        "2222": {
+            "count": 0,
+            "last_reset": "2025-10-20T01:59:27.043246"
+        }
+    }
+}

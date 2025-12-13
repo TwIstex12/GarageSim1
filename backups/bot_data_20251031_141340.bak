@@ -1,0 +1,185 @@
+{
+  "user_balance": {
+    "1678023162": 15500
+  },
+  "user_garage": {
+    "1678023162": [
+      {
+        "id": "Ot0dCGlr",
+        "name": "Seat Leon",
+        "rarity": "Обычные",
+        "rarity_key": "Обычные",
+        "value": 27889,
+        "image_path": "images/default.png",
+        "hp": 100,
+        "acc": 56,
+        "handling": 48,
+        "sellable": true
+      }
+    ]
+  },
+  "car_owner_map": {
+    "Ot0dCGlr": 1678023162
+  },
+  "user_shop_limits": {
+    "1678023162": {
+      "count": 0,
+      "last_reset": 1761912057.451936
+    }
+  },
+  "last_use": {
+    "1678023162": 1761912057.4559321
+  },
+  "daily_gift": {},
+  "user_quests": {
+    "1678023162": {
+      "daily_quests": {
+        "collect_cars": {
+          "progress": 1,
+          "completed": false,
+          "claimed": false
+        },
+        "craft_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        },
+        "tune_car": {
+          "progress": 0,
+          "completed": false,
+          "claimed": false
+        }
+      },
+      "progress": {
+        "cars_collected_today": 1,
+        "races_won_today": 0,
+        "cars_sold_today": 0,
+        "cars_tuned_today": 0,
+        "cars_crafted_today": 0,
+        "auctions_won_today": 0,
+        "total_cars_collected": 1,
+        "total_races_won": 0,
+        "total_money_earned": 0,
+        "money_earned_today": 0,
+        "total_cars_crafted": 0,
+        "total_auctions_won": 0
+      },
+      "last_reset": 1761912057.451936
+    }
+  },
+  "user_achievements": {
+    "1678023162": {
+      "first_car": {
+        "completed": true,
+        "progress": 0,
+        "completed_at": 1761912057.455932
+      },
+      "garage_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "race_champion": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "millionaire": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "car_collector": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "legend_owner": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "master_crafter": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      },
+      "auction_king": {
+        "completed": false,
+        "progress": 0,
+        "completed_at": null
+      }
+    }
+  },
+  "promocodes": {},
+  "used_promocodes": {},
+  "auctions": {},
+  "user_bids": {},
+  "user_referrals": {},
+  "referral_codes": {},
+  "active_events": {
+    "double_money": {
+      "name": "💰 Двойные деньги",
+      "description": "Получайте в 2 раза больше денег за все действия",
+      "multiplier": 2,
+      "end_time": 1761998409.8210502,
+      "type": "money_boost"
+    }
+  },
+  "event_participants": {},
+  "battle_requests": {},
+  "battle_history": {},
+  "user_deposits": {},
+  "nft_collections": {
+    "golden_cars": {
+      "name": "🚗 Золотая коллекция",
+      "description": "Эксклюзивные золотые версии машин",
+      "price": 50000,
+      "available": 100,
+      "sold": 0
+    },
+    "limited_edition": {
+      "name": "🎨 Лимитированная серия",
+      "description": "Особые дизайнерские версии",
+      "price": 75000,
+      "available": 50,
+      "sold": 0
+    }
+  },
+  "user_nfts": {},
+  "bank_balance": 0,
+  "season_data": {
+    "current_season": 1,
+    "season_end": 1764504009.591744,
+    "season_leaderboard": {},
+    "season_rewards": {
+      "1": 100000,
+      "2": 50000,
+      "3": 25000,
+      "4": 10000,
+      "5": 5000
+    }
+  },
+  "user_premium": {},
+  "user_stats": {},
+  "minigame_sessions": {},
+  "tournaments": {
+    "weekly_race": {
+      "name": "🏆 Еженедельные гонки",
+      "description": "Соревнуйтесь за звание лучшего гонщика",
+      "entry_fee": 5000,
+      "prize_pool": 0,
+      "end_time": 1762516809.8210502,
+      "participants": [],
+      "status": "active"
+    }
+  },
+  "tournament_participants": {},
+  "user_friends": {
+    "1678023162": []
+  },
+  "friend_requests": {
+    "1678023162": []
+  },
+  "daily_challenges": {}
+}
