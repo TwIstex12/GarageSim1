@@ -30,11 +30,18 @@ bot = Bot(token=TOKEN)
 dp = Dispatcher(bot)
 
 web_runner = None
-WEBHOOK_HOST = os.environ.get('K_SERVICE_URL')
+# ------------------------------------
+# УБЕДИТЕСЬ, ЧТО ЭТОТ БЛОК ПРАВИЛЬНЫЙ
+# ------------------------------------
+# Получаем публичный URL, который предоставляет Koyeb (например, https://app-name-id.koyeb.app)
+WEBHOOK_HOST = os.environ.get('K_SERVICE_URL') 
+
+# Используем токен как уникальный путь. Убедитесь, что BOT_TOKEN установлен на Koyeb.
 WEBHOOK_PATH = f'/{os.environ.get("BOT_TOKEN")}' 
 WEBHOOK_URL = f"{WEBHOOK_HOST}{WEBHOOK_PATH}"
 
 WEBAPP_HOST = '0.0.0.0'
+# Порт, который слушает Koyeb (должен совпадать с PORT в вашем Dockerfile/Procfile, обычно 8000 или 8080)
 WEBAPP_PORT = int(os.environ.get('PORT', 8000))
 
 # ======== WEB SERVER (health check) ========
@@ -6742,7 +6749,22 @@ async def on_startup(dp):
     except Exception as e: 
         print('Image mapping error:', e) 
         
-# Health check endpoint and web server functions moved to top of the file.
+        # Health check endpoint and web server functions moved to top of the file.
+
+    # При старте мы проверяем, что URL существует, и устанавливаем Webhook
+    if not WEBHOOK_HOST:
+        print("ОШИБКА: K_SERVICE_URL не найдена. Webhook не установлен.")
+        return
+        
+    print(f"Попытка установить Webhook по адресу: {WEBHOOK_URL}")
+    try:
+        success = await dp.bot.set_webhook(WEBHOOK_URL)
+        if success:
+            print("Webhook успешно установлен!")
+        else:
+            print("ОШИБКА: set_webhook вернул false.")
+    except Exception as e:
+        print('ОШИБКА: Не удалось установить webhook:', e)
 
 if __name__=='__main__':
  from aiogram import executor
