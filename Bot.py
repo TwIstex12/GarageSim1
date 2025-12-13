@@ -15,7 +15,7 @@ from datetime import datetime, timedelta
 from typing import Dict, Any, List 
 
 # ========== CONFIG & GLOBALS =========== 
-TOKEN = "8098891662:AAFqbb0db3MT7d4iTXQZeTCaf_6z9GJDWfA" 
+TOKEN = os.environ.get('BOT_TOKEN', "8098891662:AAFqbb0db3MT7d4iTXQZeTCaf_6z9GJDWfA") 
 OWNER_ID = 1678023162 
 # Use 'images' subfolder if present, otherwise use project root
 DEFAULT_IMAGES_DIR = 'images'
@@ -37,7 +37,8 @@ web_runner = None
 WEBHOOK_HOST = os.environ.get('K_SERVICE_URL')
 
 # Используем токен как уникальный путь. Убедитесь, что BOT_TOKEN установлен на Koyeb.
-WEBHOOK_PATH = f'/{os.environ.get("8098891662:AAFqbb0db3MT7d4iTXQZeTCaf_6z9GJDWfA")}' if os.environ.get("8098891662:AAFqbb0db3MT7d4iTXQZeTCaf_6z9GJDWfA") else None
+BOT_TOKEN_ENV = os.environ.get('BOT_TOKEN')
+WEBHOOK_PATH = f'/{BOT_TOKEN_ENV}' if BOT_TOKEN_ENV else None
 WEBHOOK_URL = f"{WEBHOOK_HOST}{WEBHOOK_PATH}" if WEBHOOK_HOST and WEBHOOK_PATH else None
 
 WEBAPP_HOST = '0.0.0.0'
@@ -6752,13 +6753,13 @@ async def on_startup(dp):
         # Health check endpoint and web server functions moved to top of the file.
 
     # При старте мы лениво загружаем переменные окружения и пытаемся установить Webhook
-    global WEBHOOK_HOST, WEBHOOK_PATH, WEBHOOK_URL
-    WEBHOOK_HOST = os.environ.get('disciplinary-desiri-vort1xss-71ad2f98.koyeb.app/')
-    bot_token = os.environ.get('8098891662:AAFqbb0db3MT7d4iTXQZeTCaf_6z9GJDWfA')
-    WEBHOOK_PATH = f'/{bot_token}' if bot_token else None
+    global WEBHOOK_HOST, WEBHOOK_PATH, WEBHOOK_URL, BOT_TOKEN_ENV
+    WEBHOOK_HOST = os.environ.get('K_SERVICE_URL')
+    BOT_TOKEN_ENV = os.environ.get('BOT_TOKEN')
+    WEBHOOK_PATH = f'/{BOT_TOKEN_ENV}' if BOT_TOKEN_ENV else None
     WEBHOOK_URL = f"{WEBHOOK_HOST}{WEBHOOK_PATH}" if WEBHOOK_HOST and WEBHOOK_PATH else None
 
-    if not WEBHOOK_HOST or not bot_token:
+    if not WEBHOOK_HOST or not BOT_TOKEN_ENV:
         print("ОШИБКА: K_SERVICE_URL или BOT_TOKEN не найдены. Webhook не установлен.")
     else:
         print(f"Попытка установить Webhook по адресу: {WEBHOOK_URL}")
@@ -6775,12 +6776,16 @@ if __name__=='__main__':
     from aiogram import executor
     # Перед стартом вебхука заново вычислим путь и URL, чтобы быть уверенными
     # что переменные окружения доступны в runtime (ленивая загрузка).
-    WEBHOOK_HOST = os.environ.get('disciplinary-desiri-vort1xss-71ad2f98.koyeb.app/')
-    BOT_TOKEN = os.environ.get('8098891662:AAFqbb0db3MT7d4iTXQZeTCaf_6z9GJDWfA')
-    if BOT_TOKEN:
-        WEBHOOK_PATH = f'/{BOT_TOKEN}'
-    if WEBHOOK_HOST and BOT_TOKEN:
+    WEBHOOK_HOST = os.environ.get('K_SERVICE_URL')
+    BOT_TOKEN_ENV = os.environ.get('BOT_TOKEN')
+    if BOT_TOKEN_ENV:
+        WEBHOOK_PATH = f'/{BOT_TOKEN_ENV}'
+    if WEBHOOK_HOST and BOT_TOKEN_ENV:
         WEBHOOK_URL = f"{WEBHOOK_HOST}{WEBHOOK_PATH}"
+
+    if not WEBHOOK_HOST or not BOT_TOKEN_ENV:
+        print("ОШИБКА: BOT_TOKEN или K_SERVICE_URL не заданы. Webhook не будет запущен.")
+        sys.exit(1)
 
     executor.start_webhook(
         dispatcher=dp,
