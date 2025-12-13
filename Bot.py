@@ -30,25 +30,34 @@ bot = Bot(token=TOKEN)
 dp = Dispatcher(bot) 
 
 # ======== WEB SERVER (health check) ========
-PORT = int(os.environ.get("PORT", 8000))
-app = web.Application()
-
 async def handle_health_check(request):
     """Health check handler for web server"""
     return web.Response(text="Bot is running and healthy")
 
-# Register routes
-app.router.add_get('/', handle_health_check)
-app.router.add_get('/health', handle_health_check)
+async def init_web_server():
+    """Initialize aiohttp web server and return runner"""
+    PORT = int(os.environ.get("PORT", 8000))
+    app = web.Application()
+    app.router.add_get('/', handle_health_check)
+    app.router.add_get('/health', handle_health_check)
 
-async def run_web_server():
-    """Start aiohttp web server on configured PORT"""
     runner = web.AppRunner(app)
     await runner.setup()
     site = web.TCPSite(runner, '0.0.0.0', PORT)
     print(f"Starting Health Check server on port {PORT}...")
     await site.start()
     print('Health server started')
+    return runner
+
+async def start_bot_polling():
+    """Запуск Polling с учетом on_startup/on_shutdown."""
+    print("Starting Telegram Bot Polling...")
+    await executor.start_polling(
+        dp,
+        skip_updates=True,
+        on_startup=on_startup,
+        on_shutdown=on_shutdown,
+    )
 
 # Global runtime state 
 user_balance: Dict[int, int] = {} 
@@ -6767,17 +6776,16 @@ if __name__=='__main__':
     except RuntimeError:
         loop = asyncio.new_event_loop()
         asyncio.set_event_loop(loop)
-    
-    print("Starting Telegram Bot Polling...")
-    # Start aiohttp web server for health checks before polling Telegram
-    try:
-        loop.run_until_complete(run_web_server())
-    except Exception as e:
-        print('Failed to start web server:', e)
 
-    executor.start_polling(
-        dp,
-        skip_updates=True,
-        on_startup=on_startup,
-        on_shutdown=on_shutdown
-    )
+    # Запускаем веб-сервер и polling параллельно
+    try:
+        web_task = loop.create_task(init_web_server())
+        bot_task = loop.create_task(start_bot_polling())
+        loop.run_until_complete(asyncio.gather(web_task, bot_task))
+    except KeyboardInterrupt:
+        print('Received shutdown signal')
+    except Exception as e:
+        print('Error in main loop:', e)
+    finally:
+        print('Бот отключается')
+        loop.close()
