@@ -34,10 +34,10 @@ web_runner = None
 # УБЕДИТЕСЬ, ЧТО ЭТОТ БЛОК ПРАВИЛЬНЫЙ
 # ------------------------------------
 # Получаем публичный URL, который предоставляет Koyeb (например, https://app-name-id.koyeb.app)
-WEBHOOK_HOST = os.environ.get('K_SERVICE_URL') 
+WEBHOOK_HOST = os.environ.get('disciplinary-desiri-vort1xss-71ad2f98.koyeb.app/') 
 
 # Используем токен как уникальный путь. Убедитесь, что BOT_TOKEN установлен на Koyeb.
-WEBHOOK_PATH = f'/{os.environ.get("BOT_TOKEN")}' 
+WEBHOOK_PATH = f'/{os.environ.get("8098891662:AAFqbb0db3MT7d4iTXQZeTCaf_6z9GJDWfA")}' 
 WEBHOOK_URL = f"{WEBHOOK_HOST}{WEBHOOK_PATH}"
 
 WEBAPP_HOST = '0.0.0.0'
