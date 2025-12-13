@@ -931,7 +931,7 @@ def load_data():
 
 def find_latest_backup():
     """Находит самый новый backup файл"""
-    backup_files = glob.glob('backups/bot_data_*.bak')
+    backup_files = await asyncio.to_thread(glob.glob, 'backups/bot_data_*.bak')
     if not backup_files:
         return None
     backup_files.sort(key=os.path.getmtime, reverse=True)
@@ -939,7 +939,7 @@ def find_latest_backup():
 
 def find_best_backup_by_content():
     """Находит САМЫЙ ЛУЧШИЙ backup созданный СЕГОДНЯ"""
-    backup_files = glob.glob('backups/bot_data_*.bak')
+    backup_files = await asyncio.to_thread(glob.glob, 'backups/bot_data_*.bak')
     if not backup_files:
         return None
     
@@ -1033,10 +1033,14 @@ def find_best_backup_by_content():
     print("❌ Не удалось выбрать лучший backup из сегодняшних")
     return None
 
+async def find_best_backup_by_content_async():
+    """Async wrapper для find_best_backup_by_content"""
+    return await asyncio.to_thread(find_best_backup_by_content)
+
 async def force_restore_if_needed():
     """Принудительное восстановление из САМОГО ЛУЧШЕГО сегодняшнего backup"""
     try:
-        backup_file = find_best_backup_by_content()
+        backup_file = await asyncio.to_thread(find_best_backup_by_content)
         if not backup_file:
             print("✅ Не найдено подходящих backup файлов за сегодня")
             return
@@ -1081,7 +1085,9 @@ async def force_restore_if_needed():
             improvement = backup_total_score - main_total_score
             reason = f"сегодняшний backup лучше на {improvement:.2f} баллов"
             print(f"🔄 Восстанавливаю данные ({reason})")
-            if restore_from_backup(backup_file):
+            # Запускаем восстановление в thread pool, чтобы не блокировать event loop
+            restored = await asyncio.to_thread(restore_from_backup, backup_file)
+            if restored:
                 save_data()
                 print("✅ Восстановление из САМОГО ЛУЧШЕГО сегодняшнего backup завершено!")
             else:
@@ -1095,7 +1101,13 @@ async def force_restore_if_needed():
 @dp.message_handler(lambda m: m.text and is_command_message(m, ['найти backup', 'поиск backup', 'найти бекап']) and m.from_user.id == OWNER_ID)
 async def find_all_backups(message: types.Message):
     """Поиск всех backup файлов с информацией"""
-    backup_files = glob.glob('backups/bot_data_*.bak')
+    # Запускаем сбор информации по бэкапам в фоне, чтобы не блокировать обработчик
+    asyncio.create_task(send_all_backups_info(message))
+    await message.reply("🔎 Поиск backup файлов запущен в фоне, ожидайте сообщение с результатом.")
+    return
+
+    # Код ниже перемещен в фоновой задаче
+    backup_files = await asyncio.to_thread(glob.glob, 'backups/bot_data_*.bak')
     if not backup_files:
         await message.reply("❌ Backup файлы не найдены!")
         return
@@ -1152,32 +1164,78 @@ async def find_all_backups(message: types.Message):
     
     await message.reply(text, parse_mode='HTML', reply_markup=kb)
 
+async def send_all_backups_info(message: types.Message):
+    """Собирает информацию по всем бэкапам в отдельном потоке и отправляет сообщение пользователю."""
+    def collect_info():
+        backup_files = glob.glob('backups/bot_data_*.bak')
+        if not backup_files:
+            return None
+        backup_info = []
+        for backup_file in backup_files:
+            try:
+                with open(backup_file, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                total_cars = sum(len(garage) for garage in data.get('user_garage', {}).values())
+                total_money = sum(data.get('user_balance', {}).values())
+                file_time = os.path.getmtime(backup_file)
+                file_date = datetime.fromtimestamp(file_time).strftime('%d.%m.%Y %H:%M')
+                backup_info.append({'file': backup_file, 'cars': total_cars, 'money': total_money, 'date': file_date})
+            except Exception:
+                backup_info.append({'file': backup_file, 'cars': 0, 'money': 0, 'date': 'Ошибка чтения'})
+        backup_info.sort(key=lambda x: x['cars'], reverse=True)
+        return backup_info
+
+    info = await asyncio.to_thread(collect_info)
+    if not info:
+        await message.reply("❌ Backup файлы не найдены!")
+        return
+
+    text = "📁 <b>ВСЕ BACKUP ФАЙЛЫ:</b>\n\n"
+    for i, info_item in enumerate(info[:15], 1):
+        status = "🏆" if i == 1 else "📊"
+        text += f"{status} <b>{os.path.basename(info_item['file'])}</b>\n"
+        text += f"   📅 {info_item['date']}\n"
+        text += f"   🚗 Машин: {info_item['cars']}\n"
+        text += f"   💰 Денег: {format_money(info_item['money'])}\n\n"
+    if len(info) > 15:
+        text += f"<i>... и еще {len(info) - 15} backup файлов</i>\n"
+    kb = types.InlineKeyboardMarkup()
+    kb.add(types.InlineKeyboardButton(text="🔄 Восстановить из лучшего backup", callback_data="restore_from_best_backup"))
+    await message.reply(text, parse_mode='HTML', reply_markup=kb)
 @dp.callback_query_handler(lambda c: c.data == "restore_from_best_backup")
 async def restore_from_best_backup(callback_query: types.CallbackQuery):
     """Восстановление из лучшего backup"""
     await bot.answer_callback_query(callback_query.id)
     
-    backup_file = find_best_backup_by_content()
+    backup_file = await asyncio.to_thread(find_best_backup_by_content)
     if not backup_file:
         await bot.send_message(callback_query.from_user.id, "❌ Backup файлы не найдены!")
         return
     
-    if restore_from_backup(backup_file):
-        save_data()
-        
-        total_cars = sum(len(garage) for garage in user_garage.values())
-        total_money = sum(user_balance.values())
-        
-        await bot.send_message(
-            callback_query.from_user.id,
-            f"✅ <b>ДАННЫЕ ВОССТАНОВЛЕНЫ!</b>\n\n"
-            f"📁 Backup: <code>{os.path.basename(backup_file)}</code>\n"
-            f"🚗 Машин восстановлено: {total_cars}\n"
-            f"💰 Денег восстановлено: {format_money(total_money)}",
-            parse_mode='HTML'
-        )
-    else:
-        await bot.send_message(callback_query.from_user.id, "❌ Ошибка восстановления данных!")
+    # Запускаем восстановление в фоновом потоке, чтобы не блокировать webhook
+    asyncio.create_task(perform_restore_and_notify(backup_file, callback_query.from_user.id))
+    await bot.send_message(callback_query.from_user.id, "🔄 Восстановление запущено в фоне. Я сообщу, когда оно завершится.")
+    return
+
+async def perform_restore_and_notify(backup_file: str, user_id: int):
+    try:
+        res = await asyncio.to_thread(restore_from_backup, backup_file)
+        if res:
+            save_data()
+            total_cars = sum(len(garage) for garage in user_garage.values())
+            total_money = sum(user_balance.values())
+            await bot.send_message(
+                user_id,
+                f"✅ <b>ДАННЫЕ ВОССТАНОВЛЕНЫ!</b>\n\n"
+                f"📁 Backup: <code>{os.path.basename(backup_file)}</code>\n"
+                f"🚗 Машин восстановлено: {total_cars}\n"
+                f"💰 Денег восстановлено: {format_money(total_money)}",
+                parse_mode='HTML'
+            )
+        else:
+            await bot.send_message(user_id, "❌ Ошибка восстановления данных!")
+    except Exception as e:
+        await bot.send_message(user_id, f"❌ Ошибка при восстановлении: {e}")
 
 def restore_from_backup(backup_file):
     """Восстанавливает данные из backup файла"""
@@ -1278,7 +1336,8 @@ def restore_from_backup(backup_file):
 async def force_restore_balance(message: types.Message):
     """Принудительное восстановление из backup с лучшим балансом"""
     await message.reply("🔄 <b>Принудительное восстановление баланса...</b>", parse_mode='HTML')
-    await force_restore_if_needed()
+    # Запускаем восстановление в фоне, чтобы не блокировать обработчик
+    asyncio.create_task(force_restore_if_needed())
     
     total_cars = sum(len(garage) for garage in user_garage.values())
     total_money = sum(user_balance.values())
@@ -1316,7 +1375,8 @@ async def auto_restore_on_startup():
         
         if backup_cars > main_cars:
             print(f"🔄 В backup больше машин! Восстанавливаю из {backup_file}")
-            if restore_from_backup(backup_file):
+            restored = await asyncio.to_thread(restore_from_backup, backup_file)
+            if restored:
                 save_data()
                 print("✅ Автоматическое восстановление завершено!")
             else:
@@ -6183,7 +6243,8 @@ async def confirm_restore_backup(callback_query: types.CallbackQuery):
         parse_mode='HTML'
     )
     
-    if restore_from_backup(backup_file):
+    restored = await asyncio.to_thread(restore_from_backup, backup_file)
+    if restored:
         save_data()
         
         total_cars = sum(len(garage) for garage in user_garage.values())
@@ -6416,7 +6477,8 @@ async def restore_backup_command(message: types.Message):
     
     await message.reply(f"📁 <b>Найден backup:</b> {os.path.basename(backup_file)}\n\nВосстанавливаю данные...", parse_mode='HTML')
     
-    if restore_from_backup(backup_file):
+    restored = await asyncio.to_thread(restore_from_backup, backup_file)
+    if restored:
         save_data()
         
         total_cars = sum(len(garage) for garage in user_garage.values())
@@ -6692,7 +6754,7 @@ async def periodic_checks():
 async def force_restore_balance(message: types.Message):
     """Принудительное восстановление из backup с лучшим балансом"""
     await message.reply("🔄 <b>Принудительное восстановление баланса...</b>", parse_mode='HTML')
-    await force_restore_if_needed()
+    asyncio.create_task(force_restore_if_needed())
     
     total_cars = sum(len(garage) for garage in user_garage.values())
     total_money = sum(user_balance.values())
@@ -6729,7 +6791,8 @@ async def on_startup(dp):
     init_crafting_system()
     
     # Затем принудительное восстановление данных ЕСЛИ НУЖНО
-    await force_restore_if_needed()
+    # Запускаем в фоне, чтобы не блокировать on_startup
+    asyncio.create_task(force_restore_if_needed())
     
     try: 
         if os.path.isdir(IMAGE_BASE_PATH): 
