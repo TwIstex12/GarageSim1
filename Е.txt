@@ -1,0 +1,4 @@
+1. СМД
+2. cd /d "D:\vscode code\GarageSim"
+3. venv\Scripts\activate
+4. python Bot.py
