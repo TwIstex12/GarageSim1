@@ -17,7 +17,12 @@ from typing import Dict, Any, List
 # ========== CONFIG & GLOBALS =========== 
 TOKEN = "8098891662:AAFqbb0db3MT7d4iTXQZeTCaf_6z9GJDWfA" 
 OWNER_ID = 1678023162 
-IMAGE_BASE_PATH = 'images/' 
+# Use 'images' subfolder if present, otherwise use project root
+DEFAULT_IMAGES_DIR = 'images'
+if os.path.isdir(DEFAULT_IMAGES_DIR):
+    IMAGE_BASE_PATH = os.path.normpath(DEFAULT_IMAGES_DIR)
+else:
+    IMAGE_BASE_PATH = '.'
 DATA_FILE = 'bot_data.json' 
 COOLDOWN = 3 * 60 * 60
 
@@ -1789,7 +1794,7 @@ def generate_car_data(car_name:str,rarity:str,user_id:int):
     handling = random.randint(*ranges['handling']) 
 
     image_filename = CAR_FILE_MAPPING.get(car_name, 'default.png')
-    image_path = IMAGE_BASE_PATH + image_filename
+    image_path = os.path.join(IMAGE_BASE_PATH, image_filename)
     
     car_owner_map[car_id]=user_id 
     sellable = False if rarity == 'Эксклюзивные' else True 
@@ -6661,7 +6666,7 @@ async def on_startup(dp):
     try: 
         if os.path.isdir(IMAGE_BASE_PATH): 
             files = [f for f in os.listdir(IMAGE_BASE_PATH) if os.path.isfile(os.path.join(IMAGE_BASE_PATH, f))] 
-            print(f"Найдено файлов в папке images: {len(files)}")
+            print(f"Найдено файлов в {IMAGE_BASE_PATH}: {len(files)}")
             
             for rarity, models in cars.items(): 
                 for model in models: 
@@ -6681,9 +6686,10 @@ async def on_startup(dp):
                 for car in garage:
                     car_name = car.get('name')
                     if car_name in CAR_FILE_MAPPING:
-                        car['image_path'] = IMAGE_BASE_PATH + CAR_FILE_MAPPING[car_name]
+                        car['image_path'] = os.path.join(IMAGE_BASE_PATH, CAR_FILE_MAPPING[car_name])
         else: 
-            os.makedirs(IMAGE_BASE_PATH, exist_ok=True) 
+            if IMAGE_BASE_PATH != '.':
+                os.makedirs(IMAGE_BASE_PATH, exist_ok=True)
     except Exception as e: 
         print('Image mapping error:', e) 
         # ========== КОМАНДА ПРИНУДИТЕЛЬНОГО ВОССТАНОВЛЕНИЯ БАЛАНСА ==========
@@ -6726,7 +6732,7 @@ async def on_startup(dp):
     try: 
         if os.path.isdir(IMAGE_BASE_PATH): 
             files = [f for f in os.listdir(IMAGE_BASE_PATH) if os.path.isfile(os.path.join(IMAGE_BASE_PATH, f))] 
-            print(f"Найдено файлов в папке images: {len(files)}")
+            print(f"Найдено файлов в {IMAGE_BASE_PATH}: {len(files)}")
             
             for rarity, models in cars.items(): 
                 for model in models: 
@@ -6746,9 +6752,10 @@ async def on_startup(dp):
                 for car in garage:
                     car_name = car.get('name')
                     if car_name in CAR_FILE_MAPPING:
-                        car['image_path'] = IMAGE_BASE_PATH + CAR_FILE_MAPPING[car_name]
+                        car['image_path'] = os.path.join(IMAGE_BASE_PATH, CAR_FILE_MAPPING[car_name])
         else: 
-            os.makedirs(IMAGE_BASE_PATH, exist_ok=True) 
+            if IMAGE_BASE_PATH != '.':
+                os.makedirs(IMAGE_BASE_PATH, exist_ok=True)
     except Exception as e: 
         print('Image mapping error:', e) 
         
