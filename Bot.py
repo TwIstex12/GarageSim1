@@ -28,6 +28,7 @@ COOLDOWN = 3 * 60 * 60
 
 bot = Bot(token=TOKEN) 
 dp = Dispatcher(bot) 
+web_runner = None
 
 # ======== WEB SERVER (health check) ========
 async def handle_health_check(request):
@@ -47,17 +48,11 @@ async def init_web_server():
     print(f"Starting Health Check server on port {PORT}...")
     await site.start()
     print('Health server started')
+    global web_runner
+    web_runner = runner
     return runner
 
-async def start_bot_polling():
-    """Запуск Polling с учетом on_startup/on_shutdown."""
-    print("Starting Telegram Bot Polling...")
-    await executor.start_polling(
-        dp,
-        skip_updates=True,
-        on_startup=on_startup,
-        on_shutdown=on_shutdown,
-    )
+# Note: executor.start_polling will be called in the main block; no wrapper needed.
 
 # Global runtime state 
 user_balance: Dict[int, int] = {} 
@@ -6659,48 +6654,12 @@ async def periodic_checks():
             print(f"Ошибка в periodic_checks: {e}")
             await asyncio.sleep(30)
 
-# ========== ЗАПУСК БОТА ==========
-
-async def on_startup(dp): 
-    # Проверяем текущее событие при запуске
-    check_current_event()
-    
-    # Загружаем обычные данные сначала
-    load_data() 
-    init_crafting_system()
-    
-    # Затем принудительное восстановление данных ЕСЛИ НУЖНО
-    await force_restore_if_needed()
-    
-    try: 
-        if os.path.isdir(IMAGE_BASE_PATH): 
-            files = [f for f in os.listdir(IMAGE_BASE_PATH) if os.path.isfile(os.path.join(IMAGE_BASE_PATH, f))] 
-            print(f"Найдено файлов в {IMAGE_BASE_PATH}: {len(files)}")
-            
-            for rarity, models in cars.items(): 
-                for model in models: 
-                    found_file = None
-                    for file in files:
-                        file_lower = file.lower()
-                        model_lower = model.lower().replace(' ', '_').replace('-', '_')
-                        
-                        if model_lower in file_lower or any(word in file_lower for word in model_lower.split()):
-                            found_file = file
-                            break
-                    
-                    if found_file:
-                        CAR_FILE_MAPPING[model] = found_file
-            
-            for uid, garage in user_garage.items():
-                for car in garage:
-                    car_name = car.get('name')
-                    if car_name in CAR_FILE_MAPPING:
-                        car['image_path'] = os.path.join(IMAGE_BASE_PATH, CAR_FILE_MAPPING[car_name])
-        else: 
-            if IMAGE_BASE_PATH != '.':
-                os.makedirs(IMAGE_BASE_PATH, exist_ok=True)
-    except Exception as e: 
-        print('Image mapping error:', e) 
+ 
+    # Start the health check web server when the bot starts
+    try:
+        await init_web_server()
+    except Exception as e:
+        print('Failed to start web server in on_startup:', e)
         # ========== КОМАНДА ПРИНУДИТЕЛЬНОГО ВОССТАНОВЛЕНИЯ БАЛАНСА ==========
 
 @dp.message_handler(lambda m: m.text and is_command_message(m, ['восстановить баланс', 'рестор баланс']) and m.from_user.id == OWNER_ID)
@@ -6723,6 +6682,14 @@ async def force_restore_balance(message: types.Message):
 
 async def on_shutdown(dp):
     save_data()
+    # Cleanup web runner if started
+    try:
+        global web_runner
+        if web_runner is not None:
+            await web_runner.cleanup()
+            web_runner = None
+    except Exception as e:
+        print('Error cleaning up web server runner:', e)
     print('Данные сохранены при выключении')
 
 # ========== ЗАПУСК БОТА ==========
@@ -6771,21 +6738,9 @@ async def on_startup(dp):
 # Health check endpoint and web server functions moved to top of the file.
 
 if __name__=='__main__':
-    try:
-        loop = asyncio.get_event_loop()
-    except RuntimeError:
-        loop = asyncio.new_event_loop()
-        asyncio.set_event_loop(loop)
-
-    # Запускаем веб-сервер и polling параллельно
-    try:
-        web_task = loop.create_task(init_web_server())
-        bot_task = loop.create_task(start_bot_polling())
-        loop.run_until_complete(asyncio.gather(web_task, bot_task))
-    except KeyboardInterrupt:
-        print('Received shutdown signal')
-    except Exception as e:
-        print('Error in main loop:', e)
-    finally:
-        print('Бот отключается')
-        loop.close()
+    executor.start_polling(
+        dp,
+        skip_updates=True,
+        on_startup=on_startup,
+        on_shutdown=on_shutdown,
+    )
