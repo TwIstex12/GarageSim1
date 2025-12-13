@@ -6759,9 +6759,11 @@ async def on_startup(dp):
     WEBHOOK_PATH = f'/{BOT_TOKEN_ENV}' if BOT_TOKEN_ENV else None
     WEBHOOK_URL = f"{WEBHOOK_HOST}{WEBHOOK_PATH}" if WEBHOOK_HOST and WEBHOOK_PATH else None
 
-    if not WEBHOOK_HOST or not BOT_TOKEN_ENV:
-        print("ОШИБКА: K_SERVICE_URL или BOT_TOKEN не найдены. Webhook не установлен.")
-    else:
+    # ВРЕМЕННО удаляем защитную проверку, чтобы не прерывать работу
+    # if not WEBHOOK_HOST or not BOT_TOKEN_ENV:
+    #     print("ОШИБКА: K_SERVICE_URL или BOT_TOKEN не найдены. Webhook не установлен.")
+    # else:
+    if WEBHOOK_URL:
         print(f"Попытка установить Webhook по адресу: {WEBHOOK_URL}")
         try:
             success = await dp.bot.set_webhook(WEBHOOK_URL)
