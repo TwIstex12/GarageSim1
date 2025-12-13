@@ -27,8 +27,15 @@ DATA_FILE = 'bot_data.json'
 COOLDOWN = 3 * 60 * 60
 
 bot = Bot(token=TOKEN) 
-dp = Dispatcher(bot) 
+dp = Dispatcher(bot)
+
 web_runner = None
+WEBHOOK_HOST = os.environ.get('K_SERVICE_URL')
+WEBHOOK_PATH = f'/{os.environ.get("BOT_TOKEN")}' 
+WEBHOOK_URL = f"{WEBHOOK_HOST}{WEBHOOK_PATH}"
+
+WEBAPP_HOST = '0.0.0.0'
+WEBAPP_PORT = int(os.environ.get('PORT', 8000))
 
 # ======== WEB SERVER (health check) ========
 async def handle_health_check(request):
@@ -6738,9 +6745,14 @@ async def on_startup(dp):
 # Health check endpoint and web server functions moved to top of the file.
 
 if __name__=='__main__':
-    executor.start_polling(
-        dp,
-        skip_updates=True,
+ from aiogram import executor
+executor.start_webhook(
+        dispatcher=dp,
+        webhook_path=WEBHOOK_PATH,
         on_startup=on_startup,
         on_shutdown=on_shutdown,
+        skip_updates=True,
+        host=WEBAPP_HOST,
+        port=WEBAPP_PORT,
+        
     )
